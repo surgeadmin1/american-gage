@@ -9,7 +9,14 @@ export default function StickyQuote() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 600);
+    const onScroll = () => {
+      const scrolledPast = window.scrollY > 600;
+      // Hide near the page bottom so we never overlap the CTA band / footer,
+      // which carry their own quote buttons.
+      const nearBottom =
+        window.innerHeight + window.scrollY > document.body.scrollHeight - 700;
+      setVisible(scrolledPast && !nearBottom);
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);

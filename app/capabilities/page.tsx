@@ -6,6 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import CTASection from '@/components/CTASection';
 import InstrumentIndex from '@/components/InstrumentIndex';
 import { capabilities } from '@/data/capabilities';
+import { blurMap } from '@/data/blur';
 
 export const metadata: Metadata = {
   title: 'Calibration Capabilities — A–Z Instrument Index',
@@ -43,12 +44,20 @@ export default function CapabilitiesPage() {
                   alt={c.image.alt}
                   fill
                   sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  placeholder="blur"
+                  blurDataURL={blurMap[c.image.src]}
                   className="object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-5">
-                <h2 className="font-display text-lg font-bold text-navy-800 group-hover:text-accent-600">
+                <h2 className="flex items-baseline justify-between gap-2 font-display text-lg font-bold text-navy-800 group-hover:text-accent-600">
                   {c.shortName}
+                  <span
+                    aria-hidden="true"
+                    className="text-accent-500 transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
                 </h2>
                 <p className="mt-1.5 line-clamp-2 text-sm text-steel-600">{c.headline}</p>
               </div>

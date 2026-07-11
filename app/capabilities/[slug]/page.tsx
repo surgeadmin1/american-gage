@@ -7,6 +7,7 @@ import CTASection from '@/components/CTASection';
 import JsonLd from '@/components/JsonLd';
 import { serviceSchema } from '@/lib/schema';
 import { capabilities, getCapability } from '@/data/capabilities';
+import { blurMap } from '@/data/blur';
 import { site } from '@/lib/site';
 
 export function generateStaticParams() {
@@ -117,14 +118,16 @@ export default async function CapabilityPage({
         </div>
 
         {/* Sidebar */}
-        <aside className="space-y-6 lg:pt-24">
-          <div className="overflow-hidden rounded-lg">
+        <aside className="space-y-6 lg:pt-11">
+          <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
             <Image
               src={cap.image.src}
               alt={cap.image.alt}
-              width={760}
-              height={507}
-              className="w-full object-cover"
+              fill
+              sizes="(min-width: 1024px) 380px, 100vw"
+              placeholder="blur"
+              blurDataURL={blurMap[cap.image.src]}
+              className="object-cover"
             />
           </div>
           <div className="rounded-lg border border-steel-200 bg-navy-50 p-6">

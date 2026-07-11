@@ -25,7 +25,7 @@ export default function InstrumentIndex({ instruments }: { instruments: IndexedI
 
   return (
     <div>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-2">
         <label className="relative block w-full max-w-md">
           <span className="sr-only">Search instruments</span>
           <svg
@@ -44,7 +44,16 @@ export default function InstrumentIndex({ instruments }: { instruments: IndexedI
           />
         </label>
         <p className="font-mono text-xs text-steel-500">
-          {instruments.length} instrument types · A2LA scope PDF has full CMC detail
+          {instruments.length} instrument types — full accredited ranges and CMC detail in
+          the{' '}
+          <a
+            href="https://customer.a2la.org/index.cfm?event=directory.getDocument&accreditationPID=C0086F01-07B5-4C75-9DE2-3A922A32AB5A&documentPID=7A3C4A27-E250-46EA-82FA-6E4DD5075307"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-accent-600 hover:underline"
+          >
+            A2LA scope PDF ↗
+          </a>
         </p>
       </div>
 

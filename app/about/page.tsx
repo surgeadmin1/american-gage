@@ -43,23 +43,23 @@ export default function AboutPage() {
         lead="American Gage started with gage blocks and aerospace machine shops. Over one million calibrations later, the mission hasn't changed: measurements your auditors trust, from people who know your name."
       />
 
-      <div className="container-site grid gap-12 pb-16 lg:grid-cols-2">
-        <div className="relative overflow-hidden rounded-lg">
+      <div className="container-site grid gap-6 pb-16 sm:grid-cols-2 lg:gap-8">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
           <Image
             src="/images/american-gage-facility.jpg"
-            alt="The American Gage calibration facility in Placentia, California"
-            width={1000}
-            height={501}
-            className="w-full object-cover"
+            alt="Exterior of the American Gage calibration facility at 1131 S Richfield Rd, Placentia, California"
+            fill
+            sizes="(min-width: 640px) 50vw, 100vw"
+            className="object-cover"
           />
         </div>
-        <div className="relative overflow-hidden rounded-lg">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
           <Image
-            src="/images/american-gage-team-lab.jpg"
-            alt="American Gage technicians at work in the calibration laboratory"
-            width={1600}
-            height={1067}
-            className="h-full w-full object-cover"
+            src="/images/american-gage-reception.jpg"
+            alt="American Gage reception desk with backlit AG logo, where customers drop off equipment"
+            fill
+            sizes="(min-width: 640px) 50vw, 100vw"
+            className="object-cover"
           />
         </div>
       </div>

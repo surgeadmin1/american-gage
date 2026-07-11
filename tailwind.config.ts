@@ -43,7 +43,9 @@ const config: Config = {
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
         sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
+        // "mono" token now renders in Space Grotesk — sleeker technical labels,
+        // used for cert numbers, specs, route schedules, eyebrows, etc.
+        mono: ['var(--font-display)', 'system-ui', 'sans-serif'],
       },
       maxWidth: {
         content: '72rem',

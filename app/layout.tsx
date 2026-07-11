@@ -22,15 +22,6 @@ const body = localFont({
   display: 'swap',
 });
 
-const mono = localFont({
-  src: [
-    { path: './fonts/ibm-plex-mono-latin-400-normal.woff2', weight: '400' },
-    { path: './fonts/ibm-plex-mono-latin-600-normal.woff2', weight: '600' },
-  ],
-  variable: '--font-mono',
-  display: 'swap',
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -50,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="flex min-h-screen flex-col font-sans">
         <JsonLd data={localBusinessSchema()} />
         <Header />
