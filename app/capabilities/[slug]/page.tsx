@@ -168,6 +168,7 @@ export default async function CapabilityPage({
       <CTASection
         heading={`Need ${cap.shortName.toLowerCase()} calibration?`}
         body="Send your equipment list and we’ll confirm scope, pricing, and turnaround within one business day — with free pickup if you’re on a SoCal route."
+        image={cap.image.src}
       />
     </>
   );

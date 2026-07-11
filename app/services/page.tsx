@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
+import ServiceIcon from '@/components/ServiceIcon';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JumpNav from '@/components/JumpNav';
 import CTASection from '@/components/CTASection';
@@ -48,7 +49,8 @@ export default function ServicesPage() {
       <div className="container-site max-w-4xl space-y-20 py-16">
         {/* Laboratory */}
         <section id="laboratory">
-          <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+            <ServiceIcon name="lab" />
             Laboratory Calibration
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
@@ -78,7 +80,8 @@ export default function ServicesPage() {
 
         {/* On-site */}
         <section id="on-site">
-          <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+            <ServiceIcon name="onsite" />
             On-Site Calibration
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
@@ -114,7 +117,8 @@ export default function ServicesPage() {
 
         {/* Pickup */}
         <section id="pickup-delivery">
-          <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+            <ServiceIcon name="pickup" />
             Free Pickup & Delivery
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
@@ -157,7 +161,8 @@ export default function ServicesPage() {
 
         {/* Repair */}
         <section id="repair">
-          <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+            <ServiceIcon name="repair" />
             Repair & Refurbishment
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
@@ -206,7 +211,8 @@ export default function ServicesPage() {
 
         {/* Process */}
         <section id="process">
-          <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+            <ServiceIcon name="process" />
             Process Troubleshooting & Uniformity Surveys
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
@@ -221,7 +227,8 @@ export default function ServicesPage() {
 
         {/* Validation */}
         <section id="validation">
-          <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+            <ServiceIcon name="validation" />
             Validation (IQ / OQ / PQ)
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
@@ -236,7 +243,8 @@ export default function ServicesPage() {
 
         {/* Staffing */}
         <section id="staffing">
-          <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+            <ServiceIcon name="staffing" />
             Calibration Staffing
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />

@@ -61,18 +61,28 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
+        <div className="rounded-lg border border-navy-800 bg-navy-950/50 p-5 sm:-m-5 sm:p-5">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-accent-400">
             Visit or Call
           </h2>
-          <address className="mt-4 space-y-2 text-sm not-italic">
+          <address className="mt-4 space-y-2.5 text-sm not-italic">
             <p>
-              {site.address.street}
-              <br />
-              {site.address.city}, {site.address.state} {site.address.zip}
+              <a
+                href="https://maps.google.com/?q=1131+S+Richfield+Rd,+Placentia,+CA+92870"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-accent-400"
+              >
+                {site.address.street}
+                <br />
+                {site.address.city}, {site.address.state} {site.address.zip} ↗
+              </a>
             </p>
             <p>
-              <a href={site.phoneHref} className="font-semibold text-white transition hover:text-accent-400">
+              <a
+                href={site.phoneHref}
+                className="font-display text-xl font-bold text-white transition hover:text-accent-400"
+              >
                 {site.phone}
               </a>
             </p>

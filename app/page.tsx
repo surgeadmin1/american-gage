@@ -70,40 +70,94 @@ export default function HomePage() {
           className="object-cover opacity-25"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-900/70 to-navy-900/40" aria-hidden="true" />
-        <div className="container-site relative py-24 sm:py-32">
-          <p className="eyebrow !text-accent-400">
-            A2LA Accredited · ISO/IEC 17025:2017 · Est. {site.founded}
-          </p>
-          <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Precision calibration, with a lab that actually knows your name.
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-steel-200">
-            American Gage has been the calibration supplier of record for Southern
-            California’s regulated manufacturers since 1968 — aerospace, medical device,
-            biotech, and defense. NIST-traceable on every measurement, with free pickup and
-            delivery across SoCal.
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Link href="/contact" className="btn-primary">
-              Request a Quote
-            </Link>
-            <Link href="/capabilities" className="btn-ghost-light">
-              Explore Capabilities
-            </Link>
+        <div className="container-site relative grid items-center gap-12 py-24 sm:py-28 lg:grid-cols-[1fr_340px] lg:py-32">
+          <div>
+            <p className="eyebrow !text-accent-400">
+              A2LA Accredited · ISO/IEC 17025:2017 · Est. {site.founded}
+            </p>
+            <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Precision calibration, with a lab that actually knows your name.
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-steel-200">
+              American Gage has been the calibration supplier of record for Southern
+              California’s regulated manufacturers since 1968 — aerospace, medical device,
+              biotech, and defense. NIST-traceable on every measurement, with free pickup and
+              delivery across SoCal.
+            </p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Link href="/contact" className="btn-primary">
+                Request a Quote
+              </Link>
+              <Link href="/capabilities" className="btn-ghost-light">
+                Explore Capabilities
+              </Link>
+            </div>
+            <p className="mt-6 font-mono text-sm text-steel-300">
+              Quotes within one business day ·{' '}
+              <a href={site.phoneHref} className="text-white underline decoration-accent-500 underline-offset-4 hover:text-accent-400">
+                {site.phone}
+              </a>
+            </p>
           </div>
-          <p className="mt-6 font-mono text-sm text-steel-300">
-            Quotes within one business day ·{' '}
-            <a href={site.phoneHref} className="text-white underline decoration-accent-500 underline-offset-4 hover:text-accent-400">
-              {site.phone}
-            </a>
-          </p>
+
+          {/* Trust panel */}
+          <aside className="hidden lg:block" aria-label="Accreditation summary">
+            <div className="rounded-lg border border-white/15 bg-navy-950/60 p-6 backdrop-blur-sm">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/images/a2la-accredited-4296-01.jpg"
+                  alt="A2LA Accredited symbol, certificate 4296.01"
+                  width={72}
+                  height={61}
+                  className="h-14 w-auto rounded bg-white p-1"
+                />
+                <div>
+                  <p className="font-display text-sm font-bold text-white">A2LA Accredited</p>
+                  <p className="font-mono text-xs text-steel-300">Cert #{site.a2laCertNumber}</p>
+                </div>
+              </div>
+              <ul className="mt-5 space-y-3 border-t border-white/10 pt-5 text-sm text-steel-200">
+                <li className="flex justify-between gap-3">
+                  <span>Standard turnaround</span>
+                  <span className="font-mono text-white">5–7 days</span>
+                </li>
+                <li className="flex justify-between gap-3">
+                  <span>SoCal pickup routes</span>
+                  <span className="font-mono text-white">Free</span>
+                </li>
+                <li className="flex justify-between gap-3">
+                  <span>Calibrations performed</span>
+                  <span className="font-mono text-white">1M+</span>
+                </li>
+              </ul>
+              <a
+                href={site.a2laScopeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 block rounded-md border border-white/30 py-2.5 text-center font-display text-xs font-semibold uppercase tracking-wide text-white transition hover:border-accent-400 hover:text-accent-400"
+              >
+                Download A2LA Scope (PDF)
+              </a>
+            </div>
+          </aside>
         </div>
+
+        {/* Scroll cue */}
+        <a
+          href="#disciplines"
+          aria-label="Scroll to capabilities"
+          className="absolute bottom-5 left-1/2 hidden -translate-x-1/2 text-steel-300 transition hover:text-accent-400 sm:block"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" className="animate-bounce">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </a>
       </section>
 
       <StatsBand />
 
       {/* Capabilities grid */}
-      <section className="container-site py-20">
+      <section id="disciplines" className="container-site py-20">
         <div className="max-w-2xl">
           <p className="eyebrow">Capabilities</p>
           <h2 className="mt-3 font-display text-3xl font-bold text-navy-900 sm:text-4xl">
@@ -181,6 +235,41 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section aria-label="How it works" className="border-b border-steel-200">
+        <div className="container-site py-16">
+          <p className="eyebrow">How It Works</p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-navy-900 sm:text-4xl">
+            Three steps to audit-ready.
+          </h2>
+          <ol className="mt-10 grid gap-8 md:grid-cols-3">
+            {[
+              {
+                step: '01',
+                title: 'Send your equipment list',
+                body: 'Manufacturer, model, serial — spreadsheet or scribbles, we don’t judge. You get scope confirmation, pricing, and turnaround within one business day.',
+              },
+              {
+                step: '02',
+                title: 'We pick up on your route',
+                body: 'Our driver collects your instruments on the next scheduled run through your county — or drop off anytime, or book on-site calibration at your facility.',
+              },
+              {
+                step: '03',
+                title: 'Certs land in your portal',
+                body: 'Calibrated in 5–7 business days with as-found/as-left data, uncertainty, and NIST traceability — delivered back to you and accessible online 24/7.',
+              },
+            ].map((s) => (
+              <li key={s.step} className="relative border-t-2 border-accent-500 pt-5">
+                <span className="font-mono text-xs font-semibold text-accent-600">{s.step}</span>
+                <h3 className="mt-1 font-display text-lg font-bold text-navy-800">{s.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-steel-600">{s.body}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
