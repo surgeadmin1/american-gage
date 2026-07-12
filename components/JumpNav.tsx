@@ -26,24 +26,31 @@ export default function JumpNav({ links, label = 'On this page' }: { links: Jump
   return (
     <nav
       aria-label={label}
-      className="sticky top-[4.5rem] z-30 -mx-5 overflow-x-auto border-b border-steel-200 bg-white/95 backdrop-blur sm:-mx-8 lg:mx-0"
+      className="sticky top-[4.5rem] z-30 -mx-5 border-b border-steel-200 bg-white/95 backdrop-blur sm:-mx-8 lg:mx-0"
     >
-      <ul className="container-site flex gap-1 py-2 lg:px-0">
-        {links.map((l) => (
-          <li key={l.id} className="shrink-0">
-            <a
-              href={`#${l.id}`}
-              className={`block whitespace-nowrap rounded-full px-4 py-1.5 font-display text-xs font-semibold uppercase tracking-wide transition ${
-                active === l.id
-                  ? 'bg-navy-700 text-white'
-                  : 'text-steel-600 hover:bg-navy-50 hover:text-navy-800'
-              }`}
-            >
-              {l.label}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div className="relative">
+        <ul className="container-site flex gap-1 overflow-x-auto py-2 lg:px-0">
+          {links.map((l) => (
+            <li key={l.id} className="shrink-0">
+              <a
+                href={`#${l.id}`}
+                className={`block whitespace-nowrap rounded-full px-4 py-1.5 font-display text-xs font-semibold uppercase tracking-wide transition ${
+                  active === l.id
+                    ? 'bg-navy-700 text-white'
+                    : 'text-steel-600 hover:bg-navy-50 hover:text-navy-800'
+                }`}
+              >
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {/* Right-edge fade — hints that the pill row scrolls on small screens */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-white to-transparent lg:hidden"
+        />
+      </div>
     </nav>
   );
 }

@@ -140,10 +140,13 @@ export default function Header() {
                 )}
               </li>
             ))}
-            <li className="py-3">
+            <li className="space-y-2.5 py-3">
               <Link href="/contact" onClick={() => setMobileOpen(false)} className="btn-primary w-full">
                 Request a Quote
               </Link>
+              <a href={site.phoneHref} className="btn-secondary w-full">
+                Call {site.phone}
+              </a>
             </li>
           </ul>
         </nav>

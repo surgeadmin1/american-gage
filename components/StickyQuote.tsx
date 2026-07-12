@@ -30,11 +30,12 @@ export default function StickyQuote() {
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'
       }`}
     >
-      <Link href="/contact" className="btn-primary shadow-xl">
+      <Link href="/contact" className="btn-primary !px-4 !py-2.5 shadow-xl sm:!px-6 sm:!py-3">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
           <path d="M12 5v14M5 12h14" />
         </svg>
-        Request a Quote
+        <span className="sm:hidden">Get a Quote</span>
+        <span className="hidden sm:inline">Request a Quote</span>
       </Link>
     </div>
   );

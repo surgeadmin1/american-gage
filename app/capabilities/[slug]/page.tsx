@@ -64,6 +64,20 @@ export default async function CapabilityPage({
           </h1>
           <p className="mt-2 font-display text-lg font-medium text-accent-600">{cap.headline}</p>
           <div className="gauge-ticks mt-5" aria-hidden="true" />
+
+          {/* Discipline photo — shown here on mobile, in the sidebar on desktop */}
+          <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-lg lg:hidden">
+            <Image
+              src={cap.image.src}
+              alt={cap.image.alt}
+              fill
+              sizes="100vw"
+              placeholder="blur"
+              blurDataURL={blurMap[cap.image.src]}
+              className="object-cover"
+            />
+          </div>
+
           <p className="mt-6 max-w-2xl leading-relaxed text-steel-700">{cap.intro}</p>
 
           {/* Key specs */}
@@ -119,7 +133,7 @@ export default async function CapabilityPage({
 
         {/* Sidebar */}
         <aside className="space-y-6 lg:pt-11">
-          <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
+          <div className="relative hidden aspect-[3/2] overflow-hidden rounded-lg lg:block">
             <Image
               src={cap.image.src}
               alt={cap.image.alt}

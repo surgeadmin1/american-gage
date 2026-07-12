@@ -70,7 +70,7 @@ export default function HomePage() {
           className="object-cover opacity-25"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-900/70 to-navy-900/40" aria-hidden="true" />
-        <div className="container-site relative grid items-center gap-12 py-24 sm:py-28 lg:grid-cols-[1fr_340px] lg:py-32">
+        <div className="container-site relative grid items-center gap-12 py-16 sm:py-28 lg:grid-cols-[1fr_340px] lg:py-32">
           <div>
             <p className="eyebrow !text-accent-400">
               A2LA Accredited · ISO/IEC 17025:2017 · Est. {site.founded}
