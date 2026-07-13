@@ -122,12 +122,16 @@ export default function HomePage() {
                   <span className="font-mono text-white">7–10 days</span>
                 </li>
                 <li className="flex justify-between gap-3">
+                  <span>Expedited turnaround</span>
+                  <span className="font-mono text-white">24–48 hrs</span>
+                </li>
+                <li className="flex justify-between gap-3">
                   <span>SoCal pickup routes</span>
                   <span className="font-mono text-white">Free</span>
                 </li>
                 <li className="flex justify-between gap-3">
-                  <span>Calibrations performed</span>
-                  <span className="font-mono text-white">1M+</span>
+                  <span>NIST-traceable</span>
+                  <span className="font-mono text-white">Every cert</span>
                 </li>
               </ul>
               <a
@@ -283,9 +287,9 @@ export default function HomePage() {
           <p className="mt-4 leading-relaxed text-steel-600">
             The national calibration chains process enormous volume — which means your
             instruments are one barcode among thousands. We hold the same A2LA ISO/IEC
-            17025:2017 accreditation they do, but with over a million calibrations performed
-            from one Placentia lab, we deliver something they structurally can’t: a team that
-            goes deep on every client’s program.
+            17025:2017 accreditation they do, but from one Placentia lab we deliver
+            something they structurally can’t: a team that goes deep on every client’s
+            program.
           </p>
           <dl className="mt-8 space-y-6">
             {differentiators.map((d) => (

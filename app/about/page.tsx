@@ -10,7 +10,7 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'About Us — A Calibration Lab Serving SoCal Since 1968',
   description:
-    'American Gage has calibrated for Southern California manufacturers since 1968. 8,000 sq ft of discipline-specific labs in Placentia, CA — over one million calibrations performed.',
+    'American Gage has calibrated for Southern California manufacturers since 1968 — 8,000 sq ft of discipline-specific, ISO/IEC 17025:2017 accredited labs in Placentia, CA.',
   alternates: { canonical: '/about' },
 };
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow={`Est. ${site.founded}`}
         title="Fifty-plus years of getting the measurement right."
-        lead="American Gage started with gage blocks and aerospace machine shops. Over one million calibrations later, the mission hasn't changed: measurements your auditors trust, from people who know your name."
+        lead="American Gage started with gage blocks and aerospace machine shops. More than half a century later, the mission hasn't changed: measurements your auditors trust, from people who know your name."
       />
 
       <div className="container-site grid gap-6 pb-16 sm:grid-cols-2 lg:gap-8">
@@ -97,7 +97,7 @@ export default function AboutPage() {
           </h2>
           <p className="mt-5 leading-relaxed text-steel-700">
             Our team brings over 30 years of experience in metrology and process
-            calibration, performing thousands of calibrations each month. Because we're a
+            calibration across every measurement discipline. Because we're a
             single lab — not a national network — our technicians build real familiarity
             with each customer's equipment, tolerances, and audit calendar. That's the
             difference between a calibration vendor and a calibration partner: we help

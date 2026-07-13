@@ -1,6 +1,6 @@
 const stats = [
   { value: 'Since 1968', label: 'Serving SoCal manufacturers' },
-  { value: '1,000,000+', label: 'Calibrations performed' },
+  { value: 'A2LA', label: 'ISO/IEC 17025:2017 accredited' },
   { value: '8,000 sq ft', label: 'Climate-controlled labs' },
   { value: '7–10 days', label: 'Standard turnaround' },
 ];
