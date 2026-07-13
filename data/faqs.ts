@@ -14,7 +14,7 @@ export const faqs: Faq[] = [
   {
     question: 'What is your standard turnaround time?',
     answer:
-      'Standard turnaround is 5–7 business days. Special-handling items such as gage block sets run 7–10 business days. Expedited 24, 48, and 72-hour service is available for a fee — contact customer service for pricing and availability.',
+      'Standard turnaround is 7–10 business days. Special-handling items may require additional time. Expedited 24, 48, and 72-hour service is available for a fee — contact customer service for pricing and availability.',
   },
   {
     question: 'Is every calibration NIST traceable?',

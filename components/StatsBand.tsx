@@ -2,7 +2,7 @@ const stats = [
   { value: 'Since 1968', label: 'Serving SoCal manufacturers' },
   { value: '1,000,000+', label: 'Calibrations performed' },
   { value: '8,000 sq ft', label: 'Climate-controlled labs' },
-  { value: '5–7 days', label: 'Standard turnaround' },
+  { value: '7–10 days', label: 'Standard turnaround' },
 ];
 
 export default function StatsBand() {

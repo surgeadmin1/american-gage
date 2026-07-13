@@ -19,7 +19,7 @@ const services = [
     title: 'Laboratory Calibration',
     href: '/services#laboratory',
     description:
-      '8,000 sq ft of discipline-specific, environmentally controlled labs in Placentia. Standard 5–7 day turnaround, expedited 24/48/72-hour options.',
+      '8,000 sq ft of discipline-specific, environmentally controlled labs in Placentia. Standard 7–10 day turnaround, expedited 24/48/72-hour options.',
   },
   {
     title: 'On-Site Calibration',
@@ -119,7 +119,7 @@ export default function HomePage() {
               <ul className="mt-5 space-y-3 border-t border-white/10 pt-5 text-sm text-steel-200">
                 <li className="flex justify-between gap-3">
                   <span>Standard turnaround</span>
-                  <span className="font-mono text-white">5–7 days</span>
+                  <span className="font-mono text-white">7–10 days</span>
                 </li>
                 <li className="flex justify-between gap-3">
                   <span>SoCal pickup routes</span>
@@ -260,7 +260,7 @@ export default function HomePage() {
               {
                 step: '03',
                 title: 'Certs land in your portal',
-                body: 'Calibrated in 5–7 business days with as-found/as-left data, uncertainty, and NIST traceability — delivered back to you and accessible online 24/7.',
+                body: 'Calibrated in 7–10 business days with as-found/as-left data, uncertainty, and NIST traceability — delivered back to you and accessible online 24/7.',
               },
             ].map((s) => (
               <li key={s.step} className="relative border-t-2 border-accent-500 pt-5">

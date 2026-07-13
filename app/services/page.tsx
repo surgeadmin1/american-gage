@@ -13,7 +13,7 @@ import { site, pickupRoutes } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Calibration Services — Lab, On-Site, Pickup & Repair',
   description:
-    'ISO 17025 accredited lab calibration with 5–7 day turnaround, on-site calibration across Southern California, free pickup & delivery routes, equipment repair, and IQ/OQ/PQ validation.',
+    'ISO 17025 accredited lab calibration with 7–10 day turnaround, on-site calibration across Southern California, free pickup & delivery routes, equipment repair, and IQ/OQ/PQ validation.',
   alternates: { canonical: '/services' },
 };
 
@@ -63,9 +63,10 @@ export default function ServicesPage() {
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <div className="rounded-lg border border-steel-200 p-5">
               <h3 className="font-display font-bold text-navy-800">Standard turnaround</h3>
-              <p className="spec mt-2">5–7 business days</p>
+              <p className="spec mt-2">7–10 business days</p>
               <p className="mt-1 text-sm text-steel-600">
-                Gage block sets and special-handling equipment: 7–10 business days.
+                Gage block sets and other special-handling equipment may require additional
+                time.
               </p>
             </div>
             <div className="rounded-lg border border-steel-200 p-5">
