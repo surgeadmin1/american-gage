@@ -4,13 +4,13 @@ import { site } from '@/lib/site';
 
 export default function CTASection({
   heading = 'Get a quote within one business day.',
-  body = 'Send your equipment list — manufacturer, model, serial, and any compliance regimes your customers reference. We come back with scope confirmation, pricing, and turnaround.',
+  body = 'Send your equipment list: manufacturer, model, serial, and any compliance regimes your customers reference. We come back with scope confirmation, pricing, and turnaround.',
   image,
   imageAlt = '',
 }: {
   heading?: string;
   body?: string;
-  /** Optional background photo (darkened) — e.g. the discipline image on capability pages */
+  /** Optional background photo (darkened), e.g. the discipline image on capability pages */
   image?: string;
   imageAlt?: string;
 }) {

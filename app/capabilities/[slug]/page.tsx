@@ -65,7 +65,7 @@ export default async function CapabilityPage({
           <p className="mt-2 font-display text-lg font-medium text-accent-600">{cap.headline}</p>
           <div className="gauge-ticks mt-5" aria-hidden="true" />
 
-          {/* Discipline photo — shown here on mobile, in the sidebar on desktop */}
+          {/* Discipline photo, shown here on mobile, in the sidebar on desktop */}
           <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-lg lg:hidden">
             <Image
               src={cap.image.src}
@@ -123,7 +123,7 @@ export default async function CapabilityPage({
             ))}
           </ul>
           <p className="mt-6 text-sm text-steel-500">
-            Representative list — the{' '}
+            Representative list. The{' '}
             <a href={site.a2laScopeUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-accent-600 hover:underline">
               current A2LA scope PDF
             </a>{' '}
@@ -181,7 +181,7 @@ export default async function CapabilityPage({
 
       <CTASection
         heading={`Need ${cap.shortName.toLowerCase()} calibration?`}
-        body="Send your equipment list and we’ll confirm scope, pricing, and turnaround within one business day — with free pickup if you’re on a SoCal route."
+        body="Send your equipment list and we’ll confirm scope, pricing, and turnaround within one business day, with free pickup if you’re on a SoCal route."
         image={cap.image.src}
       />
     </>

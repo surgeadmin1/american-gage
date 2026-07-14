@@ -8,9 +8,9 @@ import CTASection from '@/components/CTASection';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'About Us — A Calibration Lab Serving SoCal Since 1968',
+  title: 'About Us: A Calibration Lab Serving SoCal Since 1968',
   description:
-    'American Gage has calibrated for Southern California manufacturers since 1968 — 8,000 sq ft of discipline-specific, ISO/IEC 17025:2017 accredited labs in Placentia, CA.',
+    'American Gage has calibrated for Southern California manufacturers since 1968. 8,000 sq ft of discipline-specific, ISO/IEC 17025:2017 accredited labs in Placentia, CA.',
   alternates: { canonical: '/about' },
 };
 
@@ -25,7 +25,7 @@ const timeline = [
   },
   {
     year: '2007',
-    text: 'Acquired a local calibration laboratory — the turning point that expanded our customer base and capabilities beyond dimensional work.',
+    text: 'Acquired a local calibration laboratory, the turning point that expanded our customer base and capabilities beyond dimensional work.',
   },
   {
     year: 'Today',
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <p className="mt-5 leading-relaxed text-steel-700">
             Our team brings over 30 years of experience in metrology and process
             calibration across every measurement discipline. Because we're a
-            single lab — not a national network — our technicians build real familiarity
+            single lab, not a national network, our technicians build real familiarity
             with each customer's equipment, tolerances, and audit calendar. That's the
             difference between a calibration vendor and a calibration partner: we help
             customers improve their whole calibration program, not just stamp certificates.

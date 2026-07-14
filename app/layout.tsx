@@ -25,7 +25,7 @@ const body = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: 'American Gage | A2LA ISO 17025 Accredited Calibration Lab — Placentia, CA',
+    default: 'American Gage | A2LA ISO 17025 Accredited Calibration Lab in Placentia, CA',
     template: '%s | American Gage',
   },
   description:

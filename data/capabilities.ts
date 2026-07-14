@@ -20,7 +20,7 @@ export const capabilities: Capability[] = [
     shortName: 'Dimensional',
     metaTitle: 'Dimensional Calibration Services in Orange County | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited dimensional calibration: calipers, micrometers, gage blocks, thread gages, indicators, surface plates. Placentia, CA lab — free SoCal pickup.',
+      'A2LA ISO/IEC 17025 accredited dimensional calibration: calipers, micrometers, gage blocks, thread gages, indicators, surface plates. Placentia, CA lab. Free SoCal pickup.',
     headline: 'The discipline we were founded on in 1968.',
     intro:
       'American Gage began as a dimensional calibration laboratory supporting aerospace manufacturing in Orange County, and dimensional work remains the highest-volume workload we handle. From a machinist’s calipers to master gage block sets, every hand tool that arrives in our lab is cleaned, lubricated where appropriate, and calibrated against NIST-traceable standards in an environmentally controlled dimensional lab. Minor repairs and battery replacement are included with calibration for most major brands.',
@@ -53,7 +53,7 @@ export const capabilities: Capability[] = [
     metaTitle: 'Electrical & RF Calibration Services | A2LA Accredited | American Gage',
     metaDescription:
       'Accredited electrical calibration: multimeters to 8.5 digits, oscilloscopes, power supplies, spectrum analyzers, signal generators. Fluke MET/CAL automated procedures. Placentia, CA.',
-    headline: 'From bench multimeters to RF racks — automated, documented, traceable.',
+    headline: 'From bench multimeters to RF racks: automated, documented, traceable.',
     intro:
       'Our electrical laboratory runs the Fluke MET/CAL automated calibration system with a current procedure subscription, which means automated calibration routines, firmware-level adjustments where supported, and measurement uncertainty calculated on every point. We calibrate DC/AC voltage, current, resistance, and time & frequency, plus RF and microwave instruments through our dedicated RF racks.',
     image: {
@@ -101,7 +101,7 @@ export const capabilities: Capability[] = [
     ],
     equipment: [
       { name: 'Fluke 7080 high-precision bath', detail: '−60 to 110 °C' },
-      { name: 'Fluke 7341 deep-well bath', detail: '−45 to 150 °C — partial- and full-immersion liquid-in-glass thermometers' },
+      { name: 'Fluke 7341 deep-well bath', detail: '−45 to 150 °C, partial- and full-immersion liquid-in-glass thermometers' },
       { name: 'Fluke 6045 bath', detail: '60 to 400 °C' },
       { name: 'Fluke 6050H salt baths', detail: '180 to 550 °C' },
       { name: 'Fluke 9115A freeze-point furnace', detail: '550 to 1000 °C' },
@@ -124,7 +124,7 @@ export const capabilities: Capability[] = [
     shortName: 'Pressure',
     metaTitle: 'Pressure Calibration Services | −14.7 to 10,000 psi | American Gage',
     metaDescription:
-      'A2LA accredited pressure calibration from −14.7 to 10,000 psi at 0.01% of reading or better. Gauges, transducers, manometers. Placentia, CA — free SoCal pickup and delivery.',
+      'A2LA accredited pressure calibration from −14.7 to 10,000 psi at 0.01% of reading or better. Gauges, transducers, manometers. Placentia, CA. Free SoCal pickup and delivery.',
     headline: 'Vacuum to 10,000 psi, at 0.01% of reading or better.',
     intro:
       'The pressure laboratory spans full vacuum to 10,000 psi with automated pressure controllers as references. Low-pressure work runs on a dedicated 0–30 inH₂O controller at ±0.009% of reading, pneumatic ranges to 2,500 psi at ±0.005% of reading, and hydraulic ranges to 10,000 psi.',
@@ -156,7 +156,7 @@ export const capabilities: Capability[] = [
     metaTitle: 'Mass Calibration | ASTM Class 1 Weights to 25 kg | American Gage',
     metaDescription:
       'A2LA accredited mass calibration with four Mettler comparators. ASTM/OIML Class 1 capability to 25 kg in a ±0.5 °C controlled mass lab. Placentia, California.',
-    headline: 'A dedicated mass lab held to ±0.5 °C — because Class 1 demands it.',
+    headline: 'A dedicated mass lab held to ±0.5 °C, because Class 1 demands it.',
     intro:
       'Mass calibration runs in its own environmentally isolated laboratory on four Mettler mass comparators driven by MCLink software. The room holds ±0.5 °C and ±5 %RH during calibration, with each comparator’s weighing cavity independently monitored. We are accredited for ASTM and OIML Class 1 weights up to 25 kg.',
     image: {
@@ -183,10 +183,10 @@ export const capabilities: Capability[] = [
     shortName: 'Pipettes',
     metaTitle: 'Pipette Calibration | ISO 8655 Gravimetric & Photometric | American Gage',
     metaDescription:
-      'ISO 17025 accredited, ISO 8655 compliant pipette calibration — gravimetric and photometric methods, single and multi-channel, up to accredited 3×10 data. Placentia, CA.',
+      'ISO 17025 accredited, ISO 8655 compliant pipette calibration: gravimetric and photometric methods, single and multi-channel, up to accredited 3×10 data. Placentia, CA.',
     headline: 'ISO 8655 pipette calibration, gravimetric and photometric.',
     intro:
-      'We calibrate the full range of liquid-handling instruments to ISO 8655 under our ISO/IEC 17025 accreditation — single-channel and multi-channel pipettes, fixed-volume pipettes, motorized controllers, repeaters, bottle-top dispensers, and burettes. Both gravimetric and photometric methods are available, with service levels from a standard 2×4 As Found / As Left up to fully accredited 3×10 / 3×10 data. Preventive maintenance and repair are available on the same visit.',
+      'We calibrate the full range of liquid-handling instruments to ISO 8655 under our ISO/IEC 17025 accreditation: single-channel and multi-channel pipettes, fixed-volume pipettes, motorized controllers, repeaters, bottle-top dispensers, and burettes. Both gravimetric and photometric methods are available, with service levels from a standard 2×4 As Found / As Left up to fully accredited 3×10 / 3×10 data. Preventive maintenance and repair are available on the same visit.',
     image: {
       src: '/images/pipette-photometric-calibration.jpg',
       alt: 'Photometric pipette calibration station in the American Gage life science lab',
@@ -216,7 +216,7 @@ export const capabilities: Capability[] = [
       'Torque calibration from 0.5 ozf·in to 1,000 lbf·ft and dead-weight force calibration. Torque wrenches, force gauges, hardness testers. A2LA accredited lab in Placentia, CA.',
     headline: 'Dead weights for force. Full range for torque.',
     intro:
-      'Torque calibration covers 0.5 ozf·in through 1,000 lbf·ft, and force work is performed against dead-weight standards — the reference method that delivers the best available uncertainties. We stock common repair parts for major torque wrench brands, and we repair and calibrate hardness testers.',
+      'Torque calibration covers 0.5 ozf·in through 1,000 lbf·ft, and force work is performed against dead-weight standards, the reference method that delivers the best available uncertainties. We stock common repair parts for major torque wrench brands, and we repair and calibrate hardness testers.',
     image: {
       src: '/images/force-calibration-stand.webp',
       alt: 'Force gauge under test on a manual test stand in the American Gage mechanical calibration lab',
@@ -242,10 +242,10 @@ export const capabilities: Capability[] = [
     shortName: 'Flow',
     metaTitle: 'Gas Flow & Mass Flow Controller Calibration | American Gage',
     metaDescription:
-      'Gas flow calibration with Fluke molbloc/molbox laminar flow standards — 50 SCCM to 2,500 SLM elements, ±0.25% of reading. MFCs, rotameters, flow meters. Placentia, CA.',
+      'Gas flow calibration with Fluke molbloc/molbox laminar flow standards: 50 SCCM to 2,500 SLM elements, ±0.25% of reading. MFCs, rotameters, flow meters. Placentia, CA.',
     headline: 'molbloc-referenced gas flow, from sccm to thousands of slm.',
     intro:
-      'Our gas flow bench is built around the Fluke molbloc/molbox laminar flow measurement system — the same reference used by flow standards labs. Six molbloc elements cover 50 SCCM through 2,500 SLM full scale, with uncertainty of ±0.25% of reading from 10–100% of each element’s range. Mass flow controllers are calibrated with live setpoint control and error mapping.',
+      'Our gas flow bench is built around the Fluke molbloc/molbox laminar flow measurement system, the same reference used by flow standards labs. Six molbloc elements cover 50 SCCM through 2,500 SLM full scale, with uncertainty of ±0.25% of reading from 10–100% of each element’s range. Mass flow controllers are calibrated with live setpoint control and error mapping.',
     image: {
       src: '/images/flow-molbloc-mfc-bench.webp',
       alt: 'Fluke molbloc laminar flow elements and a mass flow controller under test on the American Gage gas flow calibration bench',

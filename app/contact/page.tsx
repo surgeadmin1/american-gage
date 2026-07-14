@@ -5,9 +5,9 @@ import ContactForm from '@/components/ContactForm';
 import { site, pickupRoutes } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Contact & Request a Quote — Placentia, CA Calibration Lab',
+  title: 'Contact & Request a Quote: Placentia, CA Calibration Lab',
   description:
-    'Request a calibration quote from American Gage — response within one business day. 1131 S Richfield Rd, Placentia, CA 92870. (657) 216-2600. Free SoCal pickup & delivery.',
+    'Request a calibration quote from American Gage, with a response within one business day. 1131 S Richfield Rd, Placentia, CA 92870. (657) 216-2600. Free SoCal pickup & delivery.',
   alternates: { canonical: '/contact' },
 };
 
@@ -18,7 +18,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Quotes within one business day. Humans on the phone."
-        lead="Send your equipment list — manufacturer, model, serial, ITAR status if applicable, and any compliance regimes your customers reference. We come back with scope confirmation, pricing, and turnaround."
+        lead="Send your equipment list: manufacturer, model, serial, ITAR status if applicable, and any compliance regimes your customers reference. We come back with scope confirmation, pricing, and turnaround."
       />
 
       <div className="container-site grid gap-12 pb-20 lg:grid-cols-[1fr_360px]">
@@ -50,7 +50,7 @@ export default function ContactPage() {
               <p className="font-mono text-xs">{site.hours}</p>
             </address>
             <p className="mt-4 text-xs text-steel-500">
-              Drop-offs welcome during business hours — include a PO or packing list.
+              Drop-offs welcome during business hours. Include a PO or packing list.
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
 
           <div className="overflow-hidden rounded-lg border border-steel-200">
             <iframe
-              title="Map to American Gage — 1131 S Richfield Rd, Placentia, CA 92870"
+              title="Map to American Gage, 1131 S Richfield Rd, Placentia, CA 92870"
               src="https://www.google.com/maps?q=1131+S+Richfield+Rd,+Placentia,+CA+92870&output=embed"
               width="100%"
               height="260"

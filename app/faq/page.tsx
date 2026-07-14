@@ -7,7 +7,7 @@ import { faqSchema } from '@/lib/schema';
 import { faqs } from '@/data/faqs';
 
 export const metadata: Metadata = {
-  title: 'Calibration FAQ — Turnaround, Pickup Routes, Accreditation',
+  title: 'Calibration FAQ: Turnaround, Pickup Routes, Accreditation',
   description:
     'Answers about American Gage calibration services: turnaround times, free SoCal pickup and delivery routes, on-site minimums, NIST traceability, A2LA accreditation, and repairs.',
   alternates: { canonical: '/faq' },
@@ -21,7 +21,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="FAQ"
         title="Frequently asked questions"
-        lead="Logistics, turnaround, accreditation, and everything in between. If your question isn't here, call the lab — a human answers."
+        lead="Logistics, turnaround, accreditation, and everything in between. If your question isn't here, call the lab. A human answers."
       />
 
       <div className="container-site max-w-3xl pb-20">
@@ -47,7 +47,7 @@ export default function FaqPage() {
 
       <CTASection
         heading="Still have a question?"
-        body="Call (657) 216-2600 during business hours — Monday through Friday, 7:30 AM to 4:00 PM — or send a message and we'll respond within one business day."
+        body="Call (657) 216-2600 during business hours (Monday through Friday, 7:30 AM to 4:00 PM), or send a message and we'll respond within one business day."
       />
     </>
   );

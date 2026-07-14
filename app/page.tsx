@@ -8,7 +8,7 @@ import { blurMap } from '@/data/blur';
 import { site, pickupRoutes } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'American Gage | A2LA ISO 17025 Accredited Calibration Lab — Placentia, CA',
+  title: 'American Gage | A2LA ISO 17025 Accredited Calibration Lab in Placentia, CA',
   description:
     'A2LA ISO/IEC 17025:2017 accredited calibration lab in Placentia, CA serving aerospace, medical device, biotech & defense manufacturers since 1968. Free SoCal pickup & delivery. (657) 216-2600.',
   alternates: { canonical: '/' },
@@ -25,7 +25,7 @@ const services = [
     title: 'On-Site Calibration',
     href: '/services#on-site',
     description:
-      'Our technicians come to you with NIST-traceable standards — no production downtime, no shipping risk. After-hours and weekend emergency calls available.',
+      'Our technicians come to you with NIST-traceable standards: no production downtime, no shipping risk. After-hours and weekend emergency calls available.',
   },
   {
     title: 'Free Pickup & Delivery',
@@ -37,22 +37,22 @@ const services = [
     title: 'Repair & Refurbishment',
     href: '/services#repair',
     description:
-      'Dimensional tool repair with stocked OEM parts, surface plate resurfacing, hardness tester and electrical repair — estimates never exceed 50% of replacement cost.',
+      'Dimensional tool repair with stocked OEM parts, surface plate resurfacing, hardness tester and electrical repair. Estimates never exceed 50% of replacement cost.',
   },
 ];
 
 const differentiators = [
   {
     title: 'You get a lab, not a queue',
-    body: 'At national chains your instruments enter a nationwide workflow. Here, the technician calibrating your equipment is a direct phone call away — and knows your account, your tolerances, and your audit schedule.',
+    body: 'At national chains your instruments enter a nationwide workflow. Here, the technician calibrating your equipment is a direct phone call away, and knows your account, your tolerances, and your audit schedule.',
   },
   {
     title: 'Audit-ready evidence, every time',
-    body: 'Every certificate documents as-found/as-left data, measurement uncertainty, NIST traceability, and the Z540.3 decision rule with TUR — the package FDA, AS9100, and ISO 13485 auditors ask for.',
+    body: 'Every certificate documents as-found/as-left data, measurement uncertainty, NIST traceability, and the Z540.3 decision rule with TUR, the package FDA, AS9100, and ISO 13485 auditors ask for.',
   },
   {
     title: 'One-stop shop convenience',
-    body: 'Calibration, repair, process troubleshooting, AMS 2750 surveys, and IQ/OQ/PQ validation under one roof — so your equipment list doesn’t get split across three vendors.',
+    body: 'Calibration, repair, process troubleshooting, AMS 2750 surveys, and IQ/OQ/PQ validation under one roof, so your equipment list doesn’t get split across three vendors.',
   },
 ];
 
@@ -80,7 +80,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-steel-200">
               American Gage has been the calibration supplier of record for Southern
-              California’s regulated manufacturers since 1968 — aerospace, medical device,
+              California’s regulated manufacturers since 1968: aerospace, medical device,
               biotech, and defense. NIST-traceable on every measurement, with free pickup and
               delivery across SoCal.
             </p>
@@ -169,7 +169,7 @@ export default function HomePage() {
           </h2>
           <p className="mt-4 text-steel-600">
             Each measurement discipline runs in its own environmentally controlled
-            laboratory — because a mass lab held to ±0.5 °C and a salt bath at 550 °C don’t
+            laboratory, because a mass lab held to ±0.5 °C and a salt bath at 550 °C don’t
             belong in the same room.
           </p>
         </div>
@@ -254,17 +254,17 @@ export default function HomePage() {
               {
                 step: '01',
                 title: 'Send your equipment list',
-                body: 'Manufacturer, model, serial — spreadsheet or scribbles, we don’t judge. You get scope confirmation, pricing, and turnaround within one business day.',
+                body: 'Manufacturer, model, serial. Spreadsheet or scribbles, we don’t judge. You get scope confirmation, pricing, and turnaround within one business day.',
               },
               {
                 step: '02',
                 title: 'We pick up on your route',
-                body: 'Our driver collects your instruments on the next scheduled run through your county — or drop off anytime, or book on-site calibration at your facility.',
+                body: 'Our driver collects your instruments on the next scheduled run through your county, or drop off anytime, or book on-site calibration at your facility.',
               },
               {
                 step: '03',
                 title: 'Certs land in your portal',
-                body: 'Calibrated in 7–10 business days with as-found/as-left data, uncertainty, and NIST traceability — delivered back to you and accessible online 24/7.',
+                body: 'Calibrated in 7–10 business days with as-found/as-left data, uncertainty, and NIST traceability, delivered back to you and accessible online 24/7.',
               },
             ].map((s) => (
               <li key={s.step} className="relative border-t-2 border-accent-500 pt-5">
@@ -285,7 +285,7 @@ export default function HomePage() {
             Big-lab accreditation. Small-lab attention.
           </h2>
           <p className="mt-4 leading-relaxed text-steel-600">
-            The national calibration chains process enormous volume — which means your
+            The national calibration chains process enormous volume, which means your
             instruments are one barcode among thousands. We hold the same A2LA ISO/IEC
             17025:2017 accreditation they do, but from one Placentia lab we deliver
             something they structurally can’t: a team that goes deep on every client’s

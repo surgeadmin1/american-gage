@@ -46,7 +46,7 @@ export default function Header() {
 
       {/* Main nav */}
       <div className="container-site flex items-center justify-between gap-6 py-3">
-        <Link href="/" aria-label="American Gage — home" className="shrink-0">
+        <Link href="/" aria-label="American Gage home" className="shrink-0">
           <Image
             src="/images/american-gage-logo.png"
             alt="American Gage logo"

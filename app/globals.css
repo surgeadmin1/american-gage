@@ -45,7 +45,7 @@ body {
   }
 }
 
-/* Gauge-tick divider — echoes the logo's speedometer arc */
+/* Gauge-tick divider, echoes the logo's speedometer arc */
 .gauge-ticks {
   background-image: repeating-linear-gradient(
     90deg,

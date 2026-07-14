@@ -44,7 +44,7 @@ export default function InstrumentIndex({ instruments }: { instruments: IndexedI
           />
         </label>
         <p className="font-mono text-xs text-steel-500">
-          {instruments.length} instrument types — full accredited ranges and CMC detail in
+          {instruments.length} instrument types. Full accredited ranges and CMC detail in
           the{' '}
           <a
             href="https://customer.a2la.org/index.cfm?event=directory.getDocument&accreditationPID=C0086F01-07B5-4C75-9DE2-3A922A32AB5A&documentPID=7A3C4A27-E250-46EA-82FA-6E4DD5075307"
@@ -75,7 +75,7 @@ export default function InstrumentIndex({ instruments }: { instruments: IndexedI
       <div className="mt-8 space-y-8">
         {letters.length === 0 && (
           <p className="text-steel-500">
-            No matches — but that doesn’t mean we can’t calibrate it.{' '}
+            No matches, but that doesn’t mean we can’t calibrate it.{' '}
             <Link href="/contact" className="font-semibold text-accent-600 hover:underline">
               Ask us directly.
             </Link>

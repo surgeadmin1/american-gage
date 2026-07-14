@@ -11,7 +11,7 @@ import { serviceSchema } from '@/lib/schema';
 import { site, pickupRoutes } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Calibration Services — Lab, On-Site, Pickup & Repair',
+  title: 'Calibration Services: Lab, On-Site, Pickup & Repair',
   description:
     'ISO 17025 accredited lab calibration with 7–10 day turnaround, on-site calibration across Southern California, free pickup & delivery routes, equipment repair, and IQ/OQ/PQ validation.',
   alternates: { canonical: '/services' },
@@ -40,7 +40,7 @@ export default function ServicesPage() {
       <Breadcrumbs items={[{ name: 'Services', href: '/services' }]} />
       <PageHero
         eyebrow="Services"
-        title="Calibration on your terms — in our lab, at your line, or door to door."
+        title="Calibration on your terms: in our lab, at your line, or door to door."
         lead="Every service below runs under the same A2LA ISO/IEC 17025:2017 accreditation and produces the same audit-ready certificate: as-found/as-left data, uncertainty, NIST traceability, and the Z540.3 decision rule."
       />
 
@@ -73,7 +73,7 @@ export default function ServicesPage() {
               <h3 className="font-display font-bold text-navy-800">Expedited service</h3>
               <p className="spec mt-2">24 / 48 / 72-hour options</p>
               <p className="mt-1 text-sm text-steel-600">
-                Available for a fee — contact customer service for pricing and availability.
+                Available for a fee. Contact customer service for pricing and availability.
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function ServicesPage() {
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
           <p className="mt-6 leading-relaxed text-steel-700">
-            When downtime isn’t an option, our technicians come to you — equipped with
+            When downtime isn’t an option, our technicians come to you, equipped with
             NIST-traceable standards to calibrate at your facility. Our scheduling specialist
             will book a date that works around your production; we recommend reserving about
             two weeks ahead.
@@ -110,7 +110,7 @@ export default function ServicesPage() {
               <strong className="text-navy-800">Service minimums:</strong>{' '}
               <span className="font-mono">$275</span> dimensional/mechanical,{' '}
               <span className="font-mono">$400</span> electrical,{' '}
-              <span className="font-mono">$800</span> RF — plus round-trip travel at{' '}
+              <span className="font-mono">$800</span> RF, plus round-trip travel at{' '}
               <span className="font-mono">$1.80/mile</span> (<span className="font-mono">$65</span> minimum).
             </li>
           </ul>
@@ -124,7 +124,7 @@ export default function ServicesPage() {
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
           <p className="mt-6 leading-relaxed text-steel-700">
-            Your instruments ride in our delivery vans with our drivers — not in a courier’s
+            Your instruments ride in our delivery vans with our drivers, not in a courier’s
             parcel stream. Scheduled routes cover the greater Los Angeles area every week:
           </p>
           <div className="mt-6 overflow-hidden rounded-lg border border-steel-200">
@@ -155,7 +155,7 @@ export default function ServicesPage() {
             <a href={site.phoneHref} className="font-semibold text-accent-600 hover:underline">
               {site.phone}
             </a>{' '}
-            to get on a route. Walk-in drop-offs are always welcome — just include a PO or
+            to get on a route. Walk-in drop-offs are always welcome. Just include a PO or
             packing list.
           </p>
         </section>
@@ -169,7 +169,7 @@ export default function ServicesPage() {
           <div className="gauge-ticks mt-4" aria-hidden="true" />
           <p className="mt-6 leading-relaxed text-steel-700">
             We evaluate before we repair, and our estimates never exceed 50% of the new cost
-            of the unit — past that, we’ll tell you the honest answer: it’s beyond economical
+            of the unit. Past that, we’ll tell you the honest answer: it’s beyond economical
             repair.
           </p>
           <dl className="mt-6 space-y-5">
@@ -220,8 +220,8 @@ export default function ServicesPage() {
           <p className="mt-6 leading-relaxed text-steel-700">
             Our process technicians troubleshoot process controls, heaters, ovens, and
             instrumentation to help you comply with GMP, USP, SAE, BAC, Nadcap, AMS 2750, and
-            related standards. We perform oven and chamber temperature uniformity surveys —
-            including AMS 2750 surveys for aerospace heat-treatment — and re-program
+            related standards. We perform oven and chamber temperature uniformity surveys
+            (including AMS 2750 surveys for aerospace heat-treatment), and re-program
             controllers, recorders, and data acquisition systems.
           </p>
         </section>
@@ -237,7 +237,7 @@ export default function ServicesPage() {
             Built on our Kaye validator systems and advanced temperature & humidity
             laboratory, our validation service supports process and equipment qualification
             end to end: design qualification (DQ), installation qualification (IQ),
-            operational qualification (OQ), and performance qualification (PQ) — for
+            operational qualification (OQ), and performance qualification (PQ), for
             pharmaceutical, biotech, and medical device environments.
           </p>
         </section>
@@ -251,7 +251,7 @@ export default function ServicesPage() {
           <div className="gauge-ticks mt-4" aria-hidden="true" />
           <p className="mt-6 leading-relaxed text-steel-700">
             GMP-trained process technicians are available for temporary or permanent on-site
-            deployment — whether you need to complete a project, cover scheduled
+            deployment, whether you need to complete a project, cover scheduled
             maintenance, or supplement your metrology team.{' '}
             <Link href="/contact" className="font-semibold text-accent-600 hover:underline">
               Ask us about staffing →

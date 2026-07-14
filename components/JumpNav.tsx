@@ -45,7 +45,7 @@ export default function JumpNav({ links, label = 'On this page' }: { links: Jump
             </li>
           ))}
         </ul>
-        {/* Right-edge fade — hints that the pill row scrolls on small screens */}
+        {/* Right-edge fade hints that the pill row scrolls on small screens */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-white to-transparent lg:hidden"

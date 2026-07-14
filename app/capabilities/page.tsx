@@ -9,7 +9,7 @@ import { capabilities } from '@/data/capabilities';
 import { blurMap } from '@/data/blur';
 
 export const metadata: Metadata = {
-  title: 'Calibration Capabilities — A–Z Instrument Index',
+  title: 'Calibration Capabilities: A–Z Instrument Index',
   description:
     'Full calibration capabilities of American Gage: dimensional, electrical & RF, temperature & humidity, pressure, mass, pipettes, force & torque, and gas flow. Search 100+ instrument types.',
   alternates: { canonical: '/capabilities' },
@@ -26,7 +26,7 @@ export default function CapabilitiesPage() {
       <PageHero
         eyebrow="Capabilities"
         title="Every discipline has its own lab. Every measurement has a traceable chain."
-        lead="From gage blocks to spectrum analyzers, our 8,000 sq ft facility runs discipline-specific, environmentally controlled laboratories accredited to ISO/IEC 17025:2017 by A2LA. If you don’t see your instrument below, ask — the list keeps growing."
+        lead="From gage blocks to spectrum analyzers, our 8,000 sq ft facility runs discipline-specific, environmentally controlled laboratories accredited to ISO/IEC 17025:2017 by A2LA. If you don’t see your instrument below, ask. The list keeps growing."
       />
 
       {/* Discipline cards */}
@@ -73,7 +73,7 @@ export default function CapabilitiesPage() {
             We also troubleshoot process control systems and instrumentation, perform oven
             and chamber uniformity surveys (including AMS 2750 for aerospace heat treatment),
             and re-program controllers, recorders, and data acquisition systems. Vibration
-            and accelerometer calibration was recently added to our scope — call the lab for
+            and accelerometer calibration was recently added to our scope. Call the lab for
             details.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function CapabilitiesPage() {
 
       <CTASection
         heading="Don’t see your instrument?"
-        body="The index above is representative, not exhaustive. Send us the manufacturer and model — if it measures something, odds are we can calibrate it or repair it."
+        body="The index above is representative, not exhaustive. Send us the manufacturer and model. If it measures something, odds are we can calibrate it or repair it."
       />
     </>
   );

@@ -7,7 +7,7 @@ import CTASection from '@/components/CTASection';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Accreditations — A2LA ISO/IEC 17025:2017, Cert #4296.01',
+  title: 'Accreditations: A2LA ISO/IEC 17025:2017, Cert #4296.01',
   description:
     'American Gage holds ISO/IEC 17025:2017 accreditation through A2LA (certificate 4296.01), with ANSI/NCSL Z540-1 and Z540.3 compliance and NIST traceability on every measurement.',
   alternates: { canonical: '/accreditations' },
@@ -28,7 +28,7 @@ export default function AccreditationsPage() {
       <PageHero
         eyebrow="Accreditations"
         title="The paperwork that makes your paperwork hold up."
-        lead="When an FDA inspector, notified-body auditor, or AS9100 customer-quality reviewer examines your calibration records, what they're really checking is the accreditation your lab operates under. Here is ours — with the scope PDF one click away."
+        lead="When an FDA inspector, notified-body auditor, or AS9100 customer-quality reviewer examines your calibration records, what they're really checking is the accreditation your lab operates under. Here is ours, with the scope PDF one click away."
       />
 
       <JumpNav links={jumpLinks} />
@@ -45,7 +45,7 @@ export default function AccreditationsPage() {
             />
             <div>
               <h2 className="font-display text-2xl font-bold text-navy-900 sm:text-3xl">
-                ISO/IEC 17025:2017 — Accredited by A2LA
+                Accredited to ISO/IEC 17025:2017 by A2LA
               </h2>
               <dl className="mt-5 grid gap-x-10 gap-y-3 font-mono text-sm sm:grid-cols-2">
                 <div>
@@ -72,11 +72,11 @@ export default function AccreditationsPage() {
           </div>
           <p className="mt-6 leading-relaxed text-steel-700">
             ISO/IEC 17025 is the international standard for the competence of calibration and
-            testing laboratories. Accreditation means an independent body — in our case,
-            A2LA — has verified that we operate a documented quality system, use traceable
+            testing laboratories. Accreditation means an independent body, in our case,
+            A2LA, has verified that we operate a documented quality system, use traceable
             measurement standards, calculate measurement uncertainty correctly, and issue
-            certificates that meet international expectations. For most regulated work —
-            AS9100, ISO 13485, IATF 16949, FDA 21 CFR — ISO 17025 accreditation is the
+            certificates that meet international expectations. For most regulated work
+            (AS9100, ISO 13485, IATF 16949, FDA 21 CFR), ISO 17025 accreditation is the
             qualifying evidence your calibration supplier has to bring.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -102,14 +102,14 @@ export default function AccreditationsPage() {
             <li className="border-l-2 border-accent-500 pl-5">
               <p className="font-display font-bold text-navy-800">ANSI/NCSL Z540-1-1994</p>
               <p className="mt-1 text-sm text-steel-600">
-                “Calibration Laboratories and Measuring and Test Equipment — General
+                “Calibration Laboratories and Measuring and Test Equipment: General
                 Requirements.”
               </p>
             </li>
             <li className="border-l-2 border-accent-500 pl-5">
               <p className="font-display font-bold text-navy-800">ANSI/NCSL Z540.3-2006</p>
               <p className="mt-1 text-sm text-steel-600">
-                “Requirements for the Calibration of Measuring and Test Equipment” —
+                “Requirements for the Calibration of Measuring and Test Equipment,”
                 including the documented decision rule and test uncertainty ratio (TUR) that
                 DoD primes, defense contractors, and most aerospace customers require on
                 every certificate.
@@ -144,7 +144,7 @@ export default function AccreditationsPage() {
           <div className="gauge-ticks mt-4" aria-hidden="true" />
           <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm leading-relaxed text-steel-700 sm:grid-cols-2">
             {[
-              'Instrument ID — manufacturer, model, serial, asset tag',
+              'Instrument ID: manufacturer, model, serial, asset tag',
               'As-found readings before any adjustment',
               'As-left readings after calibration',
               'Measurement uncertainty (GUM; ISO 8655-7 for pipettes)',
@@ -181,14 +181,14 @@ export default function AccreditationsPage() {
             standard packet includes the current A2LA scope of accreditation, certificate of
             insurance (additional insureds added on request), an ISO 9001 customer letter on
             request, and quality-manual excerpts. Send the qualification template your
-            procurement team uses — we fill it out and return it.
+            procurement team uses. We fill it out and return it.
           </p>
         </section>
       </div>
 
       <CTASection
         heading="Need our scope for a supplier file?"
-        body="Download the current A2LA scope PDF above, or request the full supplier-qualification packet — we return filled templates promptly."
+        body="Download the current A2LA scope PDF above, or request the full supplier-qualification packet. We return filled templates promptly."
       />
     </>
   );

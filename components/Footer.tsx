@@ -99,7 +99,7 @@ export default function Footer() {
           <ul className="mt-2 space-y-1 font-mono text-xs">
             {pickupRoutes.map((r) => (
               <li key={r.area}>
-                {r.days} — {r.area}
+                {r.days}: {r.area}
               </li>
             ))}
           </ul>

@@ -17,7 +17,7 @@ const config: Config = {
           400: '#4a80b4',
           500: '#265f97',
           600: '#15497c',
-          700: '#0e3a66', // primary — from logo
+          700: '#0e3a66', // primary, from logo
           800: '#0a2c4e',
           900: '#081f38',
           950: '#051426',
@@ -29,7 +29,7 @@ const config: Config = {
           400: '#7d868e',
           500: '#5c656d',
           600: '#454d54',
-          700: '#363d43', // gunmetal — from logo
+          700: '#363d43', // gunmetal, from logo
           800: '#282e33',
           900: '#1b1f23',
         },
@@ -43,7 +43,7 @@ const config: Config = {
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
         sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
-        // "mono" token now renders in Space Grotesk — sleeker technical labels,
+        // "mono" token now renders in Space Grotesk for sleeker technical labels,
         // used for cert numbers, specs, route schedules, eyebrows, etc.
         mono: ['var(--font-display)', 'system-ui', 'sans-serif'],
       },

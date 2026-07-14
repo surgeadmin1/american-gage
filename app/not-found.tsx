@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function NotFound() {
   return (
     <div className="container-site py-28 text-center">
-      <p className="eyebrow">404 — Out of Tolerance</p>
+      <p className="eyebrow">404 · Out of Tolerance</p>
       <h1 className="mt-4 font-display text-4xl font-bold text-navy-900">
         This page didn’t pass calibration.
       </h1>
