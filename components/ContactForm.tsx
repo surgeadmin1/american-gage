@@ -77,9 +77,19 @@ export default function ContactForm() {
   const [rows, setRows] = useState<EquipmentRow[]>([emptyRow()]);
   const [rowError, setRowError] = useState('');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  // Which row's manufacturer field is showing autocomplete suggestions
+  const [suggestFor, setSuggestFor] = useState<number | null>(null);
 
   function updateRow(i: number, field: keyof EquipmentRow, value: string) {
     setRows((prev) => prev.map((r, idx) => (idx === i ? { ...r, [field]: value } : r)));
+  }
+
+  function suggestionsFor(i: number) {
+    const q = rows[i]?.manufacturer.trim().toLowerCase();
+    if (!q) return [];
+    return MANUFACTURERS.filter((m) => m.toLowerCase().includes(q))
+      .filter((m) => m.toLowerCase() !== q)
+      .slice(0, 5);
   }
 
   function nextStep() {
@@ -172,12 +182,6 @@ export default function ContactForm() {
             sort it out. You can also attach an equipment list in step 2.
           </p>
 
-          <datalist id="manufacturers">
-            {MANUFACTURERS.map((m) => (
-              <option key={m} value={m} />
-            ))}
-          </datalist>
-
           <div className="mt-5 space-y-4">
             {rows.map((row, i) => (
               <fieldset key={i} className="rounded-lg border border-steel-200 p-4">
@@ -185,16 +189,47 @@ export default function ContactForm() {
                   Item {String(i + 1).padStart(2, '0')}
                 </legend>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-6">
-                  <div className="col-span-2 sm:col-span-2">
+                  <div className="relative col-span-2 sm:col-span-2">
                     <label className={labelCls} htmlFor={`mfr-${i}`}>Manufacturer</label>
                     <input
                       id={`mfr-${i}`}
-                      list="manufacturers"
                       value={row.manufacturer}
-                      onChange={(e) => updateRow(i, 'manufacturer', e.target.value)}
+                      onChange={(e) => {
+                        updateRow(i, 'manufacturer', e.target.value);
+                        setSuggestFor(i);
+                      }}
+                      onFocus={() => setSuggestFor(i)}
+                      onBlur={() => setTimeout(() => setSuggestFor((s) => (s === i ? null : s)), 150)}
                       placeholder="e.g. Fluke"
+                      autoComplete="off"
                       className={inputCls}
+                      role="combobox"
+                      aria-expanded={suggestFor === i && suggestionsFor(i).length > 0}
+                      aria-controls={`mfr-suggest-${i}`}
                     />
+                    {suggestFor === i && suggestionsFor(i).length > 0 && (
+                      <ul
+                        id={`mfr-suggest-${i}`}
+                        role="listbox"
+                        className="absolute left-0 right-0 top-full z-20 mt-1 overflow-hidden rounded-md border border-steel-200 bg-white shadow-lg"
+                      >
+                        {suggestionsFor(i).map((m) => (
+                          <li key={m} role="option" aria-selected="false">
+                            <button
+                              type="button"
+                              onMouseDown={(e) => {
+                                e.preventDefault();
+                                updateRow(i, 'manufacturer', m);
+                                setSuggestFor(null);
+                              }}
+                              className="block w-full px-3 py-1.5 text-left text-sm text-steel-700 transition hover:bg-navy-50 hover:text-navy-900"
+                            >
+                              {m}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                   <div className="sm:col-span-2">
                     <label className={labelCls} htmlFor={`model-${i}`}>Model</label>
