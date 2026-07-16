@@ -843,6 +843,206 @@ instrumentPages.push(
   }
 );
 
+/* ==================== P3 brand-modifier pages ====================
+ * Nominative use of manufacturer names (we calibrate/repair their products).
+ * Each page carries an independence disclaimer — American Gage is not
+ * affiliated with or endorsed by these manufacturers.
+ */
+
+instrumentPages.push(
+  {
+    slug: 'mitutoyo-calibration',
+    name: 'Mitutoyo Instrument Calibration',
+    metaTitle: 'Mitutoyo Calibration Service | Calipers, Micrometers, Indicators | American Gage',
+    metaDescription:
+      'Calibration and repair for Mitutoyo calipers, micrometers, indicators & height gages — OEM repair parts in stock. A2LA ISO 17025 lab in Placentia, CA. Free SoCal pickup, mail-in nationwide.',
+    h1: 'Mitutoyo Instrument Calibration & Repair',
+    lead:
+      'Mitutoyo tools dominate Southern California toolrooms — and they dominate our dimensional lab’s daily workload. American Gage calibrates Mitutoyo calipers, micrometers, indicators, and height gages with OEM repair parts on the shelf, so a failed tool gets fixed, not just flagged.',
+    image: {
+      src: '/images/dimensional-height-gauge-surface-plate.webp',
+      alt: 'Dimensional calibration on a granite surface plate at American Gage',
+    },
+    capabilitySlug: 'dimensional',
+    sections: [
+      {
+        heading: 'Why shops send us their Mitutoyo tools',
+        paragraphs: [
+          'Since 1968, dimensional hand tools have been our founding discipline — and for decades that has meant Mitutoyo above all other nameplates. Every tool is cleaned and lubricated as part of calibration, verified against NIST-traceable standards in a temperature-controlled lab, and returned with as-found/as-left data, uncertainty, and the Z540.3 decision rule documented under our A2LA ISO/IEC 17025:2017 accreditation (certificate 4296.01).',
+          'Because we stock Mitutoyo repair parts, common failures — worn jaws, sticking rails, dead cells, damaged thimbles — are typically repaired and re-calibrated in the same 7–10 business day cycle. Minor repairs and battery replacement are included with calibration.',
+        ],
+      },
+      {
+        heading: 'Coverage across the Mitutoyo catalog',
+        paragraphs: [
+          'Digimatic and mechanical calipers to 60 in, OD/ID/depth micrometers, indicators and test indicators, height gages, bore gages, depth gages, and micrometer standards. SoCal customers ride the free pickup routes (Orange County Mon & Wed, LA Tue & Thu, Inland Empire Fri); shops elsewhere mail in.',
+          'American Gage is an independent calibration laboratory. Mitutoyo is a trademark of its respective owner; we are not affiliated with or endorsed by the manufacturer — we simply calibrate and repair their instruments every working day.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Repair parts', value: 'Mitutoyo OEM parts stocked' },
+      { label: 'Included', value: 'Cleaning, lube, minor repair, batteries' },
+      { label: 'Logistics', value: 'Free SoCal routes · nationwide mail-in' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Digimatic & dial calipers',
+      'OD / ID / depth micrometers',
+      'Indicators & test indicators',
+      'Height gages & Digimatic height gages',
+      'Bore gages',
+      'Micrometer standards & gage blocks',
+    ],
+    faqs: [
+      {
+        question: 'Do you use genuine Mitutoyo parts for repairs?',
+        answer:
+          'We stock OEM repair parts for Mitutoyo tools, so common wear items are replaced with manufacturer parts during the same calibration cycle.',
+      },
+      {
+        question: 'Is your Mitutoyo calibration accredited?',
+        answer:
+          'Yes — calibrations are performed under our A2LA ISO/IEC 17025:2017 accreditation (certificate 4296.01) with as-found/as-left data and measurement uncertainty.',
+      },
+      {
+        question: 'Are you affiliated with Mitutoyo?',
+        answer:
+          'No — American Gage is an independent A2LA-accredited laboratory. We calibrate and repair Mitutoyo instruments daily but are not affiliated with or endorsed by the manufacturer.',
+      },
+    ],
+    related: ['starrett-calibration', 'caliper-calibration', 'micrometer-calibration'],
+    nationalMailIn: true,
+  },
+  {
+    slug: 'starrett-calibration',
+    name: 'Starrett Instrument Calibration',
+    metaTitle: 'Starrett Calibration Service | Micrometers, Calipers, Indicators | American Gage',
+    metaDescription:
+      'Calibration and repair for Starrett precision tools — micrometers, calipers, indicators, squares — with OEM parts stocked. A2LA ISO 17025 lab, free SoCal pickup, nationwide mail-in.',
+    h1: 'Starrett Instrument Calibration & Repair',
+    lead:
+      'Starrett tools outlive careers — when they’re maintained. American Gage calibrates and repairs Starrett precision instruments with OEM parts in stock, keeping the mics and indicators your shop trusts inside tolerance and in service.',
+    image: {
+      src: '/images/american-gage-team-lab.jpg',
+      alt: 'Technicians at work in the American Gage dimensional calibration laboratory',
+    },
+    capabilitySlug: 'dimensional',
+    sections: [
+      {
+        heading: 'Old-school tools, modern evidence',
+        paragraphs: [
+          'A 30-year-old Starrett micrometer can still measure beautifully — but your auditor needs more than faith. We verify Starrett instruments against NIST-traceable standards in our temperature-controlled dimensional lab and document as-found/as-left readings, uncertainty, and the Z540.3 decision rule under A2LA ISO/IEC 17025:2017 accreditation (certificate 4296.01).',
+          'Cleaning and lubrication are part of every calibration, minor repairs are included for most tools, and we stock Starrett repair parts — so well-made instruments keep earning their keep instead of retiring over a worn part.',
+        ],
+      },
+      {
+        heading: 'What we service',
+        paragraphs: [
+          'Micrometers of every configuration, dial and electronic calipers, dial indicators and back-plungers, height gages, squares, protractors, and rules. Free SoCal pickup routes or nationwide mail-in, standard 7–10 business day turnaround.',
+          'American Gage is an independent calibration laboratory. Starrett is a trademark of its respective owner; we are not affiliated with or endorsed by the manufacturer.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Repair parts', value: 'Starrett OEM parts stocked' },
+      { label: 'Included', value: 'Cleaning, lube, minor repair' },
+      { label: 'Logistics', value: 'Free SoCal routes · nationwide mail-in' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'OD / ID / depth micrometers',
+      'Dial & electronic calipers',
+      'Dial indicators & back-plunger indicators',
+      'Height gages',
+      'Combination squares & protractors',
+      'Precision rules & tape measures',
+    ],
+    faqs: [
+      {
+        question: 'Can you repair older Starrett tools?',
+        answer:
+          'Usually yes — we stock Starrett parts and repair worn mechanisms during the calibration cycle. If a repair would exceed 50% of replacement cost, we tell you honestly.',
+      },
+      {
+        question: 'Do vintage tools get the same certificate?',
+        answer:
+          'Yes — every instrument gets the same accredited certificate with as-found/as-left data, uncertainty, and NIST traceability, regardless of age.',
+      },
+      {
+        question: 'Are you affiliated with Starrett?',
+        answer:
+          'No — American Gage is an independent A2LA-accredited laboratory that calibrates and repairs Starrett instruments; we are not affiliated with or endorsed by the manufacturer.',
+      },
+    ],
+    related: ['mitutoyo-calibration', 'micrometer-calibration', 'caliper-calibration'],
+    nationalMailIn: true,
+  },
+  {
+    slug: 'fluke-calibration',
+    name: 'Fluke Instrument Calibration',
+    metaTitle: 'Fluke Calibration Service | DMMs, Clamp Meters, Process Tools | American Gage',
+    metaDescription:
+      'Calibration for Fluke multimeters, clamp meters, process calibrators & thermal tools using Fluke MET/CAL automated procedures. A2LA ISO 17025 lab in Placentia, CA. Free SoCal pickup.',
+    h1: 'Fluke Instrument Calibration',
+    lead:
+      'Our electrical laboratory runs on Fluke-built reference systems and MET/CAL automation — which makes calibrating your Fluke handhelds, bench meters, and process calibrators genuinely native territory.',
+    image: {
+      src: '/images/dc-voltage-fluke-8845a.webp',
+      alt: 'DC voltage calibration of a Fluke 8845A precision multimeter at American Gage',
+    },
+    capabilitySlug: 'electrical',
+    sections: [
+      {
+        heading: 'Calibrated the way the manufacturer intended',
+        paragraphs: [
+          'We maintain a current Fluke MET/CAL procedure subscription, so Fluke instruments are calibrated with automated, manufacturer-derived procedures: every function and range exercised, uncertainty computed at each point, and firmware-level adjustment performed where the instrument supports it. Certificates carry as-found/as-left data, uncertainty, NIST traceability, and the Z540.3 decision rule under A2LA ISO/IEC 17025:2017 accreditation (certificate 4296.01).',
+          'The workload spans the Fluke catalog we all carry: 87V and other handheld DMMs, clamp meters, insulation testers, process calibrators and loop tools, bench multimeters, and thermal instruments (IR thermometers verified on our Fluke 4180/4181 calibrators).',
+        ],
+      },
+      {
+        heading: 'Fleets welcome',
+        paragraphs: [
+          'Maintenance and facilities teams send Fluke meters by the case — free pickup routes cover Orange County (Mon & Wed), LA County (Tue & Thu), and the Inland Empire (Fri), with 7–10 business day turnaround and 24/48/72-hour expedites when a crew is waiting on its meters.',
+          'American Gage is an independent calibration laboratory. Fluke is a trademark of its respective owner; we are not affiliated with or endorsed by the manufacturer — we use their standards, run their procedures, and calibrate their instruments every day.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Procedures', value: 'Fluke MET/CAL automated (current subscription)' },
+      { label: 'Reference DMMs', value: 'up to 8.5 digits' },
+      { label: 'Turnaround', value: '7–10 business days (expedited available)' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Handheld DMMs (87V, 170/110 series & more)',
+      'Clamp meters',
+      'Insulation testers (1500 series)',
+      'Process calibrators & loop tools (7xx series)',
+      'Bench multimeters (8845A/8846A)',
+      'IR thermometers & thermal tools',
+    ],
+    faqs: [
+      {
+        question: 'Do you calibrate Fluke meters to manufacturer specifications?',
+        answer:
+          'Yes — via Fluke MET/CAL automated procedures under a current subscription, testing each function and range against the manufacturer’s specifications with uncertainty computed per point.',
+      },
+      {
+        question: 'Can you adjust a Fluke meter that’s drifted?',
+        answer:
+          'Yes — where the instrument supports it, adjustment is performed at firmware level and documented with both as-found and as-left data.',
+      },
+      {
+        question: 'Are you affiliated with Fluke?',
+        answer:
+          'No — American Gage is an independent A2LA-accredited laboratory. We use Fluke reference standards and procedures extensively, but we are not affiliated with or endorsed by the manufacturer.',
+      },
+    ],
+    related: ['multimeter-calibration', 'pressure-gauge-calibration', 'rush-calibration'],
+  }
+);
+
 export function getInstrumentPage(slug: string) {
   return instrumentPages.find((p) => p.slug === slug);
 }
