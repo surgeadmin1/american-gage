@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { capabilities } from '@/data/capabilities';
 import { locations } from '@/data/locations';
+import { instrumentPages } from '@/data/instrumentPages';
 import { site } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -41,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: l.slug === 'orange-county' ? 0.8 : 0.7,
+    })),
+    ...instrumentPages.map((p) => ({
+      url: `${site.url}/${p.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
     })),
   ];
 }

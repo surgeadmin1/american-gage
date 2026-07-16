@@ -8,6 +8,7 @@ import JsonLd from '@/components/JsonLd';
 import { serviceSchema, faqSchema } from '@/lib/schema';
 import { locations, getLocation } from '@/data/locations';
 import { capabilities } from '@/data/capabilities';
+import { instrumentPages } from '@/data/instrumentPages';
 import { site } from '@/lib/site';
 
 export function generateStaticParams() {
@@ -225,6 +226,22 @@ export default async function LocationPage({
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Popular instrument services */}
+      <section className="container-site pb-4">
+        <h2 className="font-mono text-xs uppercase tracking-wider text-steel-500">
+          Popular calibration services
+        </h2>
+        <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          {instrumentPages.map((p) => (
+            <li key={p.slug}>
+              <Link href={`/${p.slug}`} className="font-medium text-navy-700 hover:text-accent-600">
+                {p.name} →
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Nearby areas */}
