@@ -45,8 +45,14 @@ export default function Header() {
       </div>
 
       {/* Main nav */}
-      <div className="container-site flex items-center justify-between gap-6 py-3">
-        <Link href="/" aria-label="American Gage home" className="shrink-0">
+      <div className="container-site grid grid-cols-[2.5rem_1fr_2.5rem] items-center py-3 lg:flex lg:justify-between lg:gap-6">
+        {/* Invisible spacer mirrors the hamburger width so the logo is truly centered on mobile */}
+        <div className="w-10 lg:hidden" aria-hidden="true" />
+        <Link
+          href="/"
+          aria-label="American Gage home"
+          className="shrink-0 justify-self-center lg:justify-self-auto"
+        >
           <Image
             src="/images/american-gage-logo.png"
             alt="American Gage logo"
