@@ -46,6 +46,7 @@ export default function Footer() {
             <li><Link href="/industries" className="transition hover:text-accent-400">Industries</Link></li>
             <li><Link href="/accreditations" className="transition hover:text-accent-400">Accreditations</Link></li>
             <li><Link href="/about" className="transition hover:text-accent-400">About Us</Link></li>
+            <li><Link href="/careers" className="transition hover:text-accent-400">Careers</Link></li>
             <li><Link href="/faq" className="transition hover:text-accent-400">FAQ</Link></li>
             <li><Link href="/contact" className="transition hover:text-accent-400">Contact</Link></li>
             <li>

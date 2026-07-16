@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/industries', label: 'Industries' },
   { href: '/accreditations', label: 'Accreditations' },
   { href: '/about', label: 'About' },
+  { href: '/careers', label: 'Careers' },
   { href: '/faq', label: 'FAQ' },
 ];
 
