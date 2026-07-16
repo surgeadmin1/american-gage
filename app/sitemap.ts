@@ -56,6 +56,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
     },
+    {
+      url: `${site.url}/resources/calibration-resource`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
     ...resources.map((r) => ({
       url: `${site.url}/resources/${r.slug}`,
       lastModified: now,

@@ -25,6 +25,22 @@ export default function ResourcesPage() {
       />
 
       <div className="container-site max-w-4xl space-y-12 pb-16">
+        {/* Featured reference hub */}
+        <Link
+          href="/resources/calibration-resource"
+          className="group block rounded-lg border-2 border-navy-700 bg-navy-800 p-6 transition hover:border-accent-500 sm:p-8"
+        >
+          <p className="eyebrow !text-accent-400">Reference Desk</p>
+          <h2 className="mt-2 font-display text-2xl font-bold text-white group-hover:text-accent-400">
+            Calibration Resource: Glossary, Conversions & Basics →
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-steel-200">
+            A searchable metrology glossary, computationally verified conversion charts
+            (pressure, torque, length, temperature), the full fraction→decimal→mm table,
+            and calibration service levels explained. Built to bookmark.
+          </p>
+        </Link>
+
         {categories.map((cat) => (
           <section key={cat}>
             <h2 className="font-mono text-xs uppercase tracking-wider text-steel-500">{cat}</h2>
