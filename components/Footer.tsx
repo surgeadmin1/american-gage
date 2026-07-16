@@ -11,9 +11,9 @@ export default function Footer() {
           <Image
             src="/images/american-gage-logo.png"
             alt="American Gage logo"
-            width={160}
-            height={73}
-            className="h-11 w-auto brightness-0 invert"
+            width={200}
+            height={92}
+            className="h-14 w-auto brightness-0 invert"
           />
           <p className="mt-4 text-sm leading-relaxed">
             A2LA ISO/IEC 17025:2017 accredited calibration laboratory serving Southern

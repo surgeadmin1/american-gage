@@ -50,10 +50,10 @@ export default function Header() {
           <Image
             src="/images/american-gage-logo.png"
             alt="American Gage logo"
-            width={170}
-            height={78}
+            width={220}
+            height={101}
             priority
-            className="h-12 w-auto"
+            className="h-14 w-auto lg:h-16"
           />
         </Link>
 
