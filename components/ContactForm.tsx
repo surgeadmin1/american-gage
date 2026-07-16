@@ -22,11 +22,9 @@ const MANUFACTURERS = [
 ];
 
 const SERVICES = [
-  'Accredited Calibration — ISO/IEC 17025, with data',
-  'Traceable Calibration with Data',
-  'Traceable Calibration (Z540) — no data',
-  'Repair / Evaluation',
-  'Not sure — recommend for me',
+  'Traceable Calibration, with data, Level 1',
+  'Traceable Calibration Z540, no data, Level 2',
+  'Accredited Calibration ISO/IEC 17025, with data',
 ];
 
 const INTERVALS = ['1 year', '6 months', '3 months', '2 years', 'Other / not sure'];
@@ -189,6 +187,16 @@ export default function ContactForm() {
                   Item {String(i + 1).padStart(2, '0')}
                 </legend>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-6">
+                  <div className="col-span-2 sm:col-span-2">
+                    <label className={labelCls} htmlFor={`desc-${i}`}>Description</label>
+                    <input
+                      id={`desc-${i}`}
+                      value={row.description}
+                      onChange={(e) => updateRow(i, 'description', e.target.value)}
+                      placeholder="e.g. Multimeter"
+                      className={inputCls}
+                    />
+                  </div>
                   <div className="relative col-span-2 sm:col-span-2">
                     <label className={labelCls} htmlFor={`mfr-${i}`}>Manufacturer</label>
                     <input
@@ -231,23 +239,13 @@ export default function ContactForm() {
                       </ul>
                     )}
                   </div>
-                  <div className="sm:col-span-2">
+                  <div className="sm:col-span-1">
                     <label className={labelCls} htmlFor={`model-${i}`}>Model</label>
                     <input
                       id={`model-${i}`}
                       value={row.model}
                       onChange={(e) => updateRow(i, 'model', e.target.value)}
                       placeholder="e.g. 87V"
-                      className={inputCls}
-                    />
-                  </div>
-                  <div className="sm:col-span-1">
-                    <label className={labelCls} htmlFor={`desc-${i}`}>Description</label>
-                    <input
-                      id={`desc-${i}`}
-                      value={row.description}
-                      onChange={(e) => updateRow(i, 'description', e.target.value)}
-                      placeholder="Multimeter"
                       className={inputCls}
                     />
                   </div>
@@ -360,7 +358,7 @@ export default function ContactForm() {
                       {[r.manufacturer, r.model].filter(Boolean).join(' ') || r.description}
                     </strong>
                     {r.description && (r.manufacturer || r.model) ? ` — ${r.description}` : ''} ×{r.quantity}
-                    <span className="text-steel-500"> · {r.service.split(' — ')[0]}</span>
+                    <span className="text-steel-500"> · {r.service}</span>
                   </span>
                 </li>
               ))}
