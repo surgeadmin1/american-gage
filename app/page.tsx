@@ -322,6 +322,12 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
+            <Link
+              href="/locations"
+              className="mt-3 inline-block text-sm font-semibold text-accent-600 hover:underline"
+            >
+              See all service areas →
+            </Link>
           </div>
         </div>
       </section>

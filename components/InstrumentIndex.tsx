@@ -3,7 +3,13 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 
-export type IndexedInstrument = { name: string; capability: string; slug: string };
+export type IndexedInstrument = {
+  name: string;
+  capability: string;
+  slug: string;
+  /** Optional dedicated service page (spoke) for this instrument */
+  serviceHref?: string;
+};
 
 export default function InstrumentIndex({ instruments }: { instruments: IndexedInstrument[] }) {
   const [query, setQuery] = useState('');
@@ -44,8 +50,8 @@ export default function InstrumentIndex({ instruments }: { instruments: IndexedI
           />
         </label>
         <p className="font-mono text-xs text-steel-500">
-          {instruments.length} instrument types. Full accredited ranges and CMC detail in
-          the{' '}
+          {instruments.length} instrument types — underlined entries have dedicated
+          service pages. Full accredited ranges and CMC detail in the{' '}
           <a
             href="https://customer.a2la.org/index.cfm?event=directory.getDocument&accreditationPID=C0086F01-07B5-4C75-9DE2-3A922A32AB5A&documentPID=7A3C4A27-E250-46EA-82FA-6E4DD5075307"
             target="_blank"
@@ -89,7 +95,16 @@ export default function InstrumentIndex({ instruments }: { instruments: IndexedI
             <ul className="mt-3 grid gap-x-8 gap-y-1.5 sm:grid-cols-2 lg:grid-cols-3">
               {grouped.get(letter)!.map((inst) => (
                 <li key={`${inst.slug}-${inst.name}`} className="flex items-baseline justify-between gap-3 text-sm">
-                  <span className="text-steel-700">{inst.name}</span>
+                  {inst.serviceHref ? (
+                    <Link
+                      href={inst.serviceHref}
+                      className="font-medium text-navy-800 underline decoration-accent-500/40 underline-offset-2 transition hover:text-accent-600"
+                    >
+                      {inst.name}
+                    </Link>
+                  ) : (
+                    <span className="text-steel-700">{inst.name}</span>
+                  )}
                   <Link
                     href={`/capabilities/${inst.slug}`}
                     className="shrink-0 font-mono text-xs text-accent-600 hover:underline"

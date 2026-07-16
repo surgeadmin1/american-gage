@@ -7,8 +7,19 @@ import CTASection from '@/components/CTASection';
 import JsonLd from '@/components/JsonLd';
 import { serviceSchema } from '@/lib/schema';
 import { capabilities, getCapability } from '@/data/capabilities';
+import { instrumentPages } from '@/data/instrumentPages';
 import { blurMap } from '@/data/blur';
 import { site } from '@/lib/site';
+
+/** Map capability industry labels to /industries anchors */
+function industryAnchor(label: string): string {
+  const l = label.toLowerCase();
+  if (l.includes('aero') || l.includes('defense') || l.includes('automotive')) return 'aerospace-defense';
+  if (l.includes('medical')) return 'medical-device';
+  if (l.includes('bio') || l.includes('pharma') || l.includes('clinical')) return 'biotech-pharma';
+  if (l.includes('electronic') || l.includes('rf') || l.includes('semicond')) return 'electronics';
+  return 'manufacturing';
+}
 
 export function generateStaticParams() {
   return capabilities.map((c) => ({ slug: c.slug }));
@@ -39,6 +50,7 @@ export default async function CapabilityPage({
   if (!cap) notFound();
 
   const others = capabilities.filter((c) => c.slug !== cap.slug);
+  const spokes = instrumentPages.filter((p) => p.capabilitySlug === cap.slug);
 
   return (
     <>
@@ -129,6 +141,27 @@ export default async function CapabilityPage({
             </a>{' '}
             documents accredited ranges and CMC uncertainty at every point.
           </p>
+
+          {/* Hub → spoke links */}
+          {spokes.length > 0 && (
+            <>
+              <h2 className="mt-12 font-display text-2xl font-bold text-navy-900">
+                Dedicated {cap.shortName.toLowerCase()} services
+              </h2>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {spokes.map((s) => (
+                  <li key={s.slug}>
+                    <Link
+                      href={`/${s.slug}`}
+                      className="block rounded-md border border-steel-200 px-4 py-3 text-sm font-medium text-navy-800 transition hover:border-accent-500 hover:text-accent-600"
+                    >
+                      {s.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
 
         {/* Sidebar */}
@@ -150,8 +183,13 @@ export default async function CapabilityPage({
             </h2>
             <ul className="mt-3 flex flex-wrap gap-2">
               {cap.industries.map((ind) => (
-                <li key={ind} className="rounded-full border border-navy-200 bg-white px-3 py-1 text-xs text-navy-800">
-                  {ind}
+                <li key={ind}>
+                  <Link
+                    href={`/industries#${industryAnchor(ind)}`}
+                    className="block rounded-full border border-navy-200 bg-white px-3 py-1 text-xs text-navy-800 transition hover:border-accent-500 hover:text-accent-600"
+                  >
+                    {ind}
+                  </Link>
                 </li>
               ))}
             </ul>

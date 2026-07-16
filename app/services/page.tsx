@@ -77,6 +77,21 @@ export default function ServicesPage() {
               </p>
             </div>
           </div>
+          <p className="mt-5 text-sm text-steel-600">
+            See everything the lab covers on our{' '}
+            <Link href="/capabilities" className="font-semibold text-accent-600 hover:underline">
+              capabilities pages
+            </Link>{' '}
+            or search the{' '}
+            <Link href="/capabilities#instrument-index" className="font-semibold text-accent-600 hover:underline">
+              A–Z instrument index
+            </Link>
+            . In a hurry? See{' '}
+            <Link href="/rush-calibration" className="font-semibold text-accent-600 hover:underline">
+              rush &amp; expedited service
+            </Link>
+            .
+          </p>
         </section>
 
         {/* On-site */}
@@ -114,6 +129,17 @@ export default function ServicesPage() {
               <span className="font-mono">$1.80/mile</span> (<span className="font-mono">$65</span> minimum).
             </li>
           </ul>
+          <p className="mt-5 text-sm text-steel-600">
+            We cover all of{' '}
+            <Link href="/locations/orange-county" className="font-semibold text-accent-600 hover:underline">
+              Orange County
+            </Link>{' '}
+            and{' '}
+            <Link href="/locations/los-angeles" className="font-semibold text-accent-600 hover:underline">
+              Los Angeles County
+            </Link>{' '}
+            on-site.
+          </p>
         </section>
 
         {/* Pickup */}
@@ -157,6 +183,13 @@ export default function ServicesPage() {
             </a>{' '}
             to get on a route. Walk-in drop-offs are always welcome. Just include a PO or
             packing list.
+          </p>
+          <p className="mt-4 text-sm text-steel-600">
+            Full route detail city by city is on our{' '}
+            <Link href="/locations" className="font-semibold text-accent-600 hover:underline">
+              service areas pages
+            </Link>
+            .
           </p>
         </section>
 
@@ -208,6 +241,25 @@ export default function ServicesPage() {
               </dd>
             </div>
           </dl>
+          <p className="mt-5 text-sm text-steel-600">
+            Related services:{' '}
+            <Link href="/surface-plate-calibration" className="font-semibold text-accent-600 hover:underline">
+              surface plate resurfacing
+            </Link>
+            ,{' '}
+            <Link href="/hardness-tester-calibration" className="font-semibold text-accent-600 hover:underline">
+              hardness tester repair
+            </Link>
+            ,{' '}
+            <Link href="/mitutoyo-calibration" className="font-semibold text-accent-600 hover:underline">
+              Mitutoyo service
+            </Link>{' '}
+            and{' '}
+            <Link href="/starrett-calibration" className="font-semibold text-accent-600 hover:underline">
+              Starrett service
+            </Link>
+            .
+          </p>
         </section>
 
         {/* Process */}
@@ -224,6 +276,17 @@ export default function ServicesPage() {
             (including AMS 2750 surveys for aerospace heat-treatment), and re-program
             controllers, recorders, and data acquisition systems.
           </p>
+          <p className="mt-5 text-sm text-steel-600">
+            Backed by our{' '}
+            <Link href="/capabilities/temperature-humidity" className="font-semibold text-accent-600 hover:underline">
+              temperature &amp; humidity laboratory
+            </Link>
+            . Aerospace shops: see our{' '}
+            <Link href="/resources/as9100-calibration-requirements" className="font-semibold text-accent-600 hover:underline">
+              AS9100 calibration guide
+            </Link>
+            .
+          </p>
         </section>
 
         {/* Validation */}
@@ -239,6 +302,17 @@ export default function ServicesPage() {
             end to end: design qualification (DQ), installation qualification (IQ),
             operational qualification (OQ), and performance qualification (PQ), for
             pharmaceutical, biotech, and medical device environments.
+          </p>
+          <p className="mt-5 text-sm text-steel-600">
+            Working under FDA or ISO 13485? Read our guides to{' '}
+            <Link href="/resources/fda-21-cfr-part-211-calibration-requirements" className="font-semibold text-accent-600 hover:underline">
+              21 CFR Part 211
+            </Link>{' '}
+            and{' '}
+            <Link href="/resources/iso-13485-calibration-requirements" className="font-semibold text-accent-600 hover:underline">
+              ISO 13485 calibration requirements
+            </Link>
+            .
           </p>
         </section>
 

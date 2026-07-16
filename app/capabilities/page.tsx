@@ -15,9 +15,34 @@ export const metadata: Metadata = {
   alternates: { canonical: '/capabilities' },
 };
 
+/** Match instrument names to dedicated spoke pages for deep internal links */
+function serviceHrefFor(name: string): string | undefined {
+  const n = name.toLowerCase();
+  if (n.includes('pipette')) return '/pipette-calibration';
+  if (n.includes('torque wrench')) return '/torque-wrench-calibration';
+  if (n.includes('pressure gauge')) return '/pressure-gauge-calibration';
+  if (n.includes('caliper')) return '/caliper-calibration';
+  if (n.includes('micrometer')) return '/micrometer-calibration';
+  if (n.includes('gage block')) return '/gage-block-calibration';
+  if (n.includes('multimeter')) return '/multimeter-calibration';
+  if (n.includes('balance') || n.includes('scale') || n.includes('mass standard') || n.includes('weight set'))
+    return '/scale-calibration';
+  if (n.includes('surface plate')) return '/surface-plate-calibration';
+  if (n.includes('thread ring') || n.includes('thread plug') || n.includes('ring gage') || n.includes('plug gage'))
+    return '/thread-gage-calibration';
+  if (n.includes('force gauge') || n.includes('push-pull')) return '/force-gauge-calibration';
+  if (n.includes('hardness')) return '/hardness-tester-calibration';
+  return undefined;
+}
+
 export default function CapabilitiesPage() {
   const indexed = capabilities.flatMap((c) =>
-    c.instruments.map((name) => ({ name, capability: c.shortName, slug: c.slug }))
+    c.instruments.map((name) => ({
+      name,
+      capability: c.shortName,
+      slug: c.slug,
+      serviceHref: serviceHrefFor(name),
+    }))
   );
 
   return (

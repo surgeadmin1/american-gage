@@ -42,6 +42,8 @@ const industries: Industry[] = [
       { label: 'Force & Torque', href: '/capabilities/force-torque' },
       { label: 'Temperature (AMS 2750 surveys)', href: '/capabilities/temperature-humidity' },
       { label: 'Pressure', href: '/capabilities/pressure' },
+      { label: 'Torque wrench calibration', href: '/torque-wrench-calibration' },
+      { label: 'AS9100 calibration guide', href: '/resources/as9100-calibration-requirements' },
     ],
   },
   {
@@ -57,6 +59,8 @@ const industries: Industry[] = [
       { label: 'Temperature & Humidity', href: '/capabilities/temperature-humidity' },
       { label: 'Electrical', href: '/capabilities/electrical' },
       { label: 'Mass & Balances', href: '/capabilities/mass' },
+      { label: 'Pipette calibration', href: '/pipette-calibration' },
+      { label: 'ISO 13485 calibration guide', href: '/resources/iso-13485-calibration-requirements' },
     ],
   },
   {
@@ -72,6 +76,8 @@ const industries: Industry[] = [
       { label: 'Mass & Balances', href: '/capabilities/mass' },
       { label: 'Temperature & Humidity', href: '/capabilities/temperature-humidity' },
       { label: 'Validation (IQ/OQ/PQ)', href: '/services#validation' },
+      { label: 'Scale & balance calibration', href: '/scale-calibration' },
+      { label: '21 CFR Part 211 guide', href: '/resources/fda-21-cfr-part-211-calibration-requirements' },
     ],
   },
   {
@@ -85,6 +91,8 @@ const industries: Industry[] = [
     capabilities: [
       { label: 'Electrical & RF', href: '/capabilities/electrical' },
       { label: 'Gas Flow / MFCs', href: '/capabilities/flow' },
+      { label: 'Multimeter calibration', href: '/multimeter-calibration' },
+      { label: 'Fluke instrument service', href: '/fluke-calibration' },
       { label: 'Temperature & Humidity', href: '/capabilities/temperature-humidity' },
     ],
   },
@@ -100,6 +108,8 @@ const industries: Industry[] = [
       { label: 'Dimensional', href: '/capabilities/dimensional' },
       { label: 'Force & Torque', href: '/capabilities/force-torque' },
       { label: 'Pressure', href: '/capabilities/pressure' },
+      { label: 'Caliper calibration', href: '/caliper-calibration' },
+      { label: 'What calibration costs', href: '/resources/calibration-services-cost' },
     ],
   },
 ];
