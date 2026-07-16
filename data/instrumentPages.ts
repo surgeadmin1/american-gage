@@ -421,6 +421,428 @@ export const instrumentPages: InstrumentPage[] = [
   },
 ];
 
+/* ==================== P2 spokes ==================== */
+
+instrumentPages.push(
+  {
+    slug: 'multimeter-calibration',
+    name: 'Multimeter Calibration',
+    metaTitle: 'Multimeter Calibration in Orange County, CA | Fluke, Keysight & More | American Gage',
+    metaDescription:
+      'Accredited multimeter & DMM calibration with Fluke MET/CAL automated procedures and reference standards to 8.5 digits. Free OC/LA pickup, 7–10 day turnaround. A2LA ISO 17025.',
+    h1: 'Multimeter Calibration in Orange County',
+    lead:
+      'From the handheld Fluke on a maintenance cart to 8.5-digit bench DMMs, American Gage calibrates multimeters with automated Fluke MET/CAL procedures — uncertainty calculated at every point, firmware-level adjustment where supported.',
+    image: {
+      src: '/images/dc-voltage-fluke-8845a.webp',
+      alt: 'DC voltage calibration of a Fluke 8845A precision multimeter at American Gage',
+    },
+    capabilitySlug: 'electrical',
+    sections: [
+      {
+        heading: 'Automated procedures, not spot checks',
+        paragraphs: [
+          'Our electrical laboratory runs the Fluke MET/CAL automated calibration system with a current procedure subscription. For multimeters that means every function and range gets exercised per the manufacturer’s procedure — DC/AC voltage, current, resistance, frequency — with measurement uncertainty computed at each test point and adjustments performed at firmware level where the instrument supports it.',
+          'Certificates document as-found/as-left readings across functions, uncertainty, NIST traceability, and the Z540.3 decision rule with TUR — the record an auditor can actually follow.',
+        ],
+      },
+      {
+        heading: 'Fleet-friendly logistics',
+        paragraphs: [
+          'Maintenance departments send DMMs by the case: free pickup routes run through Orange County Monday and Wednesday, LA County Tuesday and Thursday, and the Inland Empire Friday, with 7–10 business day standard turnaround. Handhelds, bench meters, clamp meters, and insulation testers ride the same cycle — and on-site electrical calibration is available when the fleet can’t leave.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Automation', value: 'Fluke MET/CAL procedures' },
+      { label: 'Reference DMMs', value: 'up to 8.5 digits' },
+      { label: 'Turnaround', value: '7–10 business days (expedited available)' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Handheld digital multimeters',
+      'Bench DMMs (6.5 & 8.5 digit)',
+      'Clamp meters',
+      'Insulation testers / meggers',
+      'Analog multimeters',
+      'Process meters & loop calibrators',
+    ],
+    faqs: [
+      {
+        question: 'How often should a multimeter be calibrated?',
+        answer:
+          'Manufacturers typically specify 12 months; many quality systems match that, tightening to 6 months for meters used in critical measurements. We calibrate to your interval and report as-found data so you can tune it.',
+      },
+      {
+        question: 'Do you calibrate all multimeter brands?',
+        answer:
+          'Yes — Fluke, Keysight/Agilent, Tektronix, BK Precision, Extech, and most others, using manufacturer procedures through MET/CAL where available.',
+      },
+      {
+        question: 'Can you adjust an out-of-tolerance meter, not just report it?',
+        answer:
+          'Yes — where the instrument supports adjustment, we adjust at firmware level and document both as-found and as-left readings on the certificate.',
+      },
+    ],
+    related: ['pressure-gauge-calibration', 'torque-wrench-calibration', 'scale-calibration'],
+  },
+  {
+    slug: 'scale-calibration',
+    name: 'Scale & Balance Calibration',
+    metaTitle: 'Scale & Balance Calibration in Orange County, CA | ASTM Class 1 Lab | American Gage',
+    metaDescription:
+      'Accredited balance and scale calibration backed by ASTM/OIML Class 1 mass standards to 25 kg and a ±0.5 °C mass lab. Free OC/LA pickup or on-site. A2LA ISO 17025 cert 4296.01.',
+    h1: 'Scale & Balance Calibration in Orange County',
+    lead:
+      'An analytical balance is only as honest as the weights that check it. American Gage maintains ASTM/OIML Class 1 mass standards — calibrated in our own ±0.5 °C mass laboratory on Mettler comparators — and brings that traceability to your scales and balances.',
+    image: {
+      src: '/images/mass-lab-class-1-weights.webp',
+      alt: 'Class 1 stainless weight sets under glass domes in the American Gage mass laboratory',
+    },
+    capabilitySlug: 'mass',
+    sections: [
+      {
+        heading: 'Traceability that starts in a real mass lab',
+        paragraphs: [
+          'Our mass laboratory runs four Mettler comparators in a room held to ±0.5 °C and ±5 %RH, accredited for ASTM and OIML Class 1 weights up to 25 kg. Those standards anchor every balance and scale calibration we perform — from 0.01 mg analytical balances in pharma labs to bench and floor scales on production lines.',
+          'Balance calibration checks what your SOP cares about: repeatability, linearity across the range, eccentricity (corner load), and as-found/as-left readings with uncertainty — documentation that satisfies GMP, ISO 13485, and ISO 9001 audits.',
+        ],
+      },
+      {
+        heading: 'In our lab or at your bench',
+        paragraphs: [
+          'Analytical balances usually shouldn’t travel — so we come to them. On-site balance calibration covers Orange County and LA County with Class 1 standards; transportable scales can ride the free pickup routes instead (OC Mon & Wed, LA Tue & Thu, Inland Empire Fri). Your weight sets can be calibrated in our mass lab on the same cycle.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Mass standards', value: 'ASTM / OIML Class 1 to 25 kg' },
+      { label: 'Mass lab environment', value: '±0.5 °C / ±5 %RH' },
+      { label: 'Service', value: 'In-lab or on-site at your facility' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Analytical balances',
+      'Precision / top-loading balances',
+      'Bench scales',
+      'Floor & platform scales',
+      'Weight sets (calibrated in our mass lab)',
+      'Moisture analyzers (weighing function)',
+    ],
+    faqs: [
+      {
+        question: 'Do you calibrate balances on-site?',
+        answer:
+          'Yes — analytical and precision balances are best calibrated in place, and our technicians cover Orange County and LA County with Class 1 mass standards. Book about two weeks ahead.',
+      },
+      {
+        question: 'Can you calibrate our weight sets too?',
+        answer:
+          'Yes — weight sets are calibrated in our environmentally controlled mass laboratory on Mettler comparators, accredited for ASTM/OIML Class 1 up to 25 kg.',
+      },
+      {
+        question: 'What does a balance calibration certificate include?',
+        answer:
+          'Repeatability, linearity, and eccentricity results with as-found/as-left data, measurement uncertainty, the standards used, environmental conditions, and NIST traceability.',
+      },
+    ],
+    related: ['pipette-calibration', 'multimeter-calibration', 'pressure-gauge-calibration'],
+  },
+  {
+    slug: 'surface-plate-calibration',
+    name: 'Surface Plate Calibration & Resurfacing',
+    metaTitle: 'Surface Plate Calibration & Resurfacing | On-Site in SoCal | American Gage',
+    metaDescription:
+      'Granite surface plate calibration and resurfacing — on-site across Orange County & LA, small plates lapped in-lab to ±0.0001 in. A2LA ISO 17025 dimensional lab since 1968.',
+    h1: 'Surface Plate Calibration & Resurfacing',
+    lead:
+      'Every measurement made on a granite plate inherits that plate’s flatness. American Gage calibrates surface plates and resurfaces them — on-site for plates that stay put, in-lab lapping to ±0.0001 in for smaller plates.',
+    image: {
+      src: '/images/dimensional-height-gauge-surface-plate.webp',
+      alt: 'Granite surface plate in use for dimensional calibration at American Gage',
+    },
+    capabilitySlug: 'dimensional',
+    sections: [
+      {
+        heading: 'Calibration and correction, not just a report',
+        paragraphs: [
+          'Surface plate calibration verifies flatness against the grade your quality system requires. When a plate has worn out of grade — and working plates do, especially in the well-traveled center — we don’t just report it: small granite plates are lapped in our shop to ±0.0001 in, and larger plates are resurfaced on-site at your facility to the desired grade.',
+          'Badly pitted or severely worn plates get a straight answer: if economical resurfacing can’t recover the grade, we’ll recommend factory regrinding or replacement rather than sell you a service that won’t hold.',
+        ],
+      },
+      {
+        heading: 'Scheduled around your inspection department',
+        paragraphs: [
+          'On-site plate work is scheduled to minimize downtime for your inspection area — typically with about two weeks lead time across Orange County and Los Angeles County. Pair plate calibration with the height gages, indicators, and gage blocks that live on it, and the whole inspection station comes due together.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'In-lab lapping (small plates)', value: 'to ±0.0001 in' },
+      { label: 'Larger plates', value: 'Resurfaced on-site to desired grade' },
+      { label: 'Coverage', value: 'Orange County & Los Angeles County' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Granite surface plates (all grades)',
+      'Inspection bench plates',
+      'Layout plates',
+      'Toolroom plates',
+    ],
+    faqs: [
+      {
+        question: 'How often should surface plates be calibrated?',
+        answer:
+          'Annual calibration is typical for working plates, with high-use inspection plates sometimes checked every 6 months. Wear concentrates where work happens, so usage matters more than age.',
+      },
+      {
+        question: 'Can you resurface our plate without removing it?',
+        answer:
+          'Yes — larger plates are resurfaced on-site at your facility to the desired grade. Small plates can come to our shop for lapping to ±0.0001 in.',
+      },
+      {
+        question: 'What if the plate can’t be recovered?',
+        answer:
+          'We tell you. Badly pitted or out-of-tolerance plates that can’t be economically resurfaced get a recommendation for factory regrinding or replacement — not a superficial pass.',
+      },
+    ],
+    related: ['gage-block-calibration', 'caliper-calibration', 'micrometer-calibration'],
+  },
+  {
+    slug: 'thread-gage-calibration',
+    name: 'Thread Gage Calibration',
+    metaTitle: 'Thread Gage Calibration | Rings & Plugs | A2LA Accredited | American Gage',
+    metaDescription:
+      'Thread ring and thread plug gage calibration in an A2LA ISO 17025 dimensional lab — est. 1968, serving aerospace and precision manufacturers. Free SoCal pickup or nationwide mail-in.',
+    h1: 'Thread Gage Calibration',
+    lead:
+      'Thread rings and plugs are pass/fail tools with no display to sanity-check them — calibration is the only thing standing between a worn gage and a rejected lot. American Gage has calibrated thread gages for aerospace and precision manufacturers since 1968.',
+    image: {
+      src: '/images/american-gage-team-lab.jpg',
+      alt: 'The American Gage facility, home of the dimensional calibration laboratory since 1968',
+    },
+    capabilitySlug: 'dimensional',
+    nationalMailIn: true,
+    sections: [
+      {
+        heading: 'Why worn thread gages are expensive',
+        paragraphs: [
+          'A worn GO plug quietly accepts oversized threads; a worn ring passes parts your customer will reject. Because thread gages wear with every use and give no warning, quality systems put them on calibration intervals — and AS9100 customer audits check that those intervals hold. We verify thread gages against NIST-traceable standards in our temperature-controlled dimensional laboratory and report as-found condition with uncertainty.',
+          'Working masters and setting plugs can be calibrated alongside the working gages they check, keeping the whole chain consistent.',
+        ],
+      },
+      {
+        heading: 'Local routes or nationwide mail-in',
+        paragraphs: [
+          'Thread gage sets ship easily: SoCal shops use the free pickup routes (Orange County Mon & Wed, LA Tue & Thu, Inland Empire Fri), and shops elsewhere mail sets to our Placentia laboratory with a PO or packing list. Standard turnaround is 7–10 business days.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Types', value: 'Thread rings, thread plugs, setting plugs' },
+      { label: 'Standards', value: 'NIST-traceable, temperature-controlled lab' },
+      { label: 'Logistics', value: 'Free SoCal routes · nationwide mail-in' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Thread plug gages (GO / NO-GO)',
+      'Thread ring gages',
+      'Setting plugs',
+      'Plain plug & ring gages',
+      'Pin gage sets',
+    ],
+    faqs: [
+      {
+        question: 'How often should thread gages be calibrated?',
+        answer:
+          'Interval by usage: heavily used working gages often run 6–12 months, while setting masters can run longer. Tracking as-found wear over cycles is the best way to set intervals that hold up in an audit.',
+      },
+      {
+        question: 'Do you calibrate plain plug and ring gages too?',
+        answer:
+          'Yes — plain plugs, rings, and pin gage sets are core dimensional workload, calibrated in the same lab on the same cycle.',
+      },
+      {
+        question: 'Can out-of-state shops send thread gages?',
+        answer:
+          'Yes — mail sets to American Gage, 1131 S Richfield Rd, Placentia, CA 92870 with a PO or packing list, and we return-ship when calibration is complete.',
+      },
+    ],
+    related: ['gage-block-calibration', 'caliper-calibration', 'surface-plate-calibration'],
+  },
+  {
+    slug: 'force-gauge-calibration',
+    name: 'Force Gauge Calibration',
+    metaTitle: 'Force Gauge Calibration Service | Dead-Weight Reference | American Gage',
+    metaDescription:
+      'Force gauge and push-pull gauge calibration against dead-weight standards — the reference method with the best available uncertainties. A2LA ISO 17025 lab, free SoCal pickup.',
+    h1: 'Force Gauge Calibration Service',
+    lead:
+      'Force calibration at American Gage is performed against dead-weight standards — gravity acting on known mass, the reference method that delivers the best uncertainties available — in the mechanical laboratory we’ve run since 1968.',
+    image: {
+      src: '/images/force-calibration-stand.webp',
+      alt: 'Force gauge under test on a calibration stand in the American Gage mechanical laboratory',
+    },
+    capabilitySlug: 'force-torque',
+    sections: [
+      {
+        heading: 'Dead weights, because force starts with mass',
+        paragraphs: [
+          'Force references built on load cells inherit those cells’ drift. Dead-weight calibration ties your force gauge directly to mass and gravity — the primary approach — which is why our force work is performed against dead-weight standards. Certificates report as-found/as-left readings through the range, measurement uncertainty, NIST traceability, and the Z540.3 decision rule.',
+          'Typical workload includes digital and mechanical force gauges, push-pull gauges, crimp testers, and tension/compression instruments used everywhere from medical device assembly validation to wire-harness production.',
+        ],
+      },
+      {
+        heading: 'Simple logistics, honest repair calls',
+        paragraphs: [
+          'Force gauges travel well: free SoCal pickup routes (OC Mon & Wed, LA Tue & Thu, Inland Empire Fri) or nationwide mail-in, with 7–10 business day standard turnaround. Instruments that arrive damaged or drifting get an evaluation first — and per our standing policy, repair estimates never exceed 50% of replacement cost.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Reference', value: 'Dead-weight standards' },
+      { label: 'Types', value: 'Digital & mechanical, tension & compression' },
+      { label: 'Turnaround', value: '7–10 business days (expedited available)' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Digital force gauges',
+      'Mechanical force gauges',
+      'Push-pull gauges',
+      'Crimp & tension testers',
+      'Compression meters',
+    ],
+    faqs: [
+      {
+        question: 'Why does dead-weight calibration matter for force gauges?',
+        answer:
+          'Dead weights derive force directly from calibrated mass and gravity rather than from another sensor, minimizing the uncertainty stacked into your gauge’s calibration — meaningful when your tolerance is tight.',
+      },
+      {
+        question: 'Do you calibrate force test stands too?',
+        answer:
+          'We calibrate the force gauges and instruments that mount in test stands; ask us about your specific stand configuration when you request a quote.',
+      },
+    ],
+    related: ['torque-wrench-calibration', 'hardness-tester-calibration', 'scale-calibration'],
+  },
+  {
+    slug: 'hardness-tester-calibration',
+    name: 'Hardness Tester Calibration & Repair',
+    metaTitle: 'Hardness Tester Calibration & Repair in California | American Gage',
+    metaDescription:
+      'Hardness tester calibration and repair from an A2LA ISO 17025 California lab — Rockwell-type bench testers and portables, serving heat-treat and machining operations. (657) 216-2600.',
+    h1: 'Hardness Tester Calibration & Repair in California',
+    lead:
+      'A hardness tester that drifts sends bad material downstream with a passing grade. American Gage both calibrates and repairs hardness testers — one of the few Southern California labs handling the full service in-house since 1968.',
+    image: {
+      src: '/images/american-gage-facility.jpg',
+      alt: 'The American Gage calibration laboratory in Placentia, California',
+    },
+    capabilitySlug: 'force-torque',
+    sections: [
+      {
+        heading: 'Calibration plus the repair nobody else wants to do',
+        paragraphs: [
+          'Hardness testers are mechanical instruments with wear parts — and most calibration providers will verify one but won’t fix it. We do both: verification of your tester’s performance, and repair service for major hardness tester types when wear or damage is behind the drift. Per our standing policy, repair estimates never exceed 50% of the cost of a new unit.',
+          'That matters to heat-treat operations under Nadcap and machine shops certifying material condition to customer specs, where an unreliable tester means quarantined product.',
+        ],
+      },
+      {
+        heading: 'Serving California’s metal-working base',
+        paragraphs: [
+          'Bench testers are heavy and sensitive to moves, so many customers pair tester service with our on-site visits across Orange County and Los Angeles County. Portable testers ride the free pickup routes. Either way, certificates document as-found/as-left condition with NIST traceability under our A2LA ISO/IEC 17025:2017 accreditation.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Service', value: 'Calibration + repair, one lab' },
+      { label: 'Repair policy', value: 'Estimates never exceed 50% of new cost' },
+      { label: 'Coverage', value: 'In-lab, on-site OC & LA, mail-in portables' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Bench hardness testers (Rockwell-type)',
+      'Portable hardness testers',
+      'Durometers',
+      'Test blocks (verification)',
+    ],
+    faqs: [
+      {
+        question: 'Do you repair hardness testers or just calibrate them?',
+        answer:
+          'Both — repair and calibration for major hardness tester types, so a drifting tester can be corrected and certified in one cycle instead of bouncing between vendors.',
+      },
+      {
+        question: 'Can you service our bench tester on-site?',
+        answer:
+          'Yes — bench testers often shouldn’t travel, and our technicians cover Orange County and LA County on-site. Portables can use the free pickup routes instead.',
+      },
+    ],
+    related: ['force-gauge-calibration', 'torque-wrench-calibration', 'surface-plate-calibration'],
+  },
+  {
+    slug: 'rush-calibration',
+    name: 'Rush & Expedited Calibration',
+    metaTitle: 'Same-Week & Rush Calibration in Orange County | 24/48/72-Hr | American Gage',
+    metaDescription:
+      'Line down or audit tomorrow? Expedited 24, 48 & 72-hour calibration from a local A2LA ISO 17025 lab in Placentia — drop off today, walk-ins welcome. Call (657) 216-2600.',
+    h1: 'Rush & Expedited Calibration in Orange County',
+    lead:
+      'Audits don’t reschedule and production lines don’t wait. American Gage offers expedited 24, 48, and 72-hour calibration from our Placentia laboratory — and because we’re local, “rush” can start with a drop-off this afternoon, not a shipping label.',
+    image: {
+      src: '/images/onsite-multimeter-fleet.webp',
+      alt: 'American Gage technician working through a fleet of instruments',
+    },
+    capabilitySlug: 'electrical',
+    sections: [
+      {
+        heading: 'What “rush” looks like at a local lab',
+        paragraphs: [
+          'National providers quote rush service in shipping days. Ours starts when you walk in: bring instruments to 1131 S Richfield Rd in Placentia any weekday between 7:30 AM and 4:00 PM, tell us the deadline, and we’ll confirm what’s achievable on a 24, 48, or 72-hour expedite before you leave the counter. Expedited service carries a fee — the certificate carries everything else: full as-found/as-left data, uncertainty, and NIST traceability under our A2LA ISO/IEC 17025 accreditation. A rushed calibration is still a complete one.',
+          'When equipment can’t come to us, after-hours and weekend emergency on-site calls are available across Orange County and LA County.',
+        ],
+      },
+      {
+        heading: 'The audit-week playbook',
+        paragraphs: [
+          'Most rush requests are audit-driven: an overdue sticker discovered during prep, or a surveillance audit moved up. Call (657) 216-2600 with the list — manufacturer, model, and due date — and we’ll triage what needs accredited data versus verification, confirm turnaround per item, and get your records defensible before the auditor signs in.',
+        ],
+      },
+    ],
+    specs: [
+      { label: 'Expedite tiers', value: '24 / 48 / 72 hours (fee applies)' },
+      { label: 'Walk-ins', value: 'Mon–Fri 7:30 AM – 4:00 PM, Placentia' },
+      { label: 'Emergency on-site', value: 'After-hours & weekends available' },
+      { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
+    ],
+    itemsWeSee: [
+      'Audit-prep batches (mixed disciplines)',
+      'Line-down replacement instruments',
+      'Incoming-inspection tools',
+      'New equipment needing first calibration',
+    ],
+    faqs: [
+      {
+        question: 'How fast can you actually turn a calibration around?',
+        answer:
+          'Expedited tiers are 24, 48, and 72 hours for a fee, subject to scope and workload — call (657) 216-2600 and we’ll confirm per instrument before you commit.',
+      },
+      {
+        question: 'Is a rush calibration less thorough?',
+        answer:
+          'No — expedited work follows the same procedures and produces the same accredited certificate with as-found/as-left data and uncertainty. The fee buys queue position, not shortcuts.',
+      },
+      {
+        question: 'Can you come to us in an emergency?',
+        answer:
+          'Yes — after-hours and weekend emergency on-site calls are available across Orange County and Los Angeles County.',
+      },
+    ],
+    related: ['multimeter-calibration', 'caliper-calibration', 'pressure-gauge-calibration'],
+  }
+);
+
 export function getInstrumentPage(slug: string) {
   return instrumentPages.find((p) => p.slug === slug);
 }

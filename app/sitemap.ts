@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { capabilities } from '@/data/capabilities';
 import { locations } from '@/data/locations';
 import { instrumentPages } from '@/data/instrumentPages';
+import { resources } from '@/data/resources';
 import { site } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -45,6 +46,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...instrumentPages.map((p) => ({
       url: `${site.url}/${p.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+    {
+      url: `${site.url}/resources`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    ...resources.map((r) => ({
+      url: `${site.url}/resources/${r.slug}`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
