@@ -152,13 +152,13 @@ export const serviceLevels: RefTable = {
   id: 'service-levels',
   title: 'Calibration service levels compared',
   note: 'Match the level to what your quality system and customers require — the levels mirror the options on our quote form.',
-  headers: ['', 'Traceable, with data (Level 1)', 'Traceable Z540, no data (Level 2)', 'Accredited ISO/IEC 17025, with data'],
+  headers: ['', 'Traceable, no data (Level 1)', 'Traceable Z540, with data (Level 2)', 'Accredited ISO/IEC 17025, with data'],
   rows: [
     ['NIST-traceable standards', '✓', '✓', '✓'],
     ['Certificate issued', '✓', '✓', '✓'],
-    ['As-found / as-left readings', '✓', '—', '✓'],
+    ['As-found / as-left readings', '—', '✓', '✓'],
     ['Measurement uncertainty reported', '—', '—', '✓'],
     ['Issued under A2LA accreditation', '—', '—', '✓'],
-    ['Typical use', 'General QA programs needing data', 'Basic compliance, non-critical tools', 'AS9100, ISO 13485, FDA & audited programs'],
+    ['Typical use', 'Basic compliance, non-critical tools', 'General QA programs needing data', 'AS9100, ISO 13485, FDA & audited programs'],
   ],
 };

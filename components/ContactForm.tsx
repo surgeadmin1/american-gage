@@ -22,8 +22,8 @@ const MANUFACTURERS = [
 ];
 
 const SERVICES = [
-  'Traceable Calibration, with data, Level 1',
-  'Traceable Calibration Z540, no data, Level 2',
+  'Traceable Calibration, no data, Level 1',
+  'Traceable Calibration Z540, with data, Level 2',
   'Accredited Calibration ISO/IEC 17025, with data',
 ];
 
