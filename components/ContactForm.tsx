@@ -107,6 +107,7 @@ export default function ContactForm() {
     const data = new FormData(form);
     const equipment = equipmentToText(rows);
     data.set('equipment_list', equipment);
+    data.set('equipment_json', JSON.stringify(rows));
 
     if (!FORM_ENDPOINT) {
       const files = data.getAll('attachment') as File[];

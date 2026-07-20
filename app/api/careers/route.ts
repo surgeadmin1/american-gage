@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { emailShell, infoTable, sectionHeading, noteBlock } from '@/lib/emailLayout';
 
 /**
  * Careers application handler — sends submissions via Resend (https://resend.com).
@@ -20,9 +21,6 @@ const FROM = process.env.CAREERS_FROM ?? 'American Gage Careers <onboarding@rese
 const TO = process.env.CAREERS_TO ?? 'customerservice@americangage.com';
 
 const MAX_TOTAL_ATTACHMENT_BYTES = 20 * 1024 * 1024;
-
-const esc = (s: string) =>
-  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 function field(data: FormData, name: string): string {
   const v = data.get(name);
@@ -98,25 +96,26 @@ export async function POST(req: Request) {
     `Resume: ${attachments.map((a) => a.filename).join(', ')}`,
   ].join('\n');
 
-  const html = `
-  <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#1a2430;max-width:640px;">
-    <h2 style="color:#0e3a66;margin:0 0 4px;">Job application — ${esc(position)}</h2>
-    <p style="margin:0 0 16px;color:#666;">Submitted from americangage.com/careers</p>
-    <table cellpadding="0" cellspacing="0" style="font-size:14px;line-height:1.6;">
-      <tr><td style="padding-right:16px;color:#666;">Name</td><td><strong>${esc(firstName)} ${esc(lastName)}</strong></td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Email</td><td><a href="mailto:${esc(email)}">${esc(email)}</a></td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Phone</td><td>${esc(phone)}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Location</td><td>${esc(location || '—')}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Position</td><td>${esc(position)}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Experience</td><td>${esc(experience || '—')}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Disciplines</td><td>${esc(disciplines.length ? disciplines.join(', ') : '—')}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Certifications</td><td>${esc(certifications || '—')}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">U.S. work auth</td><td>${esc(workAuth || '—')}</td></tr>
-    </table>
-    <h3 style="color:#0e3a66;margin:20px 0 8px;">About the applicant</h3>
-    <p style="margin:0;white-space:pre-wrap;">${esc(message || '—')}</p>
-    <p style="margin:16px 0 0;color:#666;">Resume attached: ${esc(attachments.map((a) => a.filename).join(', '))}</p>
-  </div>`;
+  const inner = `
+    ${sectionHeading('Applicant')}
+    ${infoTable([
+      { label: 'Name', value: `${firstName} ${lastName}` },
+      { label: 'Email', value: email, isLink: 'email' },
+      { label: 'Phone', value: phone, isLink: 'tel' },
+      { label: 'Location', value: location },
+      { label: 'Position', value: position },
+      { label: 'Experience', value: experience },
+      { label: 'Disciplines', value: disciplines.length ? disciplines.join(', ') : '' },
+      { label: 'Certifications', value: certifications },
+      { label: 'U.S. work auth', value: workAuth },
+    ])}
+    ${sectionHeading('About the applicant')}
+    ${noteBlock(message)}
+    ${sectionHeading('Resume')}
+    ${noteBlock(attachments.map((a) => a.filename).join(', ') + '  (attached to this email)')}
+  `;
+
+  const html = emailShell({ tag: 'Job Application', title: `${position} — ${firstName} ${lastName}`, inner });
 
   const payload: Record<string, unknown> = {
     from: FROM,

@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { emailShell, infoTable, dataTable, sectionHeading, noteBlock } from '@/lib/emailLayout';
 
 /**
  * Quote form handler — sends submissions via Resend (https://resend.com).
@@ -22,9 +23,6 @@ const REPAIR_CC = 'repair@americangage.com';
 
 // Attachments: Resend caps the whole request at 40 MB; stay well under it.
 const MAX_TOTAL_ATTACHMENT_BYTES = 20 * 1024 * 1024;
-
-const esc = (s: string) =>
-  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 function field(data: FormData, name: string): string {
   const v = data.get(name);
@@ -84,6 +82,16 @@ export async function POST(req: Request) {
 
   const address = [street, city, state, zip].filter(Boolean).join(', ');
 
+  // Parse structured equipment for a proper columned table (falls back to text).
+  type Eq = { manufacturer?: string; model?: string; description?: string; quantity?: string; service?: string; interval?: string; notes?: string };
+  let equipmentRows: Eq[] = [];
+  try {
+    const parsed = JSON.parse(field(data, 'equipment_json'));
+    if (Array.isArray(parsed)) equipmentRows = parsed;
+  } catch {
+    /* fall back to text list below */
+  }
+
   const text = [
     `QUOTE REQUEST — ${company}`,
     '',
@@ -103,29 +111,41 @@ export async function POST(req: Request) {
     .filter((l) => l !== '')
     .join('\n');
 
-  const rowsHtml = equipmentList
-    .split('\n')
-    .filter(Boolean)
-    .map((line) => `<li style="margin:0 0 6px;">${esc(line)}</li>`)
-    .join('');
+  const contactTable = infoTable([
+    { label: 'Name', value: `${firstName} ${lastName}` },
+    { label: 'Company', value: company },
+    { label: 'Email', value: email, isLink: 'email' },
+    { label: 'Phone', value: phone, isLink: 'tel' },
+    { label: 'Address', value: address },
+    { label: 'Logistics', value: delivery },
+  ]);
 
-  const html = `
-  <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#1a2430;max-width:640px;">
-    <h2 style="color:#0e3a66;margin:0 0 4px;">Quote request — ${esc(company)}</h2>
-    <p style="margin:0 0 16px;color:#666;">Submitted from americangage.com</p>
-    <table cellpadding="0" cellspacing="0" style="font-size:14px;line-height:1.6;">
-      <tr><td style="padding-right:16px;color:#666;">Name</td><td><strong>${esc(firstName)} ${esc(lastName)}</strong></td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Company</td><td>${esc(company)}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Email</td><td><a href="mailto:${esc(email)}">${esc(email)}</a></td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Phone</td><td>${esc(phone)}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Address</td><td>${esc(address || '—')}</td></tr>
-      <tr><td style="padding-right:16px;color:#666;">Logistics</td><td>${esc(delivery || '—')}</td></tr>
-    </table>
-    <h3 style="color:#0e3a66;margin:20px 0 8px;">Equipment (${itemCount})</h3>
-    <ol style="margin:0;padding-left:20px;">${rowsHtml}</ol>
-    <h3 style="color:#0e3a66;margin:20px 0 8px;">Notes</h3>
-    <p style="margin:0;white-space:pre-wrap;">${esc(message || '—')}</p>
-  </div>`;
+  const equipmentTable = equipmentRows.length
+    ? dataTable(
+        ['#', 'Item', 'Qty', 'Service', 'Interval', 'Notes'],
+        equipmentRows.map((r, i) => [
+          String(i + 1),
+          [r.manufacturer, r.model].filter(Boolean).join(' ') +
+            (r.description ? ` — ${r.description}` : ''),
+          r.quantity || '1',
+          r.service || '—',
+          r.interval || '—',
+          r.notes || '—',
+        ])
+      )
+    : dataTable(['#', 'Item'], equipmentList.split('\n').filter(Boolean).map((l, i) => [String(i + 1), l.replace(/^\d+\.\s*/, '')]));
+
+  const inner = `
+    ${sectionHeading('Contact')}
+    ${contactTable}
+    ${sectionHeading(`Equipment (${itemCount})`)}
+    ${equipmentTable}
+    ${sectionHeading('Notes')}
+    ${noteBlock(message)}
+    ${attachments.length ? sectionHeading('Attachments') + noteBlock(attachments.map((a) => a.filename).join(', ')) : ''}
+  `;
+
+  const html = emailShell({ tag: 'Quote Request', title: `${company} — ${itemCount} item${itemCount === 1 ? '' : 's'}`, inner });
 
   const payload: Record<string, unknown> = {
     from: FROM,
