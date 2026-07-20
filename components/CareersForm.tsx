@@ -5,13 +5,11 @@ import { useState } from 'react';
 /**
  * Careers application form.
  *
- * Backend: set NEXT_PUBLIC_CAREERS_FORM_ENDPOINT in Vercel (separate Formspree
- * form from the quote wizard so applications land in their own inbox).
- * Resume attachment is REQUIRED — because of that, there is no mailto fallback
- * for submission; without an endpoint we prompt the applicant to email their
- * resume directly instead.
+ * Backend: POSTs to our own /api/careers route, which sends via Resend
+ * (requires RESEND_API_KEY on Vercel — see app/api/careers/route.ts).
+ * A resume attachment is required and travels with the submission.
  */
-const CAREERS_ENDPOINT = process.env.NEXT_PUBLIC_CAREERS_FORM_ENDPOINT ?? '';
+const CAREERS_ENDPOINT = '/api/careers';
 
 const POSITIONS = [
   'Calibration Technician — Dimensional',
@@ -52,19 +50,6 @@ export default function CareersForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    if (!CAREERS_ENDPOINT) {
-      // No backend configured — resumes can't ride a mailto link, so direct the
-      // applicant to email it with their details pre-filled in the subject.
-      const subject = encodeURIComponent(
-        `[Application] ${data.get('position')}: ${data.get('first_name')} ${data.get('last_name')}`
-      );
-      const bodyText = encodeURIComponent(
-        `Name: ${data.get('first_name')} ${data.get('last_name')}\nEmail: ${data.get('email')}\nPhone: ${data.get('phone')}\nLocation: ${data.get('location')}\nPosition: ${data.get('position')}\nExperience: ${data.get('experience')}\nDisciplines: ${data.getAll('disciplines').join(', ') || '—'}\nCertifications: ${data.get('certifications') || '—'}\nAuthorized to work in the U.S.: ${data.get('work_auth')}\n\n${data.get('message') || ''}\n\n*** PLEASE ATTACH YOUR RESUME TO THIS EMAIL BEFORE SENDING ***`
-      );
-      window.location.href = `mailto:customerservice@americangage.com?subject=${subject}&body=${bodyText}`;
-      return;
-    }
-
     setStatus('sending');
     try {
       const res = await fetch(CAREERS_ENDPOINT, {
@@ -74,6 +59,7 @@ export default function CareersForm() {
       });
       if (!res.ok) throw new Error('send failed');
       setStatus('sent');
+      form.reset();
     } catch {
       setStatus('error');
     }

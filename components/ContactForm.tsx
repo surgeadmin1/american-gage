@@ -5,11 +5,11 @@ import { useState } from 'react';
 /**
  * Two-step quote wizard (equipment first, contact info second).
  *
- * Form backend: set NEXT_PUBLIC_FORM_ENDPOINT in Vercel env vars
- * (e.g. a Formspree endpoint like https://formspree.io/f/xxxxxxx).
- * Until it's set, the form falls back to a pre-filled email.
+ * Form backend: POSTs to our own /api/quote route, which sends via Resend
+ * (requires RESEND_API_KEY on Vercel — see app/api/quote/route.ts).
+ * NEXT_PUBLIC_FORM_ENDPOINT can still override the endpoint if ever needed.
  */
-const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? '';
+const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? '/api/quote';
 
 const MANUFACTURERS = [
   'Fluke', 'Keysight', 'Agilent', 'Tektronix', 'Rohde & Schwarz', 'Anritsu', 'BK Precision',
