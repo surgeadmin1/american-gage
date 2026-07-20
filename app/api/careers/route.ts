@@ -18,7 +18,12 @@ import { emailShell, infoTable, sectionHeading, noteBlock } from '@/lib/emailLay
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY ?? '';
 const FROM = process.env.CAREERS_FROM ?? 'American Gage Careers <onboarding@resend.dev>';
-const TO = process.env.CAREERS_TO ?? 'customerservice@americangage.com';
+// Recipient list — comma-separated. CAREERS_TO env var overrides (e.g. for testing).
+const TO = (process.env.CAREERS_TO ??
+  'Rwilliamson@americangage.com, sales@americangage.com, info@americangage.com, rarnold@americangage.com, nick@surgedm.com')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
 
 const MAX_TOTAL_ATTACHMENT_BYTES = 20 * 1024 * 1024;
 
@@ -119,7 +124,7 @@ export async function POST(req: Request) {
 
   const payload: Record<string, unknown> = {
     from: FROM,
-    to: [TO],
+    to: TO,
     reply_to: email,
     subject: `[Careers] ${position}: ${firstName} ${lastName}`,
     text,

@@ -18,7 +18,12 @@ import { emailShell, infoTable, dataTable, sectionHeading, noteBlock } from '@/l
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY ?? '';
 const FROM = process.env.QUOTE_FROM ?? 'American Gage Website <onboarding@resend.dev>';
-const TO = process.env.QUOTE_TO ?? 'customerservice@americangage.com';
+// Recipient list — comma-separated. QUOTE_TO env var overrides (e.g. for testing).
+const TO = (process.env.QUOTE_TO ??
+  'Rwilliamson@americangage.com, sales@americangage.com, info@americangage.com, nick@surgedm.com')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
 const REPAIR_CC = 'repair@americangage.com';
 
 // Attachments: Resend caps the whole request at 40 MB; stay well under it.
@@ -149,7 +154,7 @@ export async function POST(req: Request) {
 
   const payload: Record<string, unknown> = {
     from: FROM,
-    to: [TO],
+    to: TO,
     reply_to: email,
     subject: `[Website] Quote request: ${company} (${itemCount} item${itemCount === 1 ? '' : 's'})`,
     text,
