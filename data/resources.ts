@@ -206,7 +206,7 @@ export const resources: ResourceArticle[] = [
     ],
     relatedLinks: [
       { label: 'Biotech & Pharma industry page', href: '/industries#biotech-pharma' },
-      { label: 'Validation (IQ/OQ/PQ) services', href: '/services#validation' },
+      { label: 'Scale & balance calibration', href: '/scale-calibration' },
       { label: 'Pipette calibration', href: '/pipette-calibration' },
       { label: 'Temperature & humidity calibration', href: '/capabilities/temperature-humidity' },
     ],
@@ -303,7 +303,7 @@ export const resources: ResourceArticle[] = [
             ['Analytical balances', '12 months + interim checks', 'GMP criticality, environment shifts'],
             ['Pressure gauges', '12 months', 'process-critical, pulsating service'],
             ['Pipettes', '3–12 months', 'high throughput, critical assays'],
-            ['Environmental chambers', '12 months (mapping per SOP)', 'validation requirements'],
+            ['Environmental chambers', '12 months (mapping per SOP)', 'tighter mapping requirements'],
             ['Surface plates', '12 months', 'concentrated wear, high traffic'],
           ],
         },

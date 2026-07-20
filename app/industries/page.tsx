@@ -68,14 +68,13 @@ const industries: Industry[] = [
     name: 'Biotechnology & Pharmaceutical',
     standards: ['FDA 21 CFR Part 211', 'GMP / GxP', 'USP', 'ISO 8655'],
     body: [
-      'From pipettes calibrated to ISO 8655 (gravimetric and photometric) to balance calibration in a mass lab held to ±0.5 °C, we support the daily metrology load of GMP facilities. Our Kaye validator systems extend that support into full IQ/OQ/PQ qualification of chambers, freezers, and process equipment.',
-      'GMP-trained process technicians are available for on-site work and staffing placements, and our validation and process-troubleshooting services help you resolve deviations before they become findings.',
+      'From pipettes calibrated to ISO 8655 (gravimetric and photometric) to balance calibration in a mass lab held to ±0.5 °C, we support the daily metrology load of GMP facilities — the instruments your quality system depends on, calibrated with audit-ready data.',
+      'GMP-trained process technicians are available for on-site work and staffing placements, and our process-troubleshooting services help you resolve deviations before they become findings.',
     ],
     capabilities: [
       { label: 'Pipettes', href: '/capabilities/pipettes' },
       { label: 'Mass & Balances', href: '/capabilities/mass' },
       { label: 'Temperature & Humidity', href: '/capabilities/temperature-humidity' },
-      { label: 'Validation (IQ/OQ/PQ)', href: '/services#validation' },
       { label: 'Scale & balance calibration', href: '/scale-calibration' },
       { label: '21 CFR Part 211 guide', href: '/resources/fda-21-cfr-part-211-calibration-requirements' },
     ],

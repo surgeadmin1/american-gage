@@ -250,7 +250,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'How Irvine companies work with us',
         paragraphs: [
-          'Most Irvine clients use the free Monday & Wednesday route — our driver collects instruments at your dock and returns them calibrated, typically in 7–10 business days. For chambers, ovens, and equipment that can’t travel, on-site calibration and IQ/OQ/PQ validation with our Kaye systems come to you. Supplier-qualification packets (A2LA scope, COI, quality documentation) are returned promptly for your vendor files.',
+          'Most Irvine clients use the free Monday & Wednesday route — our driver collects instruments at your dock and returns them calibrated, typically in 7–10 business days. For chambers, ovens, and equipment that can’t travel, on-site calibration and uniformity surveys come to you. Supplier-qualification packets (A2LA scope, COI, quality documentation) are returned promptly for your vendor files.',
         ],
       },
     ],
@@ -272,9 +272,9 @@ export const locations: LocationPage[] = [
           'Yes — ISO 8655 pipette calibration with gravimetric and photometric methods, from standard 2×4 service up to accredited 3×10 data, plus preventive maintenance and repair.',
       },
       {
-        question: 'Can you validate chambers and freezers at our Irvine facility?',
+        question: 'Can you calibrate temperature equipment at our Irvine facility?',
         answer:
-          'Yes — on-site temperature uniformity surveys and IQ/OQ/PQ validation using Kaye validator systems, scheduled around your production.',
+          'Yes — on-site temperature and humidity calibration, plus oven and chamber uniformity surveys, scheduled around your production.',
       },
     ],
     neighbors: ['orange-county', 'santa-ana', 'anaheim'],

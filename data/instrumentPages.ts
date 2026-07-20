@@ -183,7 +183,7 @@ export const instrumentPages: InstrumentPage[] = [
       {
         heading: 'For plants, shops, and everything with a header',
         paragraphs: [
-          'Orange County’s manufacturers send us maintenance-cart gauges by the crate; medical device and pharma plants send transducers and transmitters on validation-driven intervals. Free pickup routes run through Orange County Monday and Wednesday and LA County Tuesday and Thursday, with 7–10 business day standard turnaround. On-site calibration is available for instruments plumbed into your process.',
+          'Orange County’s manufacturers send us maintenance-cart gauges by the crate; medical device and pharma plants send transducers and transmitters on scheduled intervals. Free pickup routes run through Orange County Monday and Wednesday and LA County Tuesday and Thursday, with 7–10 business day standard turnaround. On-site calibration is available for instruments plumbed into your process.',
         ],
       },
     ],
@@ -689,7 +689,7 @@ instrumentPages.push(
         heading: 'Dead weights, because force starts with mass',
         paragraphs: [
           'Force references built on load cells inherit those cells’ drift. Dead-weight calibration ties your force gauge directly to mass and gravity — the primary approach — which is why our force work is performed against dead-weight standards. Certificates report as-found/as-left readings through the range, measurement uncertainty, NIST traceability, and the Z540.3 decision rule.',
-          'Typical workload includes digital and mechanical force gauges, push-pull gauges, crimp testers, and tension/compression instruments used everywhere from medical device assembly validation to wire-harness production.',
+          'Typical workload includes digital and mechanical force gauges, push-pull gauges, crimp testers, and tension/compression instruments used everywhere from medical device assembly to wire-harness production.',
         ],
       },
       {

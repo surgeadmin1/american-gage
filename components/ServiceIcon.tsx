@@ -19,10 +19,6 @@ const paths: Record<string, React.ReactNode> = {
     // gauge
     <path d="M12 20a8 8 0 1 1 8-8M12 12l4-4M12 20h.01M5 15h.01M19 15h.01" />
   ),
-  validation: (
-    // clipboard check
-    <path d="M9 4h6v3H9zM15 4h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M9 13l2 2 4-4" />
-  ),
   staffing: (
     // people
     <path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 5.8M18.2 14.4a6.5 6.5 0 0 1 3.3 5.6" />

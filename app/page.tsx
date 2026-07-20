@@ -52,7 +52,7 @@ const differentiators = [
   },
   {
     title: 'One-stop shop convenience',
-    body: 'Calibration, repair, process troubleshooting, AMS 2750 surveys, and IQ/OQ/PQ validation under one roof, so your equipment list doesn’t get split across three vendors.',
+    body: 'Calibration, repair, process troubleshooting, and AMS 2750 surveys under one roof, so your equipment list doesn’t get split across three vendors.',
   },
 ];
 

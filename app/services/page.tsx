@@ -13,7 +13,7 @@ import { site, pickupRoutes } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Calibration Services: Lab, On-Site, Pickup & Repair',
   description:
-    'ISO 17025 accredited lab calibration with 7–10 day turnaround, on-site calibration across Southern California, free pickup & delivery routes, equipment repair, and IQ/OQ/PQ validation.',
+    'ISO 17025 accredited lab calibration with 7–10 day turnaround, on-site calibration across Southern California, free pickup & delivery routes, equipment repair, process troubleshooting, and calibration staffing.',
   alternates: { canonical: '/services' },
 };
 
@@ -23,7 +23,6 @@ const jumpLinks = [
   { id: 'pickup-delivery', label: 'Pickup & Delivery' },
   { id: 'repair', label: 'Repair' },
   { id: 'process', label: 'Process & Surveys' },
-  { id: 'validation', label: 'Validation' },
   { id: 'staffing', label: 'Staffing' },
 ];
 
@@ -287,26 +286,7 @@ export default function ServicesPage() {
             <Link href="/resources/as9100-calibration-requirements" className="font-semibold text-accent-600 hover:underline">
               AS9100 calibration guide
             </Link>
-            .
-          </p>
-        </section>
-
-        {/* Validation */}
-        <section id="validation">
-          <h2 className="flex items-center gap-4 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
-            <ServiceIcon name="validation" />
-            Validation (IQ / OQ / PQ)
-          </h2>
-          <div className="gauge-ticks mt-4" aria-hidden="true" />
-          <p className="mt-6 leading-relaxed text-steel-700">
-            Built on our Kaye validator systems and advanced temperature & humidity
-            laboratory, our validation service supports process and equipment qualification
-            end to end: design qualification (DQ), installation qualification (IQ),
-            operational qualification (OQ), and performance qualification (PQ), for
-            pharmaceutical, biotech, and medical device environments.
-          </p>
-          <p className="mt-5 text-sm text-steel-600">
-            Working under FDA or ISO 13485? Read our guides to{' '}
+            . Working under FDA or ISO 13485? Read our guides to{' '}
             <Link href="/resources/fda-21-cfr-part-211-calibration-requirements" className="font-semibold text-accent-600 hover:underline">
               21 CFR Part 211
             </Link>{' '}

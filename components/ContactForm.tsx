@@ -18,7 +18,7 @@ const MANUFACTURERS = [
   'Eppendorf', 'Rainin', 'Gilson', 'Thermo Scientific', 'Fisher Scientific',
   'Ashcroft', 'WIKA', 'Druck', 'Additel', 'Rosemount', 'Omega', 'Dwyer',
   'CDI Torque', 'Snap-on', 'Sturtevant Richmont', 'Norbar', 'Chatillon', 'Ametek', 'Imada',
-  'Vaisala', 'Testo', 'Extech', 'Alicat', 'MKS', 'Brooks Instrument', 'Kaye',
+  'Vaisala', 'Testo', 'Extech', 'Alicat', 'MKS', 'Brooks Instrument',
 ];
 
 const SERVICES = [

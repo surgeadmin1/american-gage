@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StickyQuote from '@/components/StickyQuote';
+import Analytics from '@/components/Analytics';
 import JsonLd from '@/components/JsonLd';
 import { localBusinessSchema } from '@/lib/schema';
 import { site } from '@/lib/site';
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <StickyQuote />
+        <Analytics />
       </body>
     </html>
   );
