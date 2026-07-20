@@ -123,7 +123,7 @@ export default function AboutPage() {
 
       <CTASection
         heading="Meet the lab your instruments deserve."
-        body="Drop off during business hours, get on a free pickup route, or send your equipment list for a quote within one business day."
+        body="Drop off during business hours, get on a free pickup route, or send your equipment list for a quote within one to two business days."
       />
     </>
   );

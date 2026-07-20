@@ -176,7 +176,7 @@ export const instrumentPages: InstrumentPage[] = [
       {
         heading: 'Reference-grade pressure, three ways',
         paragraphs: [
-          'The lab runs dedicated reference systems by range: a low-pressure controller for 0–30 inH₂O work at ±0.009% of reading (draft gauges, magnehelics, low-DP instruments), pneumatic controllers covering −14.7 to 2,500 psi at ±0.005% of reading, and hydraulic capability to 10,000 psi. That means your 30 psi sanitary gauge and your 10,000 psi hydraulic gauge both get calibrated against a reference appropriate to the range — not stretched across one instrument’s span.',
+          'The lab runs dedicated reference systems by range: a low-pressure controller for 0–30 inH₂O work at ±0.009% of reading (draft gauges, magnehelics, low-DP instruments), pneumatic controllers covering −14.7 to 2,500 psi at ±0.01% of reading, and hydraulic capability to 10,000 psi. That means your 30 psi sanitary gauge and your 10,000 psi hydraulic gauge both get calibrated against a reference appropriate to the range — not stretched across one instrument’s span.',
           'Certificates carry as-found/as-left points across the dial or range, measurement uncertainty, NIST traceability, and the Z540.3 decision rule — ready for FDA, AS9100, and process-safety audits alike.',
         ],
       },
@@ -189,7 +189,7 @@ export const instrumentPages: InstrumentPage[] = [
     ],
     specs: [
       { label: 'Range', value: '−14.7 to 10,000 psi' },
-      { label: 'Pneumatic (to 2,500 psi)', value: '±0.005% of reading' },
+      { label: 'Pneumatic (to 2,500 psi)', value: '±0.01% of reading' },
       { label: 'Low pressure (0–30 inH₂O)', value: '±0.009% of reading' },
       { label: 'Hydraulic', value: 'to 10,000 psi' },
       { label: 'Accreditation', value: 'A2LA ISO/IEC 17025:2017 · #4296.01' },
@@ -206,12 +206,12 @@ export const instrumentPages: InstrumentPage[] = [
       {
         question: 'How accurate is your pressure calibration?',
         answer:
-          'Reference controllers deliver ±0.005% of reading on pneumatic ranges to 2,500 psi and ±0.009% of reading on 0–30 inH₂O work — comfortably supporting calibration of gauges from 4:1 TUR down to precision digital standards.',
+          'Reference controllers deliver ±0.01% of reading on pneumatic ranges to 2,500 psi and ±0.009% of reading on 0–30 inH₂O work — comfortably supporting calibration of gauges from 4:1 TUR down to precision digital standards.',
       },
       {
         question: 'Can you calibrate gauges installed in our process?',
         answer:
-          'Yes — on-site pressure calibration is available across Orange County and LA County for instruments that can’t come out of the line, with about two weeks scheduling lead time.',
+          'Yes — on-site pressure calibration is available across Orange County and LA County for instruments that can’t come out of the line, with about 3–4 weeks scheduling lead time.',
       },
       {
         question: 'Do you calibrate both liquid-filled and dry gauges?',
@@ -533,7 +533,7 @@ instrumentPages.push(
       {
         question: 'Do you calibrate balances on-site?',
         answer:
-          'Yes — analytical and precision balances are best calibrated in place, and our technicians cover Orange County and LA County with Class 1 mass standards. Book about two weeks ahead.',
+          'Yes — analytical and precision balances are best calibrated in place, and our technicians cover Orange County and LA County with Class 1 mass standards. Book about 3–4 weeks ahead.',
       },
       {
         question: 'Can you calibrate our weight sets too?',
@@ -573,7 +573,7 @@ instrumentPages.push(
       {
         heading: 'Scheduled around your inspection department',
         paragraphs: [
-          'On-site plate work is scheduled to minimize downtime for your inspection area — typically with about two weeks lead time across Orange County and Los Angeles County. Pair plate calibration with the height gages, indicators, and gage blocks that live on it, and the whole inspection station comes due together.',
+          'On-site plate work is scheduled to minimize downtime for your inspection area — typically with about 3–4 weeks lead time across Orange County and Los Angeles County. Pair plate calibration with the height gages, indicators, and gage blocks that live on it, and the whole inspection station comes due together.',
         ],
       },
     ],

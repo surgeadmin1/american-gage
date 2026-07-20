@@ -105,7 +105,7 @@ export default function ServicesPage() {
             When downtime isn’t an option, our technicians come to you, equipped with
             NIST-traceable standards to calibrate at your facility. Our scheduling specialist
             will book a date that works around your production; we recommend reserving about
-            two weeks ahead.
+            3–4 weeks ahead.
           </p>
           <div className="mt-6 overflow-hidden rounded-lg">
             <Image
@@ -207,12 +207,14 @@ export default function ServicesPage() {
           </p>
           <dl className="mt-6 space-y-5">
             <div className="border-l-2 border-accent-500 pl-4">
-              <dt className="font-display font-bold text-navy-800">Dimensional gage repair</dt>
+              <dt className="font-display font-bold text-navy-800">Hand tool & dimensional gage repair</dt>
               <dd className="mt-1 text-sm leading-relaxed text-steel-600">
-                Every hand tool is cleaned and lubricated as part of calibration; minor
-                repairs and battery replacement are included for most brands. We stock
-                replacement parts for Mitutoyo, Starrett, Interapid, SPI, and other major
-                manufacturers.
+                Full repair service for precision hand tools — calipers, micrometers,
+                indicators, height gages, and more. Every hand tool is cleaned and lubricated
+                as part of calibration; minor repairs and battery replacement are included for
+                most brands, and we stock replacement parts for Mitutoyo, Starrett, Interapid,
+                SPI, and other major manufacturers so worn tools are repaired and re-certified
+                in the same visit.
               </dd>
             </div>
             <div className="border-l-2 border-accent-500 pl-4">

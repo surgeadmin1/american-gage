@@ -19,7 +19,7 @@ export const faqs: Faq[] = [
   {
     question: 'Is every calibration NIST traceable?',
     answer:
-      'Yes. Every measurement we issue connects through an unbroken, documented chain of calibrations, with stated uncertainty at each link, to national standards maintained by NIST. The traceability chain is documented on every calibration certificate.',
+      'Wherever a NIST-traceable reference exists for the measurement, yes — the calibration connects through an unbroken, documented chain, with stated uncertainty at each link, to national standards maintained by NIST, and the traceability chain is shown on the certificate. Some services are functional-check or verification certifications for which no NIST-traceable standard applies; those certificates state the basis used instead. If NIST traceability is required for a specific item, just ask and we will confirm it up front.',
   },
   {
     question: 'What accreditations does American Gage hold?',
@@ -34,7 +34,7 @@ export const faqs: Faq[] = [
   {
     question: 'Do you provide on-site calibration?',
     answer:
-      'Yes. On-site calibration is available for most equipment. We recommend booking about two weeks ahead. Service minimums apply by discipline ($275 dimensional/mechanical, $400 electrical, $800 RF) plus round-trip travel at $1.80 per mile ($65 minimum). After-hours and weekend emergency calls are available.',
+      'Yes. On-site calibration is available for most equipment. We recommend booking about 3–4 weeks ahead. Service minimums apply by discipline ($275 dimensional/mechanical, $400 electrical, $800 RF) plus round-trip travel at $1.80 per mile ($65 minimum). After-hours and weekend emergency calls are available.',
   },
   {
     question: 'Can I drop off equipment at your lab?',
@@ -49,7 +49,7 @@ export const faqs: Faq[] = [
   {
     question: 'How do I get a quote?',
     answer:
-      'Send your equipment list (manufacturer, model, serial number, and any compliance requirements your customers reference, including ITAR status if applicable) through our contact form or to customerservice@americangage.com. We respond with scope confirmation, pricing, and turnaround within one business day.',
+      'Send your equipment list (manufacturer, model, serial number, and any compliance requirements your customers reference, including ITAR status if applicable) through our contact form or to customerservice@americangage.com. We respond with scope confirmation, pricing, and turnaround within one to two business days.',
   },
   {
     question: 'What payment methods do you accept?',

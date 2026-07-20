@@ -7,7 +7,7 @@ import { site, pickupRoutes } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Contact & Request a Quote: Placentia, CA Calibration Lab',
   description:
-    'Request a calibration quote from American Gage, with a response within one business day. 1131 S Richfield Rd, Placentia, CA 92870. (657) 216-2600. Free SoCal pickup & delivery.',
+    'Request a calibration quote from American Gage, with a response within one to two business days. 1131 S Richfield Rd, Placentia, CA 92870. (657) 216-2600. Free SoCal pickup & delivery.',
   alternates: { canonical: '/contact' },
 };
 
@@ -17,7 +17,7 @@ export default function ContactPage() {
       <Breadcrumbs items={[{ name: 'Contact', href: '/contact' }]} />
       <PageHero
         eyebrow="Contact"
-        title="Quotes within one business day. Humans on the phone."
+        title="Detailed quotes, fast. Humans on the phone."
         lead="Send your equipment list: manufacturer, model, serial, ITAR status if applicable, and any compliance regimes your customers reference. We come back with scope confirmation, pricing, and turnaround."
       />
 

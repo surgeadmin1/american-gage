@@ -243,7 +243,7 @@ export default function CalibrationResourcePage() {
 
       <CTASection
         heading="Reference desk open, lab door too."
-        body="When the chart answers the question but the instrument still needs calibrating: send your list and get scope, pricing, and turnaround within one business day."
+        body="When the chart answers the question but the instrument still needs calibrating: send your list and get scope, pricing, and turnaround within one to two business days."
       />
     </>
   );

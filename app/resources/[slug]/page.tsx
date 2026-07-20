@@ -188,7 +188,7 @@ export default async function ResourceArticlePage({
 
       <CTASection
         heading="Put this into practice."
-        body="Send your equipment list with the compliance regimes that apply — we'll confirm service levels, pricing, and turnaround within one business day."
+        body="Send your equipment list with the compliance regimes that apply — we'll confirm service levels, pricing, and turnaround within one to two business days."
       />
     </>
   );

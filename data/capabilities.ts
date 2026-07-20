@@ -52,20 +52,21 @@ export const capabilities: Capability[] = [
     shortName: 'Electrical / RF',
     metaTitle: 'Electrical & RF Calibration Services | A2LA Accredited | American Gage',
     metaDescription:
-      'Accredited electrical calibration: multimeters to 8.5 digits, oscilloscopes, power supplies, spectrum analyzers, signal generators. Fluke MET/CAL automated procedures. Placentia, CA.',
-    headline: 'From bench multimeters to RF racks: automated, documented, traceable.',
+      'Accredited electrical & RF calibration with automated MET/CAL procedures: DMMs to 8.5 digits, spectrum & network analyzers, signal generators, power sensors, attenuators. Automated RF racks. Placentia, CA.',
+    headline: 'Automated RF & microwave calibration — a lab built for the RF rack.',
     intro:
-      'Our electrical laboratory runs the Fluke MET/CAL automated calibration system with a current procedure subscription, which means automated calibration routines, firmware-level adjustments where supported, and measurement uncertainty calculated on every point. We calibrate DC/AC voltage, current, resistance, and time & frequency, plus RF and microwave instruments through our dedicated RF racks.',
+      'RF and microwave is where our electrical lab stands out. We run automated RF calibration through dedicated, purpose-built RF racks driven by the Fluke MET/CAL system with a current procedure subscription — so spectrum analyzers, network analyzers, signal generators, power meters and sensors, and attenuators are calibrated with automated routines that exercise every point, compute uncertainty, and apply firmware-level adjustment where supported. The same automated bench covers the full DC/LF workload: DC/AC voltage, current, resistance, and time & frequency.',
     image: {
       src: '/images/electrical-calibration-bench.webp',
       alt: 'Electrical calibration bench at American Gage with precision multimeters, current shunt, and racks of signal-generation and measurement standards',
     },
     specs: [
+      { label: 'RF automation', value: 'Automated MET/CAL RF racks' },
       { label: 'DMM resolution', value: 'up to 8.5 digits' },
-      { label: 'Automation', value: 'Fluke MET/CAL procedures' },
-      { label: 'Parameters', value: 'V, A, Ω, time & frequency, RF power' },
+      { label: 'Parameters', value: 'RF power, V, A, Ω, time & frequency' },
     ],
     equipment: [
+      { name: 'Automated RF racks', detail: 'Purpose-built RF/microwave calibration racks driven by MET/CAL — automated routines for analyzers, generators, power sensors, and attenuators' },
       { name: 'Fluke MET/CAL', detail: 'Automated calibration procedures with built-in uncertainty calculation and firmware-level adjustment support' },
       { name: 'Precision reference standards', detail: 'Multifunction calibrators and 8.5-digit reference multimeters for DC/LF workload' },
     ],
@@ -127,19 +128,19 @@ export const capabilities: Capability[] = [
       'A2LA accredited pressure calibration from −14.7 to 10,000 psi at 0.01% of reading or better. Gauges, transducers, manometers. Placentia, CA. Free SoCal pickup and delivery.',
     headline: 'Vacuum to 10,000 psi, at 0.01% of reading or better.',
     intro:
-      'The pressure laboratory spans full vacuum to 10,000 psi with automated pressure controllers as references. Low-pressure work runs on a dedicated 0–30 inH₂O controller at ±0.009% of reading, pneumatic ranges to 2,500 psi at ±0.005% of reading, and hydraulic ranges to 10,000 psi.',
+      'The pressure laboratory spans full vacuum to 10,000 psi with automated pressure controllers as references. Low-pressure work runs on a dedicated 0–30 inH₂O controller at ±0.009% of reading, pneumatic ranges to 2,500 psi at ±0.01% of reading, and hydraulic ranges to 10,000 psi.',
     image: {
       src: '/images/pressure-high-comparator.jpg',
       alt: 'American Gage technician operating a hydraulic pressure comparator with a precision pressure controller in the pressure lab',
     },
     specs: [
       { label: 'Range', value: '−14.7 to 10,000 psi' },
-      { label: 'Pneumatic (to 2,500 psi)', value: '±0.005% of reading' },
+      { label: 'Pneumatic (to 2,500 psi)', value: '±0.01% of reading' },
       { label: 'Low pressure (0–30 inH₂O)', value: '±0.009% of reading' },
       { label: 'Hydraulic (to 10,000 psi)', value: '±0.01% FS per transducer range' },
     ],
     equipment: [
-      { name: 'Fluke 7250xi pressure controllers', detail: '−14.7 to 2,500 psi pneumatic, ±0.005% of reading' },
+      { name: 'Fluke 7250xi pressure controllers', detail: '−14.7 to 2,500 psi pneumatic, ±0.01% of reading' },
       { name: 'Fluke 7615 hydraulic controller', detail: 'To 10,000 psi across 3,000 / 6,000 / 10,000 psi transducer ranges' },
       { name: 'Fluke (Ruska) 7250LP', detail: '0–30 inH₂O low-pressure controller, ±0.009% of reading' },
     ],
@@ -242,10 +243,10 @@ export const capabilities: Capability[] = [
     shortName: 'Flow',
     metaTitle: 'Gas Flow & Mass Flow Controller Calibration | American Gage',
     metaDescription:
-      'Gas flow calibration with Fluke molbloc/molbox laminar flow standards: 50 SCCM to 2,500 SLM elements, ±0.25% of reading. MFCs, rotameters, flow meters. Placentia, CA.',
-    headline: 'molbloc-referenced gas flow, from sccm to thousands of slm.',
+      'Gas flow calibration with Fluke molbloc/molbox laminar flow standards: 50 SCCM to 2,500 SLPM elements, ±0.25% of reading. MFCs, rotameters, flow meters. Placentia, CA.',
+    headline: 'molbloc-referenced gas flow, from sccm to thousands of slpm.',
     intro:
-      'Our gas flow bench is built around the Fluke molbloc/molbox laminar flow measurement system, the same reference used by flow standards labs. Six molbloc elements cover 50 SCCM through 2,500 SLM full scale, with uncertainty of ±0.25% of reading from 10–100% of each element’s range. Mass flow controllers are calibrated with live setpoint control and error mapping.',
+      'Our gas flow bench is built around the Fluke molbloc/molbox laminar flow measurement system, the same reference used by flow standards labs. Six molbloc elements cover 50 SCCM through 2,500 SLPM full scale, with uncertainty of ±0.25% of reading from 10–100% of each element’s range. Mass flow controllers are calibrated with live setpoint control and error mapping.',
     image: {
       src: '/images/flow-molbloc-mfc-bench.webp',
       alt: 'Fluke molbloc laminar flow elements and a mass flow controller under test on the American Gage gas flow calibration bench',
@@ -253,15 +254,42 @@ export const capabilities: Capability[] = [
     specs: [
       { label: 'Uncertainty (10–100% FS)', value: '±0.25% of reading' },
       { label: 'Below 10% FS', value: '±0.025% FS' },
-      { label: 'Element coverage', value: '50 / 500 SCCM · 5 / 25 / 250 / 2,500 SLM' },
+      { label: 'Element coverage', value: '50 / 500 SCCM · 5 / 25 / 250 / 2,500 SLPM' },
     ],
     equipment: [
-      { name: 'Fluke molbloc/molbox system', detail: 'Laminar flow reference with six molbloc elements spanning 50 SCCM to 2,500 SLM' },
+      { name: 'Fluke molbloc/molbox system', detail: 'Laminar flow reference with six molbloc elements spanning 50 SCCM to 2,500 SLPM' },
     ],
     instruments: [
       'Mass flow controllers (MFCs)', 'Mass flow meters', 'Rotameters', 'Flow meters', 'Flow sensors',
     ],
     industries: ['Semiconductor', 'Biotechnology', 'Aerospace', 'Electronics'],
+  },
+  {
+    slug: 'vibration',
+    name: 'Vibration & Accelerometer Calibration',
+    shortName: 'Vibration',
+    metaTitle: 'Vibration & Accelerometer Calibration | American Gage',
+    metaDescription:
+      'Accelerometer and vibration sensor calibration by back-to-back comparison against a reference accelerometer. A newly added capability at our A2LA-accredited Placentia, CA lab.',
+    headline: 'A newer capability, held to the same standard as the rest of the lab.',
+    intro:
+      'Vibration and accelerometer calibration is one of the most recent additions to the American Gage lab. We calibrate accelerometers and vibration sensors by the back-to-back comparison method — mounting the unit under test against a NIST-traceable reference accelerometer on a controlled shaker and comparing sensitivity across the tested range. Certificates document as-found/as-left results with the reference standards used and their traceability. Because ranges and available frequencies for this capability are still expanding, contact the lab to confirm coverage for your specific sensor.',
+    image: {
+      src: '/images/vibration-accelerometer-calibration.webp',
+      alt: 'Accelerometer and vibration sensor calibration equipment at American Gage',
+    },
+    specs: [
+      { label: 'Method', value: 'Back-to-back comparison' },
+      { label: 'Reference', value: 'NIST-traceable reference accelerometer' },
+      { label: 'Coverage', value: 'Confirm range/frequencies with the lab' },
+    ],
+    equipment: [
+      { name: 'Reference accelerometer + shaker system', detail: 'Comparison calibration of the unit under test against a traceable reference sensitivity standard' },
+    ],
+    instruments: [
+      'Accelerometers', 'Vibration sensors', 'Vibration meters', 'Shaker / calibration exciters',
+    ],
+    industries: ['Aerospace', 'Defense', 'Automotive', 'Electronics'],
   },
 ];
 

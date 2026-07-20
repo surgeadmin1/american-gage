@@ -264,7 +264,7 @@ export default async function LocationPage({
 
       <CTASection
         heading={`Need calibration in ${loc.shortName}?`}
-        body={`Send your equipment list and we'll confirm scope, pricing, and turnaround within one business day — with free pickup on the ${loc.proximity.routeDays.split(' — ')[0]} route.`}
+        body={`Send your equipment list and we'll confirm scope, pricing, and turnaround within one to two business days — with free pickup on the ${loc.proximity.routeDays.split(' — ')[0]} route.`}
       />
     </>
   );

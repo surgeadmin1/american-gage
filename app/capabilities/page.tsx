@@ -11,7 +11,7 @@ import { blurMap } from '@/data/blur';
 export const metadata: Metadata = {
   title: 'Calibration Capabilities: A–Z Instrument Index',
   description:
-    'Full calibration capabilities of American Gage: dimensional, electrical & RF, temperature & humidity, pressure, mass, pipettes, force & torque, and gas flow. Search 100+ instrument types.',
+    'Full calibration capabilities of American Gage: dimensional, electrical & RF, temperature & humidity, pressure, mass, pipettes, force & torque, gas flow, and vibration. Search 100+ instrument types.',
   alternates: { canonical: '/capabilities' },
 };
 
@@ -92,14 +92,13 @@ export default function CapabilitiesPage() {
 
         <div className="mt-10 rounded-lg border border-steel-200 bg-navy-50 p-6">
           <h2 className="font-display font-bold text-navy-800">
-            Beyond the eight disciplines
+            Beyond the nine disciplines
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-steel-600">
             We also troubleshoot process control systems and instrumentation, perform oven
             and chamber uniformity surveys (including AMS 2750 for aerospace heat treatment),
-            and re-program controllers, recorders, and data acquisition systems. Vibration
-            and accelerometer calibration was recently added to our scope. Call the lab for
-            details.
+            and re-program controllers, recorders, and data acquisition systems. Don’t see
+            your instrument? Call the lab — the scope keeps growing.
           </p>
         </div>
       </section>

@@ -37,7 +37,7 @@ const services = [
     title: 'Repair & Refurbishment',
     href: '/services#repair',
     description:
-      'Dimensional tool repair with stocked OEM parts, surface plate resurfacing, hardness tester and electrical repair. Estimates never exceed 50% of replacement cost.',
+      'Hand tool repair with stocked OEM parts (calipers, micrometers, indicators), surface plate resurfacing, hardness tester and electrical repair. Estimates never exceed 50% of replacement cost.',
   },
 ];
 
@@ -81,7 +81,7 @@ export default function HomePage() {
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-steel-200">
               American Gage has been the calibration supplier of record for Southern
               California’s regulated manufacturers since 1968: aerospace, medical device,
-              biotech, and defense. NIST-traceable on every measurement, with free pickup and
+              biotech, and defense. NIST-traceable calibration where the discipline allows, with free pickup and
               delivery across SoCal.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -93,7 +93,7 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="mt-6 font-mono text-sm text-steel-300">
-              Quotes within one business day ·{' '}
+              Fast, detailed quotes ·{' '}
               <a href={site.phoneHref} className="text-white underline decoration-accent-500 underline-offset-4 hover:text-accent-400">
                 {site.phone}
               </a>
@@ -131,7 +131,7 @@ export default function HomePage() {
                 </li>
                 <li className="flex justify-between gap-3">
                   <span>NIST-traceable</span>
-                  <span className="font-mono text-white">Every cert</span>
+                  <span className="font-mono text-white">Where applicable</span>
                 </li>
               </ul>
               <a
@@ -165,7 +165,7 @@ export default function HomePage() {
         <div className="max-w-2xl">
           <p className="eyebrow">Capabilities</p>
           <h2 className="mt-3 font-display text-3xl font-bold text-navy-900 sm:text-4xl">
-            Eight disciplines. One accredited lab.
+            Nine disciplines. One accredited lab.
           </h2>
           <p className="mt-4 text-steel-600">
             Each measurement discipline runs in its own environmentally controlled
@@ -254,7 +254,7 @@ export default function HomePage() {
               {
                 step: '01',
                 title: 'Send your equipment list',
-                body: 'Manufacturer, model, serial. Spreadsheet or scribbles, we don’t judge. You get scope confirmation, pricing, and turnaround within one business day.',
+                body: 'Manufacturer, model, serial. Spreadsheet or scribbles, we don’t judge. You get scope confirmation, pricing, and turnaround within one to two business days.',
               },
               {
                 step: '02',
@@ -348,7 +348,7 @@ export default function HomePage() {
                 ISO/IEC 17025:2017 · A2LA Certificate #{site.a2laCertNumber}
               </p>
               <p className="mt-1 text-sm text-steel-600">
-                ANSI/NCSL Z540-1 & Z540.3 compliant · NIST traceable on every measurement
+                ANSI/NCSL Z540-1 & Z540.3 compliant · NIST-traceable calibration
               </p>
             </div>
           </div>

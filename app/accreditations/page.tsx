@@ -9,7 +9,7 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Accreditations: A2LA ISO/IEC 17025:2017, Cert #4296.01',
   description:
-    'American Gage holds ISO/IEC 17025:2017 accreditation through A2LA (certificate 4296.01), with ANSI/NCSL Z540-1 and Z540.3 compliance and NIST traceability on every measurement.',
+    'American Gage holds ISO/IEC 17025:2017 accreditation through A2LA (certificate 4296.01), with ANSI/NCSL Z540-1 and Z540.3 compliance and NIST-traceable calibration.',
   alternates: { canonical: '/accreditations' },
 };
 
@@ -129,7 +129,7 @@ export default function AccreditationsPage() {
           </h2>
           <div className="gauge-ticks mt-4" aria-hidden="true" />
           <p className="mt-6 leading-relaxed text-steel-700">
-            Every measurement we issue connects, through an unbroken chain of calibrations,
+            Every calibration we issue against a NIST-traceable reference connects, through an unbroken chain,
             to a U.S. national standard at the National Institute of Standards and
             Technology. The chain carries a stated uncertainty at each link, is documented on
             every certificate, and is what makes our calibration evidence acceptable to FDA,

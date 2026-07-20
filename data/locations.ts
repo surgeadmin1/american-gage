@@ -57,7 +57,7 @@ export const locations: LocationPage[] = [
         heading: 'An Orange County calibration lab, not an Orange County sales office',
         paragraphs: [
           'When your quality system needs a calibration supplier, the difference between a lab and a drop point matters. Instruments sent through a national chain’s local office typically ship to another state, wait in a national queue, and come back on the chain’s schedule. Everything we calibrate is calibrated here — at 1131 S Richfield Rd in Placentia — by technicians you can call directly.',
-          'That’s how we’ve operated since 1968, when American Gage opened as a dimensional lab serving Orange County’s aerospace machine shops. Over one million calibrations later, the lab covers eight disciplines in discipline-specific, environmentally controlled rooms: dimensional, electrical and RF, temperature and humidity, pressure, mass, pipettes, force and torque, and gas flow.',
+          'That’s how we’ve operated since 1968, when American Gage opened as a dimensional lab serving Orange County’s aerospace machine shops. Over one million calibrations later, the lab covers nine disciplines in discipline-specific, environmentally controlled rooms: dimensional, electrical and RF, temperature and humidity, pressure, mass, pipettes, force and torque, gas flow, and vibration.',
         ],
       },
       {
@@ -153,7 +153,7 @@ export const locations: LocationPage[] = [
       {
         question: 'Can you calibrate on-site at our Anaheim facility?',
         answer:
-          'Yes. On-site calibration with NIST-traceable standards is available throughout Anaheim — we recommend booking about two weeks ahead. After-hours and weekend emergency service is available.',
+          'Yes. On-site calibration with NIST-traceable standards is available throughout Anaheim — we recommend booking about 3–4 weeks ahead. After-hours and weekend emergency service is available.',
       },
     ],
     neighbors: ['orange-county', 'placentia', 'fullerton', 'santa-ana'],
@@ -190,7 +190,7 @@ export const locations: LocationPage[] = [
         ],
       },
       {
-        heading: 'Eight disciplines, one stop',
+        heading: 'Nine disciplines, one stop',
         paragraphs: [
           'Dimensional hand tools, electrical and RF test equipment, temperature and humidity, pressure, mass and balances, pipettes, force and torque, and gas flow — all calibrated in-house at our A2LA-accredited facility (certificate 4296.01). We also repair dimensional tools with stocked OEM parts and resurface granite surface plates on-site.',
         ],
@@ -211,7 +211,7 @@ export const locations: LocationPage[] = [
       {
         question: 'What accreditation do your certificates carry?',
         answer:
-          'ISO/IEC 17025:2017 accredited by A2LA, certificate 4296.01, with ANSI/NCSL Z540-1 and Z540.3 compliance and NIST traceability on every measurement.',
+          'ISO/IEC 17025:2017 accredited by A2LA, certificate 4296.01, with ANSI/NCSL Z540-1 and Z540.3 compliance and NIST-traceable calibration where the discipline allows.',
       },
     ],
     neighbors: ['orange-county', 'placentia', 'anaheim', 'brea'],
@@ -364,7 +364,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'Placentia’s own accredited metrology lab',
         paragraphs: [
-          'American Gage has operated in north Orange County since 1968 and calls Placentia home — eight discipline-specific, environmentally controlled laboratories accredited to ISO/IEC 17025:2017 by A2LA (certificate 4296.01). For Placentia businesses, that means accredited calibration with zero shipping: drop instruments off on your way in, pick them up on the way home.',
+          'American Gage has operated in north Orange County since 1968 and calls Placentia home — nine discipline-specific, environmentally controlled laboratories accredited to ISO/IEC 17025:2017 by A2LA (certificate 4296.01). For Placentia businesses, that means accredited calibration with zero shipping: drop instruments off on your way in, pick them up on the way home.',
           'Local shops use us for the full range — dimensional hand tools, electrical test equipment, pressure gauges, torque wrenches, scales and balances — plus repairs, with parts stocked for major brands like Mitutoyo and Starrett.',
         ],
       },
@@ -379,7 +379,7 @@ export const locations: LocationPage[] = [
       {
         question: 'What does American Gage calibrate?',
         answer:
-          'Eight disciplines in-house: dimensional, electrical & RF, temperature & humidity, pressure, mass, pipettes, force & torque, and gas flow — plus repair services and on-site calibration.',
+          'Nine disciplines in-house: dimensional, electrical & RF, temperature & humidity, pressure, mass, pipettes, force & torque, gas flow, and vibration — plus repair services and on-site calibration.',
       },
     ],
     neighbors: ['orange-county', 'anaheim', 'fullerton', 'yorba-linda', 'brea'],
@@ -531,7 +531,7 @@ export const locations: LocationPage[] = [
       {
         question: 'Can you do on-site calibration in LA County?',
         answer:
-          'Yes — on-site service covers LA County, including AMS 2750 oven/furnace surveys, with about two weeks scheduling lead time and emergency after-hours options.',
+          'Yes — on-site service covers LA County, including AMS 2750 oven/furnace surveys, with about 3–4 weeks scheduling lead time and emergency after-hours options.',
       },
     ],
     neighbors: ['orange-county', 'anaheim', 'santa-ana'],

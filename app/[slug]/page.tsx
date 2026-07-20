@@ -218,7 +218,7 @@ export default async function InstrumentSeoPage({
 
       <CTASection
         heading={`Need ${page.name.toLowerCase()}?`}
-        body="Send your list — manufacturer, model, quantity — and we'll return scope, pricing, and turnaround within one business day."
+        body="Send your list — manufacturer, model, quantity — and we'll return scope, pricing, and turnaround within one to two business days."
         image={page.image.src}
       />
     </>

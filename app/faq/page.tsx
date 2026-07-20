@@ -47,7 +47,7 @@ export default function FaqPage() {
 
       <CTASection
         heading="Still have a question?"
-        body="Call (657) 216-2600 during business hours (Monday through Friday, 7:30 AM to 4:00 PM), or send a message and we'll respond within one business day."
+        body="Call (657) 216-2600 during business hours (Monday through Friday, 7:30 AM to 4:00 PM), or send a message and we'll respond within one to two business days."
       />
     </>
   );

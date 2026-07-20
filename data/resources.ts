@@ -222,7 +222,7 @@ export const resources: ResourceArticle[] = [
     category: 'Buyer Guides',
     readMinutes: 5,
     lead:
-      'Almost no calibration lab publishes prices — which makes budgeting feel like guesswork. Here’s an honest breakdown of what actually drives calibration cost, the numbers we do publish, and how to get a firm quote in one business day.',
+      'Almost no calibration lab publishes prices — which makes budgeting feel like guesswork. Here’s an honest breakdown of what actually drives calibration cost, the numbers we do publish, and how to get a firm quote fast.',
     sections: [
       {
         heading: 'The five factors that set the price',
@@ -238,14 +238,14 @@ export const resources: ResourceArticle[] = [
       {
         heading: 'The numbers we publish',
         paragraphs: [
-          'On-site calibration carries published minimums: $275 for dimensional/mechanical work, $400 for electrical, and $800 for RF, plus round-trip travel at $1.80 per mile ($65 minimum). In-lab pricing is quoted per instrument because the same model can need different service levels — but quotes come back within one business day, itemized, with no obligation.',
+          'On-site calibration carries published minimums: $275 for dimensional/mechanical work, $400 for electrical, and $800 for RF, plus round-trip travel at $1.80 per mile ($65 minimum). In-lab pricing is quoted per instrument because the same model can need different service levels — but quotes come back quickly, itemized, with no obligation.',
           'One honest caution when comparing quotes: a low per-item price for a certificate without data isn’t comparable to an accredited certificate with as-found/as-left readings and uncertainty. If your auditors expect data — AS9100, ISO 13485, and FDA-regulated programs generally do — price the service level your quality system actually needs.',
         ],
       },
       {
         heading: 'How to get an exact number fast',
         paragraphs: [
-          'Send your equipment list — manufacturer, model, quantity, and any compliance requirements your customers reference — through our quote form or to customerservice@americangage.com. We return scope confirmation, itemized pricing, and turnaround within one business day. Bundling a full toolroom onto one pickup usually beats piecemeal sends.',
+          'Send your equipment list — manufacturer, model, quantity, and any compliance requirements your customers reference — through our quote form or to customerservice@americangage.com. We return scope confirmation, itemized pricing, and turnaround within one to two business days. Bundling a full toolroom onto one pickup usually beats piecemeal sends.',
         ],
       },
     ],

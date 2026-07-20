@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { site } from '@/lib/site';
 
 export default function CTASection({
-  heading = 'Get a quote within one business day.',
+  heading = 'Request a detailed quote.',
   body = 'Send your equipment list: manufacturer, model, serial, and any compliance regimes your customers reference. We come back with scope confirmation, pricing, and turnaround.',
   image,
   imageAlt = '',

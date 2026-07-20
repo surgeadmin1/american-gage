@@ -40,7 +40,7 @@ export default function StickyQuote() {
       <div className="border-t border-white/10 bg-navy-950/95 shadow-[0_-4px_20px_rgba(5,20,38,0.35)] backdrop-blur">
         <div className="container-site flex items-center justify-between gap-3 py-2.5">
           <p className="hidden font-mono text-xs text-steel-300 md:block">
-            A2LA Accredited · Free SoCal pickup · Quotes within one business day
+            A2LA Accredited · Free SoCal pickup · Fast, detailed quotes
           </p>
           <div className="flex w-full items-center gap-2.5 md:w-auto">
             <Link

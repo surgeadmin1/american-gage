@@ -143,7 +143,7 @@ export default function ContactForm() {
       <div className="rounded-lg border border-navy-200 bg-navy-50 p-8 text-center">
         <p className="font-display text-xl font-bold text-navy-900">Quote request received.</p>
         <p className="mt-2 text-steel-600">
-          We review every request and respond within one business day. Need it faster? Call{' '}
+          We review every request and respond within one to two business days. Need it faster? Call{' '}
           <a href="tel:+16572162600" className="font-semibold text-accent-600">
             (657) 216-2600
           </a>

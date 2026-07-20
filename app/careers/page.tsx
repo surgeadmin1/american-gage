@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const highlights = [
   {
     title: 'Learn a real trade',
-    body: 'Metrology is a skill that stays in demand across aerospace, medical device, and defense. Train hands-on across eight disciplines — from gage blocks to RF racks — instead of being siloed into one bench.',
+    body: 'Metrology is a skill that stays in demand across aerospace, medical device, and defense. Train hands-on across nine disciplines — from gage blocks to RF racks — instead of being siloed into one bench.',
   },
   {
     title: 'A lab, not a call center',

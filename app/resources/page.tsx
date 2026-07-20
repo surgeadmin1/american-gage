@@ -69,7 +69,7 @@ export default function ResourcesPage() {
 
       <CTASection
         heading="Questions a guide can't answer?"
-        body="Call the lab — a metrologist picks up. Or send your equipment list and compliance requirements for a quote within one business day."
+        body="Call the lab — a metrologist picks up. Or send your equipment list and compliance requirements for a quote within one to two business days."
       />
     </>
   );
