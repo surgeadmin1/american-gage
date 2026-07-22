@@ -88,7 +88,7 @@ export async function POST(req: Request) {
   const address = [street, city, state, zip].filter(Boolean).join(', ');
 
   // Parse structured equipment for a proper columned table (falls back to text).
-  type Eq = { manufacturer?: string; model?: string; description?: string; quantity?: string; service?: string; interval?: string; notes?: string };
+  type Eq = { manufacturer?: string; model?: string; description?: string; quantity?: string; service?: string; interval?: string; customerId?: string; serial?: string; notes?: string };
   let equipmentRows: Eq[] = [];
   try {
     const parsed = JSON.parse(field(data, 'equipment_json'));
@@ -127,12 +127,14 @@ export async function POST(req: Request) {
 
   const equipmentTable = equipmentRows.length
     ? dataTable(
-        ['#', 'Item', 'Qty', 'Service', 'Interval', 'Notes'],
+        ['#', 'Item', 'Qty', 'Customer ID', 'Serial #', 'Service', 'Interval', 'Notes'],
         equipmentRows.map((r, i) => [
           String(i + 1),
           [r.manufacturer, r.model].filter(Boolean).join(' ') +
             (r.description ? ` — ${r.description}` : ''),
           r.quantity || '1',
+          r.customerId || '—',
+          r.serial || '—',
           r.service || '—',
           r.interval || '—',
           r.notes || '—',

@@ -44,6 +44,8 @@ type EquipmentRow = {
   quantity: string;
   service: string;
   interval: string;
+  customerId: string;
+  serial: string;
   notes: string;
 };
 
@@ -54,6 +56,8 @@ const emptyRow = (): EquipmentRow => ({
   quantity: '1',
   service: SERVICES[0],
   interval: INTERVALS[0],
+  customerId: '',
+  serial: '',
   notes: '',
 });
 
@@ -65,7 +69,7 @@ function equipmentToText(rows: EquipmentRow[]) {
   return rows
     .map(
       (r, i) =>
-        `${i + 1}. ${r.manufacturer} ${r.model}${r.description ? ` (${r.description})` : ''} ×${r.quantity} — ${r.service} — interval: ${r.interval}${r.notes ? ` — ${r.notes}` : ''}`
+        `${i + 1}. ${r.manufacturer} ${r.model}${r.description ? ` (${r.description})` : ''} ×${r.quantity} — ${r.service} — interval: ${r.interval} — Customer ID: ${r.customerId} — Serial #: ${r.serial}${r.notes ? ` — ${r.notes}` : ''}`
     )
     .join('\n');
 }
@@ -91,9 +95,16 @@ export default function ContactForm() {
   }
 
   function nextStep() {
-    const incomplete = rows.some((r) => !r.manufacturer.trim() && !r.model.trim() && !r.description.trim());
+    const incomplete = rows.some(
+      (r) =>
+        !r.description.trim() ||
+        !r.manufacturer.trim() ||
+        !r.model.trim() ||
+        !r.customerId.trim() ||
+        !r.serial.trim()
+    );
     if (incomplete) {
-      setRowError('Each item needs at least a manufacturer, model, or description — or remove the empty row.');
+      setRowError('Each item needs a description, manufacturer, model, Customer ID, and Serial # — or remove the extra row.');
       return;
     }
     setRowError('');
@@ -177,8 +188,9 @@ export default function ContactForm() {
       {step === 1 && (
         <div>
           <p className="text-sm text-steel-600">
-            Add each item you need calibrated. Not sure about a field? Leave it blank — we’ll
-            sort it out. You can also attach an equipment list in step 2.
+            Add each item you need calibrated. Description, manufacturer, model, Customer ID,
+            and Serial # are required; the rest is optional. Have a long list? You can also
+            attach a spreadsheet in step 2.
           </p>
 
           <div className="mt-5 space-y-4">
@@ -189,7 +201,7 @@ export default function ContactForm() {
                 </legend>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-6">
                   <div className="col-span-2 sm:col-span-2">
-                    <label className={labelCls} htmlFor={`desc-${i}`}>Description</label>
+                    <label className={labelCls} htmlFor={`desc-${i}`}>Description *</label>
                     <input
                       id={`desc-${i}`}
                       value={row.description}
@@ -199,7 +211,7 @@ export default function ContactForm() {
                     />
                   </div>
                   <div className="relative col-span-2 sm:col-span-2">
-                    <label className={labelCls} htmlFor={`mfr-${i}`}>Manufacturer</label>
+                    <label className={labelCls} htmlFor={`mfr-${i}`}>Manufacturer *</label>
                     <input
                       id={`mfr-${i}`}
                       value={row.manufacturer}
@@ -241,7 +253,7 @@ export default function ContactForm() {
                     )}
                   </div>
                   <div className="sm:col-span-1">
-                    <label className={labelCls} htmlFor={`model-${i}`}>Model</label>
+                    <label className={labelCls} htmlFor={`model-${i}`}>Model *</label>
                     <input
                       id={`model-${i}`}
                       value={row.model}
@@ -287,13 +299,33 @@ export default function ContactForm() {
                       ))}
                     </select>
                   </div>
-                  <div className="col-span-2 sm:col-span-2">
+                  <div className="col-span-1 sm:col-span-3">
+                    <label className={labelCls} htmlFor={`cust-${i}`}>Customer ID *</label>
+                    <input
+                      id={`cust-${i}`}
+                      value={row.customerId}
+                      onChange={(e) => updateRow(i, 'customerId', e.target.value)}
+                      placeholder="Your asset / ID tag"
+                      className={inputCls}
+                    />
+                  </div>
+                  <div className="col-span-1 sm:col-span-3">
+                    <label className={labelCls} htmlFor={`serial-${i}`}>Serial # *</label>
+                    <input
+                      id={`serial-${i}`}
+                      value={row.serial}
+                      onChange={(e) => updateRow(i, 'serial', e.target.value)}
+                      placeholder="Instrument serial number"
+                      className={inputCls}
+                    />
+                  </div>
+                  <div className="col-span-2 sm:col-span-6">
                     <label className={labelCls} htmlFor={`notes-${i}`}>Notes</label>
                     <input
                       id={`notes-${i}`}
                       value={row.notes}
                       onChange={(e) => updateRow(i, 'notes', e.target.value)}
-                      placeholder="Serial #, tolerance, etc."
+                      placeholder="Tolerance, accessories, special instructions, etc."
                       className={inputCls}
                     />
                   </div>
