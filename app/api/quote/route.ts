@@ -17,7 +17,7 @@ import { emailShell, infoTable, dataTable, sectionHeading, noteBlock } from '@/l
  */
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY ?? '';
-const FROM = process.env.QUOTE_FROM ?? 'American Gage Website <onboarding@resend.dev>';
+const FROM = process.env.QUOTE_FROM ?? 'American Gage <no-reply@mail.americangage.com>';
 // Recipient list — comma-separated. QUOTE_TO env var overrides (e.g. for testing).
 const TO = (process.env.QUOTE_TO ??
   'Rwilliamson@americangage.com, sales@americangage.com, info@americangage.com, nick@surgedm.com')

@@ -17,7 +17,7 @@ import { emailShell, infoTable, sectionHeading, noteBlock } from '@/lib/emailLay
  */
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY ?? '';
-const FROM = process.env.CAREERS_FROM ?? 'American Gage Careers <onboarding@resend.dev>';
+const FROM = process.env.CAREERS_FROM ?? 'American Gage Careers <no-reply@mail.americangage.com>';
 // Recipient list — comma-separated. CAREERS_TO env var overrides (e.g. for testing).
 const TO = (process.env.CAREERS_TO ??
   'Rwilliamson@americangage.com, sales@americangage.com, info@americangage.com, rarnold@americangage.com, nick@surgedm.com')
