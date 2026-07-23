@@ -45,9 +45,9 @@ export const locations: LocationPage[] = [
     name: 'Orange County, California',
     shortName: 'Orange County',
     kind: 'county',
-    metaTitle: 'Calibration Services in Orange County, CA | A2LA ISO 17025 Lab | American Gage',
+    metaTitle: 'Orange County Calibration Lab | A2LA ISO 17025 | American Gage',
     metaDescription:
-      'A2LA-accredited calibration lab based IN Orange County — not a satellite office. Free pickup routes Mon & Wed, 7–10 day turnaround. Dimensional, electrical, pressure, temperature & more. (657) 216-2600.',
+      'A2LA-accredited calibration in Orange County since 1968 — not a satellite office. Free Mon/Wed pickup, 7–10 day turnaround, all disciplines. Request a quote.',
     h1: 'Calibration Services in Orange County',
     lead:
       'Most “Orange County” calibration providers are satellite offices of labs headquartered somewhere else. American Gage has calibrated from inside Orange County since 1968 — an 8,000 sq ft, A2LA-accredited laboratory in Placentia with free pickup and delivery routes running through the county every Monday and Wednesday.',
@@ -116,9 +116,9 @@ export const locations: LocationPage[] = [
     name: 'Anaheim, California',
     shortName: 'Anaheim',
     kind: 'city',
-    metaTitle: 'Calibration Services in Anaheim, CA | A2LA Accredited Lab Next Door | American Gage',
+    metaTitle: 'Calibration Services in Anaheim, CA | American Gage',
     metaDescription:
-      'A2LA ISO 17025 calibration lab minutes from Anaheim — free pickup every Mon & Wed. Calipers, multimeters, pressure gauges, torque wrenches & more. Since 1968. (657) 216-2600.',
+      'Accredited ISO/IEC 17025 calibration for Anaheim manufacturers, minutes away in Placentia. Free pickup, fast turnaround, full-data certificates. Get a quote.',
     h1: 'Calibration Services in Anaheim',
     lead:
       'American Gage’s laboratory sits in Placentia, directly bordering Anaheim — your instruments travel minutes, not states. Free pickup and delivery runs through Anaheim every Monday and Wednesday.',
@@ -174,9 +174,9 @@ export const locations: LocationPage[] = [
     name: 'Fullerton, California',
     shortName: 'Fullerton',
     kind: 'city',
-    metaTitle: 'Calibration Services in Fullerton, CA | ISO 17025 Accredited | American Gage',
+    metaTitle: 'Calibration Services in Fullerton, CA | American Gage',
     metaDescription:
-      'Calibration lab bordering Fullerton: A2LA ISO/IEC 17025 accredited, free Mon & Wed pickup routes, 7–10 day turnaround, on-site service. Serving Fullerton manufacturers since 1968.',
+      'A2LA-accredited calibration next door in Placentia. Free pickup for Fullerton shops, 7–10 day turnaround, certificates with data. Request a quote today.',
     h1: 'Calibration Services in Fullerton',
     lead:
       'Fullerton’s manufacturers have an accredited calibration lab in the neighboring city: American Gage in Placentia, roughly five miles east, with free pickup through Fullerton every Monday and Wednesday since — well, longer than most quality managers have been quality managers.',
@@ -232,9 +232,9 @@ export const locations: LocationPage[] = [
     name: 'Irvine, California',
     shortName: 'Irvine',
     kind: 'city',
-    metaTitle: 'Calibration Services in Irvine, CA | Medical Device & Aerospace | American Gage',
+    metaTitle: 'Calibration Services in Irvine, CA | American Gage',
     metaDescription:
-      'A2LA ISO 17025 calibration for Irvine medical device, biotech & aerospace companies. Free Mon & Wed pickup, pipette & dimensional specialists, audit-ready certificates. (657) 216-2600.',
+      'ISO/IEC 17025 accredited calibration for Irvine aerospace & medtech. Free pickup, fast turnaround, audit-ready certificates. Request a quote from American Gage.',
     h1: 'Calibration Services in Irvine',
     lead:
       'Irvine concentrates more medical device, biotech, and aerospace engineering than almost anywhere in California — industries where calibration evidence gets audited line by line. American Gage delivers audit-ready, [A2LA](/accreditations)-accredited calibration with free pickup through Irvine every Monday and Wednesday.',
@@ -295,9 +295,9 @@ export const locations: LocationPage[] = [
     name: 'Santa Ana, California',
     shortName: 'Santa Ana',
     kind: 'city',
-    metaTitle: 'Calibration Services in Santa Ana, CA | A2LA ISO 17025 Lab | American Gage',
+    metaTitle: 'Calibration Services in Santa Ana, CA | American Gage',
     metaDescription:
-      'Accredited calibration for Santa Ana manufacturers — free Mon & Wed pickup routes, 7–10 day turnaround, dimensional to RF. A2LA ISO/IEC 17025 cert 4296.01. Call (657) 216-2600.',
+      'A2LA-accredited calibration for Santa Ana manufacturers. Free scheduled pickup, 7–10 day turnaround, full-data ISO 17025 certificates. Request a quote.',
     h1: 'Calibration Services in Santa Ana',
     lead:
       'Santa Ana is Orange County’s seat and one of its densest manufacturing cities. American Gage has served its shops from 15 minutes up the road since 1968 — with free pickup and delivery through Santa Ana every Monday and Wednesday.',
@@ -353,9 +353,9 @@ export const locations: LocationPage[] = [
     name: 'Placentia, California',
     shortName: 'Placentia',
     kind: 'city',
-    metaTitle: 'Calibration Lab in Placentia, CA | American Gage — Est. 1968',
+    metaTitle: 'Placentia Calibration Lab | A2LA ISO 17025 | American Gage',
     metaDescription:
-      'American Gage IS Placentia’s calibration lab — 8,000 sq ft, A2LA ISO 17025 accredited, at 1131 S Richfield Rd. Walk-in drop-offs welcome Mon–Fri. (657) 216-2600.',
+      'Your local A2LA-accredited calibration lab in Placentia, CA since 1968. Walk-in drop-off, fast turnaround, nine disciplines under one roof. Request a quote.',
     h1: 'Calibration Lab in Placentia',
     lead:
       'Searching for a calibration lab in Placentia? You found the actual one. American Gage’s 8,000 sq ft, [A2LA](/accreditations)-accredited laboratory is at 1131 S Richfield Rd — walk-in drop-offs welcome every weekday.',
@@ -400,9 +400,9 @@ export const locations: LocationPage[] = [
     name: 'Brea, California',
     shortName: 'Brea',
     kind: 'city',
-    metaTitle: 'Calibration Services in Brea, CA | Accredited Lab 10 Minutes Away | American Gage',
+    metaTitle: 'Calibration Services in Brea, CA | American Gage',
     metaDescription:
-      'A2LA ISO 17025 calibration lab ~4 miles from Brea. Free Mon & Wed pickup, walk-in drop-offs, 7–10 day turnaround. Dimensional, electrical, pressure & more. (657) 216-2600.',
+      'A2LA-accredited calibration minutes from Brea in Placentia. Free pickup, 7–10 day turnaround, ISO 17025 certificates with data. Request a quote today.',
     h1: 'Calibration Services in Brea',
     lead:
       'Brea’s industrial parks are about ten minutes from our door. American Gage — [A2LA](/accreditations)-accredited, in Placentia since 1968 — picks up in Brea every Monday and Wednesday, free.',
@@ -447,9 +447,9 @@ export const locations: LocationPage[] = [
     name: 'Yorba Linda, California',
     shortName: 'Yorba Linda',
     kind: 'city',
-    metaTitle: 'Calibration Services in Yorba Linda, CA | Lab Minutes Away | American Gage',
+    metaTitle: 'Calibration Services in Yorba Linda, CA | American Gage',
     metaDescription:
-      'Yorba Linda’s nearest A2LA ISO 17025 calibration lab — bordering Placentia, free Mon & Wed pickup, drop-offs welcome. Since 1968. Call (657) 216-2600.',
+      'Local A2LA-accredited calibration for Yorba Linda, next door in Placentia. Free pickup, fast turnaround, full-data certificates. Request a quote.',
     h1: 'Calibration Services in Yorba Linda',
     lead:
       'Yorba Linda borders Placentia — which makes American Gage the calibration lab around the corner. Free pickup runs through Yorba Linda every Monday and Wednesday, and drop-offs take minutes.',
@@ -494,9 +494,9 @@ export const locations: LocationPage[] = [
     name: 'Los Angeles, California',
     shortName: 'Los Angeles',
     kind: 'region',
-    metaTitle: 'Calibration Services in Los Angeles, CA | Free Tue & Thu Pickup | American Gage',
+    metaTitle: 'Los Angeles Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO 17025 accredited calibration serving Los Angeles County — free pickup routes every Tuesday & Thursday, 7–10 day turnaround, on-site service. Est. 1968. (657) 216-2600.',
+      'A2LA-accredited calibration across LA County. Free Tue/Thu pickup, 7–10 day turnaround, AS9100 & ISO 13485-ready certificates. Request a quote.',
     h1: 'Calibration Services in Los Angeles',
     lead:
       'American Gage runs free pickup and delivery routes through Los Angeles County every Tuesday and Thursday — bringing LA manufacturers the same [A2LA](/accreditations)-accredited, single-lab service Orange County has used since 1968.',
@@ -558,9 +558,9 @@ export const locations: LocationPage[] = [
     shortName: 'California',
     kind: 'state',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in California | A2LA ISO 17025 Lab | American Gage',
+    metaTitle: 'California Calibration Lab | A2LA ISO 17025 | American Gage',
     metaDescription:
-      'A2LA-accredited (ISO/IEC 17025) calibration lab serving all of California. Local pickup across Southern California and fast mail-in service statewide. Dimensional, electrical, pressure, temperature & more.',
+      'A2LA-accredited calibration statewide — SoCal free pickup plus fast mail-in for Northern California and beyond. All disciplines, full data. Request a quote.',
     h1: 'Calibration Services Across California',
     lead:
       'American Gage has calibrated for California manufacturers since 1968 from our lab in Placentia. Southern California companies get free scheduled pickup; the rest of the state — the Bay Area, Sacramento, the Central Valley, and beyond — ships in and gets the same [A2LA](/accreditations)-accredited certificates with fast turnaround.',
@@ -615,9 +615,9 @@ export const locations: LocationPage[] = [
     shortName: 'Texas',
     kind: 'state',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Texas | A2LA ISO 17025 Mail-In Lab | American Gage',
+    metaTitle: 'Texas Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration by mail-in for Texas manufacturers — aerospace, energy, semiconductors, and defense. Full data certificates, fast turnaround, no sub-contracting.',
+      'A2LA ISO/IEC 17025 calibration for Texas aerospace, energy & semiconductors — by mail-in. Full-data certificates, fast turnaround. Request a quote.',
     h1: 'Calibration Services for Texas Manufacturers',
     lead:
       'From the aerospace and defense corridor around Fort Worth to the energy instrumentation of Houston and the semiconductor fabs near Austin, Texas runs on measurement. American Gage provides [A2LA](/accreditations)-accredited calibration to Texas companies by mail-in, with certificates built to satisfy the toughest customer audits.',
@@ -672,9 +672,9 @@ export const locations: LocationPage[] = [
     shortName: 'Arizona',
     kind: 'state',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Arizona | A2LA ISO 17025 Mail-In Lab | American Gage',
+    metaTitle: 'Arizona Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA-accredited calibration for Arizona’s semiconductor, aerospace, and defense manufacturers by mail-in. Full-data ISO/IEC 17025 certificates with fast, reliable turnaround.',
+      'A2LA mail-in calibration for Arizona semiconductor, aerospace & defense makers. RF/microwave capable, full-data certs, fast turnaround. Request a quote.',
     h1: 'Calibration Services for Arizona Manufacturers',
     lead:
       'Arizona has become one of the country’s most important semiconductor and aerospace-defense hubs. American Gage supports Phoenix, Tucson, and the wider state with [A2LA](/accreditations)-accredited mail-in calibration and certificates that stand up to semiconductor and defense audits alike.',
@@ -729,9 +729,9 @@ export const locations: LocationPage[] = [
     shortName: 'Washington',
     kind: 'state',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Washington State | ISO 17025 Mail-In | American Gage',
+    metaTitle: 'Washington Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Washington’s aerospace and technology manufacturers by mail-in. Full-data certificates for AS9100 aerospace supply chains.',
+      'A2LA ISO/IEC 17025 mail-in calibration for Washington aerospace & tech manufacturers. AS9100-ready certificates with data, fast turnaround. Request a quote.',
     h1: 'Calibration Services for Washington Manufacturers',
     lead:
       'Washington is aerospace country — Boeing and a deep tier of [AS9100](/resources/as9100-calibration-requirements) suppliers around the Puget Sound, alongside a strong technology and medical-device base. American Gage delivers [A2LA](/accreditations)-accredited mail-in calibration with the documented, traceable certificates aerospace primes expect.',
@@ -786,9 +786,9 @@ export const locations: LocationPage[] = [
     shortName: 'Massachusetts',
     kind: 'state',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Massachusetts | ISO 17025 Mail-In | American Gage',
+    metaTitle: 'Massachusetts Calibration | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Massachusetts biotech, medical device, and defense-electronics manufacturers by mail-in. Full-data certificates, fast turnaround.',
+      'A2LA-accredited mail-in calibration for Massachusetts biotech, medical device & defense. Pipettes, balances, loggers, full-data certs. Request a quote.',
     h1: 'Calibration Services for Massachusetts Manufacturers',
     lead:
       'Massachusetts is a powerhouse of biotech, medical device, and defense electronics, from the Cambridge/Boston life-sciences cluster to the state’s established defense contractors. American Gage supports them with [A2LA](/accreditations)-accredited mail-in calibration and certificates built for [ISO 13485](/resources/iso-13485-calibration-requirements) and defense audits.',
@@ -843,9 +843,9 @@ export const locations: LocationPage[] = [
     shortName: 'Michigan',
     kind: 'state',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Michigan | ISO 17025 Mail-In Lab | American Gage',
+    metaTitle: 'Michigan Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Michigan automotive, tooling, and defense manufacturers by mail-in. Certificates aligned with IATF 16949 measurement control.',
+      'A2LA ISO/IEC 17025 mail-in calibration for Michigan automotive & tooling. IATF 16949-aligned, dimensional & torque, full-data certs. Request a quote.',
     h1: 'Calibration Services for Michigan Manufacturers',
     lead:
       'Michigan is the heart of American automotive manufacturing and its tooling, die, and ground-vehicle defense supply chains. American Gage supports Michigan companies with A2LA-accredited mail-in calibration and certificates that align with IATF 16949 measurement-control expectations.',
@@ -901,9 +901,9 @@ export const locations: LocationPage[] = [
     shortName: 'San Jose',
     kind: 'city',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in San Jose & Silicon Valley | ISO 17025 | American Gage',
+    metaTitle: 'San Jose Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Silicon Valley semiconductor, electronics, and hardware R&D companies by mail-in. Electrical, RF, dimensional & more with full-data certificates.',
+      'A2LA-accredited mail-in calibration for Silicon Valley electronics & semiconductors. Automated RF/microwave, fast turnaround, full-data certs. Request a quote.',
     h1: 'Calibration Services in San Jose & Silicon Valley',
     lead:
       'Silicon Valley builds the world’s most advanced electronics and hardware, and every one of those products depends on precise measurement. American Gage supports San Jose and the wider Bay Area tech corridor with [A2LA](/accreditations)-accredited mail-in calibration — including automated [RF/microwave](/capabilities/electrical) capability for high-frequency work.',
@@ -958,9 +958,9 @@ export const locations: LocationPage[] = [
     shortName: 'Houston',
     kind: 'city',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Houston, TX | ISO 17025 Mail-In | American Gage',
+    metaTitle: 'Houston Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Houston energy, petrochemical, and aerospace instrumentation by mail-in. Pressure, temperature, electrical & more with full-data certificates.',
+      'A2LA ISO/IEC 17025 mail-in calibration for Houston energy & aerospace. Deep pressure & temperature capability, full-data certificates. Request a quote.',
     h1: 'Calibration Services in Houston',
     lead:
       'Houston runs on process instrumentation — energy, oil and gas, petrochemical, and the aerospace work anchored by NASA. American Gage supports Houston companies with [A2LA](/accreditations)-accredited mail-in calibration, with deep pressure and temperature capability for process and safety instrumentation.',
@@ -1015,9 +1015,9 @@ export const locations: LocationPage[] = [
     shortName: 'Boston',
     kind: 'city',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Boston, MA | ISO 17025 Mail-In | American Gage',
+    metaTitle: 'Boston Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Boston and Cambridge biotech, medical device, and research labs by mail-in. Pipettes, balances, data loggers & more with full-data certificates.',
+      'A2LA-accredited mail-in calibration for Boston & Cambridge biotech and medical device. Pipettes, balances, loggers, full-data certs. Request a quote.',
     h1: 'Calibration Services in Boston & Cambridge',
     lead:
       'The Boston–Cambridge corridor is one of the world’s densest concentrations of biotech, life sciences, and medical-device innovation. American Gage supports its labs and manufacturers with [A2LA](/accreditations)-accredited mail-in calibration for the [pipettes](/pipette-calibration), balances, and environmental instruments that research and production depend on.',
@@ -1072,9 +1072,9 @@ export const locations: LocationPage[] = [
     shortName: 'Seattle',
     kind: 'city',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Seattle, WA | ISO 17025 Mail-In | American Gage',
+    metaTitle: 'Seattle Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Seattle and Puget Sound aerospace and technology manufacturers by mail-in. Full-data certificates for AS9100 supply chains.',
+      'A2LA ISO/IEC 17025 mail-in calibration for Seattle & Puget Sound aerospace. AS9100-ready certificates with data, fast turnaround. Request a quote.',
     h1: 'Calibration Services in Seattle & the Puget Sound',
     lead:
       'Seattle and the Puget Sound anchor one of the largest aerospace manufacturing clusters in the world, surrounded by aviation MRO, technology hardware, and medical device. American Gage supports them with [A2LA](/accreditations)-accredited mail-in calibration and the documented certificates aerospace primes require.',
@@ -1129,9 +1129,9 @@ export const locations: LocationPage[] = [
     shortName: 'Wichita',
     kind: 'city',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Wichita, KS | Aviation ISO 17025 Mail-In | American Gage',
+    metaTitle: 'Wichita Aviation Calibration | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Wichita — the Air Capital — aviation manufacturers by mail-in. Dimensional, torque, and full-data certificates for AS9100 aerospace.',
+      'A2LA-accredited mail-in calibration for Wichita aviation manufacturers. Dimensional & torque for AS9100 supply chains, full-data certs. Request a quote.',
     h1: 'Calibration Services in Wichita — the Air Capital',
     lead:
       'Wichita calls itself the Air Capital of the World for good reason — it is one of the densest aircraft-manufacturing clusters anywhere. American Gage supports Wichita’s aviation manufacturers and their [AS9100](/resources/as9100-calibration-requirements) supply chain with A2LA-accredited mail-in calibration and fully documented certificates.',
@@ -1186,9 +1186,9 @@ export const locations: LocationPage[] = [
     shortName: 'Phoenix',
     kind: 'city',
     nationalMailIn: true,
-    metaTitle: 'Calibration Services in Phoenix, AZ | ISO 17025 Mail-In | American Gage',
+    metaTitle: 'Phoenix Calibration Services | ISO 17025 | American Gage',
     metaDescription:
-      'A2LA ISO/IEC 17025 accredited calibration for Phoenix semiconductor, aerospace, and electronics manufacturers by mail-in. Electrical, RF, dimensional & more with full-data certificates.',
+      'A2LA ISO/IEC 17025 mail-in calibration for Phoenix semiconductor & aerospace. RF/microwave capable, full-data certificates, fast turnaround. Request a quote.',
     h1: 'Calibration Services in Phoenix',
     lead:
       'Phoenix has become a national center for semiconductor fabrication and a long-established aerospace and electronics hub. American Gage supports Phoenix-area manufacturers with [A2LA](/accreditations)-accredited mail-in calibration, including automated [RF/microwave](/capabilities/electrical) capability for high-frequency work.',
