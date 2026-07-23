@@ -8,11 +8,14 @@ import { locations } from '@/data/locations';
 import { pickupRoutes } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Service Areas — Calibration Across Southern California',
+  title: 'Service Areas — Calibration in SoCal & Nationwide Mail-In',
   description:
-    'American Gage provides A2LA-accredited calibration across Southern California with free pickup routes: Orange County (Mon & Wed), Los Angeles County (Tue & Thu), Inland Empire (Fri).',
+    'American Gage provides A2LA-accredited calibration with free pickup across Southern California (Orange County, LA County, Inland Empire) and fast mail-in service to manufacturers nationwide.',
   alternates: { canonical: '/locations' },
 };
+
+const local = locations.filter((l) => !l.nationalMailIn);
+const nationwide = locations.filter((l) => l.nationalMailIn);
 
 export default function LocationsPage() {
   return (
@@ -20,8 +23,8 @@ export default function LocationsPage() {
       <Breadcrumbs items={[{ name: 'Service Areas', href: '/locations' }]} />
       <PageHero
         eyebrow="Service Areas"
-        title="One accredited lab. Routes across Southern California."
-        lead="Every instrument is calibrated at our A2LA-accredited laboratory in Placentia — and our vans bring the lab to you, with free scheduled pickup and delivery across the region."
+        title="One accredited lab. Local routes and nationwide mail-in."
+        lead="Every instrument is calibrated at our A2LA-accredited laboratory in Placentia. Southern California gets free scheduled pickup and delivery; the rest of the country ships in and gets the same accredited certificates with fast turnaround."
       />
 
       <div className="container-site pb-16">
@@ -45,8 +48,11 @@ export default function LocationsPage() {
           </table>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {locations.map((loc) => (
+        <h2 className="font-display text-xl font-bold text-navy-900">
+          Southern California — free pickup & delivery
+        </h2>
+        <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {local.map((loc) => (
             <Link
               key={loc.slug}
               href={`/locations/${loc.slug}`}
@@ -62,17 +68,48 @@ export default function LocationsPage() {
                 />
               </div>
               <div className="p-5">
-                <h2 className="flex items-baseline justify-between gap-2 font-display text-lg font-bold text-navy-800 group-hover:text-accent-600">
+                <h3 className="flex items-baseline justify-between gap-2 font-display text-lg font-bold text-navy-800 group-hover:text-accent-600">
                   {loc.shortName}
                   <span aria-hidden="true" className="text-accent-500 transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
-                </h2>
+                </h3>
                 <p className="mt-1.5 font-mono text-xs text-steel-500">{loc.proximity.routeDays}</p>
               </div>
             </Link>
           ))}
         </div>
+
+        {nationwide.length > 0 && (
+          <>
+            <h2 className="mt-14 font-display text-xl font-bold text-navy-900">
+              Nationwide — mail-in calibration
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm text-steel-600">
+              Outside Southern California? Ship your instruments to our Placentia lab for the
+              same A2LA-accredited calibration, typically returned in 7–10 business days.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {nationwide.map((loc) => (
+                <Link
+                  key={loc.slug}
+                  href={`/locations/${loc.slug}`}
+                  className="group flex items-center justify-between gap-2 rounded-lg border border-steel-200 px-5 py-4 transition hover:border-accent-500 hover:shadow-sm"
+                >
+                  <span className="font-display font-semibold text-navy-800 group-hover:text-accent-600">
+                    {loc.shortName}
+                    <span className="ml-2 font-mono text-[11px] uppercase tracking-wide text-steel-400">
+                      {loc.kind === 'state' ? 'State' : 'Metro'}
+                    </span>
+                  </span>
+                  <span aria-hidden="true" className="text-accent-500 transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       <CTASection

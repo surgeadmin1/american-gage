@@ -3,6 +3,7 @@ import { capabilities } from '@/data/capabilities';
 import { locations } from '@/data/locations';
 import { instrumentPages } from '@/data/instrumentPages';
 import { resources } from '@/data/resources';
+import { blogPosts } from '@/data/blog';
 import { site } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -67,6 +68,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+    })),
+    {
+      url: `${site.url}/blog`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    ...blogPosts.map((p) => ({
+      url: `${site.url}/blog/${p.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: p.type === 'pillar' ? 0.7 : 0.6,
     })),
   ];
 }

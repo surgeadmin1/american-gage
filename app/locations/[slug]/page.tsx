@@ -80,7 +80,7 @@ export default async function LocationPage({
       {/* Hero */}
       <div className="container-site grid items-center gap-10 py-10 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Service Area · {loc.kind === 'city' ? 'City' : loc.kind === 'county' ? 'County' : 'Region'}</p>
+          <p className="eyebrow">Service Area · {loc.kind === 'city' ? 'City' : loc.kind === 'county' ? 'County' : loc.kind === 'state' ? 'State' : 'Region'}</p>
           <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl lg:text-5xl">
             {loc.h1}
           </h1>
@@ -115,11 +115,18 @@ export default async function LocationPage({
       {/* Proximity band */}
       <section aria-label="Location logistics" className="border-y border-steel-200 bg-navy-50">
         <div className="container-site grid gap-6 py-8 sm:grid-cols-3">
-          {[
-            { label: 'Distance', value: loc.proximity.distance },
-            { label: 'Drive time', value: loc.proximity.drive },
-            { label: 'Route days', value: loc.proximity.routeDays },
-          ].map((item) => (
+          {(loc.nationalMailIn
+            ? [
+                { label: 'Service model', value: loc.proximity.distance },
+                { label: 'Inbound shipping', value: loc.proximity.drive },
+                { label: 'Turnaround', value: loc.proximity.routeDays },
+              ]
+            : [
+                { label: 'Distance', value: loc.proximity.distance },
+                { label: 'Drive time', value: loc.proximity.drive },
+                { label: 'Route days', value: loc.proximity.routeDays },
+              ]
+          ).map((item) => (
             <div key={item.label}>
               <p className="font-mono text-xs uppercase tracking-wider text-steel-500">{item.label}</p>
               <p className="mt-1 font-display font-semibold text-navy-800">{item.value}</p>
@@ -180,7 +187,10 @@ export default async function LocationPage({
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-steel-300">
             8,000 sq ft of discipline-specific, environmentally controlled laboratories in
             Placentia — accredited to ISO/IEC 17025:2017 by A2LA, certificate #
-            {site.a2laCertNumber}. Nothing is forwarded to out-of-state labs.
+            {site.a2laCertNumber}.{' '}
+            {loc.nationalMailIn
+              ? 'Every instrument you ship is calibrated here and returned to you — never sub-contracted to another lab.'
+              : 'Nothing is forwarded to out-of-state labs.'}
           </p>
         </div>
       </section>
@@ -244,6 +254,29 @@ export default async function LocationPage({
         </ul>
       </section>
 
+      {/* Authoritative sources */}
+      {loc.externalLinks && loc.externalLinks.length > 0 && (
+        <section className="container-site pb-2 pt-6">
+          <h2 className="font-mono text-xs uppercase tracking-wider text-steel-500">
+            Authoritative references
+          </h2>
+          <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            {loc.externalLinks.map((l) => (
+              <li key={l.href}>
+                <a
+                  href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-navy-700 hover:text-accent-600"
+                >
+                  {l.label} <span className="text-steel-400">({l.source}) ↗</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {/* Nearby areas */}
       {neighbors.length > 0 && (
         <section className="container-site py-10">
@@ -264,7 +297,11 @@ export default async function LocationPage({
 
       <CTASection
         heading={`Need calibration in ${loc.shortName}?`}
-        body={`Send your equipment list and we'll confirm scope, pricing, and turnaround within one to two business days — with free pickup on the ${loc.proximity.routeDays.split(' — ')[0]} route.`}
+        body={
+          loc.nationalMailIn
+            ? `Send your equipment list and we'll confirm scope, pricing, and turnaround within one to two business days — then ship your instruments to our Placentia lab for accredited calibration and return.`
+            : `Send your equipment list and we'll confirm scope, pricing, and turnaround within one to two business days — with free pickup on the ${loc.proximity.routeDays.split(' — ')[0]} route.`
+        }
       />
     </>
   );
