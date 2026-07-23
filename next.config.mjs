@@ -15,7 +15,6 @@ const nextConfig = {
       { source: '/2016/05/a-sound-idea-solar-panels-as-sonic-barriers-7', destination: '/capabilities/pipettes', permanent: true },
       { source: '/2016/04/a-sound-idea-solar-panels-as-sonic-barriers-10', destination: '/services', permanent: true },
       { source: '/2016/03/a-sound-idea-solar-panels-as-sonic-barriers-8', destination: '/services', permanent: true },
-      { source: '/blog', destination: '/faq', permanent: false },
     ];
   },
 };
