@@ -199,8 +199,8 @@ export default function ContactForm() {
                 <legend className="px-1.5 font-mono text-xs font-semibold text-steel-500">
                   Item {String(i + 1).padStart(2, '0')}
                 </legend>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-6">
-                  <div className="col-span-2 sm:col-span-2">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-12">
+                  <div className="col-span-2 sm:col-span-4">
                     <label className={labelCls} htmlFor={`desc-${i}`}>Description *</label>
                     <input
                       id={`desc-${i}`}
@@ -210,7 +210,7 @@ export default function ContactForm() {
                       className={inputCls}
                     />
                   </div>
-                  <div className="relative col-span-2 sm:col-span-2">
+                  <div className="relative col-span-2 sm:col-span-3">
                     <label className={labelCls} htmlFor={`mfr-${i}`}>Manufacturer *</label>
                     <input
                       id={`mfr-${i}`}
@@ -252,7 +252,7 @@ export default function ContactForm() {
                       </ul>
                     )}
                   </div>
-                  <div className="sm:col-span-1">
+                  <div className="sm:col-span-3">
                     <label className={labelCls} htmlFor={`model-${i}`}>Model / Range Capacity *</label>
                     <input
                       id={`model-${i}`}
@@ -262,7 +262,7 @@ export default function ContactForm() {
                       className={inputCls}
                     />
                   </div>
-                  <div className="sm:col-span-1">
+                  <div className="sm:col-span-2">
                     <label className={labelCls} htmlFor={`qty-${i}`}>Qty</label>
                     <input
                       id={`qty-${i}`}
@@ -273,7 +273,7 @@ export default function ContactForm() {
                       className={inputCls}
                     />
                   </div>
-                  <div className="col-span-2 sm:col-span-3">
+                  <div className="col-span-2 sm:col-span-8">
                     <label className={labelCls} htmlFor={`svc-${i}`}>Calibration service</label>
                     <select
                       id={`svc-${i}`}
@@ -286,7 +286,7 @@ export default function ContactForm() {
                       ))}
                     </select>
                   </div>
-                  <div className="sm:col-span-1">
+                  <div className="sm:col-span-4">
                     <label className={labelCls} htmlFor={`int-${i}`}>Interval</label>
                     <select
                       id={`int-${i}`}
@@ -299,7 +299,7 @@ export default function ContactForm() {
                       ))}
                     </select>
                   </div>
-                  <div className="col-span-1 sm:col-span-3">
+                  <div className="col-span-1 sm:col-span-6">
                     <label className={labelCls} htmlFor={`cust-${i}`}>Customer ID *</label>
                     <input
                       id={`cust-${i}`}
@@ -309,7 +309,7 @@ export default function ContactForm() {
                       className={inputCls}
                     />
                   </div>
-                  <div className="col-span-1 sm:col-span-3">
+                  <div className="col-span-1 sm:col-span-6">
                     <label className={labelCls} htmlFor={`tol-${i}`}>Accuracy / Tolerance *</label>
                     <input
                       id={`tol-${i}`}
@@ -319,7 +319,7 @@ export default function ContactForm() {
                       className={inputCls}
                     />
                   </div>
-                  <div className="col-span-2 sm:col-span-6">
+                  <div className="col-span-2 sm:col-span-12">
                     <label className={labelCls} htmlFor={`notes-${i}`}>Notes</label>
                     <input
                       id={`notes-${i}`}
