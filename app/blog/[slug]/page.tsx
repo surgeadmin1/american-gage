@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CTASection from '@/components/CTASection';
 import JsonLd from '@/components/JsonLd';
+import RichText from '@/components/RichText';
 import { faqSchema } from '@/lib/schema';
 import { site } from '@/lib/site';
 import {
@@ -85,7 +86,7 @@ export default async function BlogPostPage({
           {post.title}
         </h1>
         <div className="gauge-ticks mt-5" aria-hidden="true" />
-        <p className="mt-6 text-lg leading-relaxed text-steel-600">{post.lead}</p>
+        <p className="mt-6 text-lg leading-relaxed text-steel-600"><RichText text={post.lead} /></p>
 
         {/* Hero image */}
         <figure className="mt-8">
@@ -120,7 +121,7 @@ export default async function BlogPostPage({
               <h2 className="font-display text-2xl font-bold text-navy-900">{s.heading}</h2>
               {s.paragraphs.map((p, i) => (
                 <p key={i} className="mt-4 leading-relaxed text-steel-700">
-                  {p}
+                  <RichText text={p} />
                 </p>
               ))}
               {s.bullets && (

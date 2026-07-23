@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CTASection from '@/components/CTASection';
 import JsonLd from '@/components/JsonLd';
+import RichText from '@/components/RichText';
 import { serviceSchema, faqSchema } from '@/lib/schema';
 import { locations, getLocation } from '@/data/locations';
 import { capabilities } from '@/data/capabilities';
@@ -85,7 +86,7 @@ export default async function LocationPage({
             {loc.h1}
           </h1>
           <div className="gauge-ticks mt-5" aria-hidden="true" />
-          <p className="mt-6 text-lg leading-relaxed text-steel-600">{loc.lead}</p>
+          <p className="mt-6 text-lg leading-relaxed text-steel-600"><RichText text={loc.lead} /></p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary">
               Request a Quote
@@ -143,7 +144,7 @@ export default async function LocationPage({
             <div className="gauge-ticks mt-4" aria-hidden="true" />
             {s.paragraphs.map((p, i) => (
               <p key={i} className="mt-5 leading-relaxed text-steel-700">
-                {p}
+                <RichText text={p} />
               </p>
             ))}
           </section>

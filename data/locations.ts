@@ -66,13 +66,13 @@ export const locations: LocationPage[] = [
         heading: 'An Orange County calibration lab, not an Orange County sales office',
         paragraphs: [
           'When your quality system needs a calibration supplier, the difference between a lab and a drop point matters. Instruments sent through a national chain’s local office typically ship to another state, wait in a national queue, and come back on the chain’s schedule. Everything we calibrate is calibrated here — at 1131 S Richfield Rd in Placentia — by technicians you can call directly.',
-          'That’s how we’ve operated since 1968, when American Gage opened as a dimensional lab serving Orange County’s aerospace machine shops. Over one million calibrations later, the lab covers nine disciplines in discipline-specific, environmentally controlled rooms: dimensional, electrical and RF, temperature and humidity, pressure, mass, pipettes, force and torque, gas flow, and vibration.',
+          'That’s how we’ve operated since 1968, when American Gage opened as a dimensional lab serving Orange County’s aerospace machine shops. Over one million calibrations later, the lab covers nine disciplines in discipline-specific, environmentally controlled rooms: dimensional, [electrical and RF](/capabilities/electrical), temperature and humidity, pressure, mass, [pipettes](/pipette-calibration), force and torque, gas flow, and vibration.',
         ],
       },
       {
         heading: 'Built for Orange County’s regulated manufacturers',
         paragraphs: [
-          'Orange County’s manufacturing economy is dominated by exactly the industries that audit calibration hardest: aerospace and defense suppliers working to AS9100 and Nadcap, medical device manufacturers under ISO 13485 and FDA 21 CFR 820, biotech and pharma labs following GMP, and electronics builders. Every certificate we issue documents as-found/as-left data, measurement uncertainty, NIST traceability, and the ANSI/NCSL Z540.3 decision rule with TUR — the evidence package those audits ask for.',
+          'Orange County’s manufacturing economy is dominated by exactly the industries that audit calibration hardest: aerospace and defense suppliers working to [AS9100](/resources/as9100-calibration-requirements) and Nadcap, medical device manufacturers under [ISO 13485](/resources/iso-13485-calibration-requirements) and FDA 21 CFR 820, biotech and pharma labs following GMP, and electronics builders. Every certificate we issue documents as-found/as-left data, measurement uncertainty, NIST traceability, and the ANSI/NCSL Z540.3 decision rule with TUR — the evidence package those audits ask for.',
           'We hold ISO/IEC 17025:2017 accreditation through A2LA (certificate 4296.01), comply with ANSI/NCSL Z540-1 and Z540.3, and operate a quality system compliant with ISO 10012 and applicable portions of AS9100, IATF 16949, ISO 13485, and FDA 21 CFR requirements.',
         ],
       },
@@ -136,14 +136,14 @@ export const locations: LocationPage[] = [
       {
         heading: 'The calibration lab next door to Anaheim',
         paragraphs: [
-          'Anaheim is more than a tourism town — it’s one of Orange County’s largest industrial bases, from the manufacturing corridors along the 57 and 91 to the Anaheim Canyon business district. Those shops run on calibrated instruments: calipers and micrometers on inspection benches, torque wrenches on assembly lines, pressure gauges and multimeters in maintenance carts.',
+          'Anaheim is more than a tourism town — it’s one of Orange County’s largest industrial bases, from the manufacturing corridors along the 57 and 91 to the Anaheim Canyon business district. Those shops run on calibrated instruments: [calipers](/caliper-calibration) and [micrometers](/micrometer-calibration) on inspection benches, [torque wrenches](/torque-wrench-calibration) on assembly lines, pressure gauges and multimeters in maintenance carts.',
           'Our A2LA-accredited lab is minutes away in neighboring Placentia. That proximity is practical, not just geographic: same-week drop-offs, free route pickup twice a week, and a technician you can actually call when a certificate raises a question. Since 1968, Anaheim manufacturers have been part of our home territory.',
         ],
       },
       {
         heading: 'What Anaheim companies send us',
         paragraphs: [
-          'The heaviest Anaheim workload is dimensional — calipers, micrometers, indicators, gage blocks, thread gages — followed by electrical test equipment, torque tools, and pressure instruments. All eight of our disciplines are available with ISO/IEC 17025:2017 accredited certificates including as-found/as-left data, uncertainty, and NIST traceability.',
+          'The heaviest Anaheim workload is dimensional — calipers, micrometers, indicators, [gage blocks](/gage-block-calibration), thread gages — followed by electrical test equipment, torque tools, and pressure instruments. All eight of our disciplines are available with ISO/IEC 17025:2017 accredited certificates including as-found/as-left data, uncertainty, and NIST traceability.',
         ],
       },
     ],
@@ -195,13 +195,13 @@ export const locations: LocationPage[] = [
         heading: 'Fullerton’s local option for accredited calibration',
         paragraphs: [
           'Fullerton has a deep manufacturing bench — aerospace and defense suppliers, food processing, electronics, and the machine shops that support them — but most calibration providers treat it as a stop on the way to somewhere else. We’re headquartered one city over. Instruments from Fullerton reach our Placentia laboratory in minutes and come back on a 7–10 business day standard turnaround with fully accredited certificates.',
-          'Every certificate carries as-found/as-left readings, measurement uncertainty, NIST traceability, and the Z540.3 decision rule — the documentation AS9100 customer audits and FDA-regulated quality systems expect from a supplier.',
+          'Every certificate carries as-found/as-left readings, measurement uncertainty, NIST traceability, and the Z540.3 decision rule — the documentation [AS9100](/resources/as9100-calibration-requirements) customer audits and FDA-regulated quality systems expect from a supplier.',
         ],
       },
       {
         heading: 'Nine disciplines, one stop',
         paragraphs: [
-          'Dimensional hand tools, electrical and RF test equipment, temperature and humidity, pressure, mass and balances, pipettes, force and torque, and gas flow — all calibrated in-house at our A2LA-accredited facility (certificate 4296.01). We also repair dimensional tools with stocked OEM parts and resurface granite surface plates on-site.',
+          'Dimensional hand tools, [electrical and RF](/capabilities/electrical) test equipment, temperature and humidity, pressure, mass and balances, [pipettes](/pipette-calibration), force and torque, and gas flow — all calibrated in-house at our A2LA-accredited facility (certificate 4296.01). We also repair dimensional tools with stocked OEM parts and resurface granite [surface plates](/surface-plate-calibration) on-site.',
         ],
       },
     ],
@@ -237,7 +237,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO 17025 calibration for Irvine medical device, biotech & aerospace companies. Free Mon & Wed pickup, pipette & dimensional specialists, audit-ready certificates. (657) 216-2600.',
     h1: 'Calibration Services in Irvine',
     lead:
-      'Irvine concentrates more medical device, biotech, and aerospace engineering than almost anywhere in California — industries where calibration evidence gets audited line by line. American Gage delivers audit-ready, A2LA-accredited calibration with free pickup through Irvine every Monday and Wednesday.',
+      'Irvine concentrates more medical device, biotech, and aerospace engineering than almost anywhere in California — industries where calibration evidence gets audited line by line. American Gage delivers audit-ready, [A2LA](/accreditations)-accredited calibration with free pickup through Irvine every Monday and Wednesday.',
     heroImage: {
       src: 'https://images.unsplash.com/photo-1628961434457-8c271a350754?q=80&w=1600&auto=format&fit=crop',
       alt: 'Aerial view over Irvine, California with mountains in the distance',
@@ -252,7 +252,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'Calibration for Irvine’s regulated industries',
         paragraphs: [
-          'An ISO 13485 audit doesn’t care how impressive your product is — it cares whether the micrometer that inspected it has a certificate that stands up. Irvine’s medical device manufacturers, biotech labs, and aerospace suppliers send us exactly that workload: inspection tools, environmental chambers, balances, pipettes, torque drivers, and electrical test equipment.',
+          'An [ISO 13485](/resources/iso-13485-calibration-requirements) audit doesn’t care how impressive your product is — it cares whether the [micrometer](/micrometer-calibration) that inspected it has a certificate that stands up. Irvine’s medical device manufacturers, biotech labs, and aerospace suppliers send us exactly that workload: inspection tools, environmental chambers, balances, [pipettes](/pipette-calibration), torque drivers, and electrical test equipment.',
           'Certificates document as-found/as-left data, measurement uncertainty, NIST traceability, and the Z540.3 decision rule with TUR. For pipette-heavy labs, we calibrate to ISO 8655 with both gravimetric and photometric methods — up to fully accredited 3×10 data — in an environmentally controlled life-science lab.',
         ],
       },
@@ -315,14 +315,14 @@ export const locations: LocationPage[] = [
       {
         heading: 'Serving Santa Ana’s industrial core',
         paragraphs: [
-          'From the industrial blocks around Dyer Road to the shops off Grand Avenue, Santa Ana runs on machining, metal fabrication, electronics, and medical device production. That mix generates a steady calibration load: dimensional inspection tools, torque wrenches, pressure gauges, scales, and bench electrical equipment.',
-          'We calibrate all of it under one A2LA ISO/IEC 17025:2017 accreditation (certificate 4296.01), in discipline-specific labs at our Placentia facility. Certificates arrive audit-ready: as-found/as-left data, uncertainty, NIST traceability, and the Z540.3 decision rule documented.',
+          'From the industrial blocks around Dyer Road to the shops off Grand Avenue, Santa Ana runs on machining, metal fabrication, electronics, and medical device production. That mix generates a steady calibration load: dimensional inspection tools, [torque wrenches](/torque-wrench-calibration), [pressure gauges](/pressure-gauge-calibration), scales, and bench electrical equipment.',
+          'We calibrate all of it under one [A2LA](/accreditations) ISO/IEC 17025:2017 accreditation (certificate 4296.01), in discipline-specific labs at our Placentia facility. Certificates arrive audit-ready: as-found/as-left data, uncertainty, NIST traceability, and the Z540.3 decision rule documented.',
         ],
       },
       {
         heading: 'Logistics that fit a production schedule',
         paragraphs: [
-          'Free route pickup rolls through Santa Ana Mondays and Wednesdays; standard turnaround is 7–10 business days with expedited options at 24, 48, or 72 hours. Repairs ride along too — dimensional tool repair with stocked OEM parts, hardness tester service, and surface plate resurfacing at your facility or ours.',
+          'Free route pickup rolls through Santa Ana Mondays and Wednesdays; standard turnaround is 7–10 business days with expedited options at 24, 48, or 72 hours. Repairs ride along too — dimensional tool repair with stocked OEM parts, hardness tester service, and [surface plate](/surface-plate-calibration) resurfacing at your facility or ours.',
         ],
       },
     ],
@@ -358,7 +358,7 @@ export const locations: LocationPage[] = [
       'American Gage IS Placentia’s calibration lab — 8,000 sq ft, A2LA ISO 17025 accredited, at 1131 S Richfield Rd. Walk-in drop-offs welcome Mon–Fri. (657) 216-2600.',
     h1: 'Calibration Lab in Placentia',
     lead:
-      'Searching for a calibration lab in Placentia? You found the actual one. American Gage’s 8,000 sq ft, A2LA-accredited laboratory is at 1131 S Richfield Rd — walk-in drop-offs welcome every weekday.',
+      'Searching for a calibration lab in Placentia? You found the actual one. American Gage’s 8,000 sq ft, [A2LA](/accreditations)-accredited laboratory is at 1131 S Richfield Rd — walk-in drop-offs welcome every weekday.',
     heroImage: {
       src: 'https://images.unsplash.com/photo-1644118956196-06e072513216?q=80&w=1600&auto=format&fit=crop',
       alt: 'View over north Orange County, California with mountains in the background',
@@ -374,7 +374,7 @@ export const locations: LocationPage[] = [
         heading: 'Placentia’s own accredited metrology lab',
         paragraphs: [
           'American Gage has operated in north Orange County since 1968 and calls Placentia home — nine discipline-specific, environmentally controlled laboratories accredited to ISO/IEC 17025:2017 by A2LA (certificate 4296.01). For Placentia businesses, that means accredited calibration with zero shipping: drop instruments off on your way in, pick them up on the way home.',
-          'Local shops use us for the full range — dimensional hand tools, electrical test equipment, pressure gauges, torque wrenches, scales and balances — plus repairs, with parts stocked for major brands like Mitutoyo and Starrett.',
+          'Local shops use us for the full range — dimensional hand tools, electrical test equipment, [pressure gauges](/pressure-gauge-calibration), [torque wrenches](/torque-wrench-calibration), scales and balances — plus repairs, with parts stocked for major brands like Mitutoyo and Starrett.',
         ],
       },
     ],
@@ -405,7 +405,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO 17025 calibration lab ~4 miles from Brea. Free Mon & Wed pickup, walk-in drop-offs, 7–10 day turnaround. Dimensional, electrical, pressure & more. (657) 216-2600.',
     h1: 'Calibration Services in Brea',
     lead:
-      'Brea’s industrial parks are about ten minutes from our door. American Gage — A2LA-accredited, in Placentia since 1968 — picks up in Brea every Monday and Wednesday, free.',
+      'Brea’s industrial parks are about ten minutes from our door. American Gage — [A2LA](/accreditations)-accredited, in Placentia since 1968 — picks up in Brea every Monday and Wednesday, free.',
     heroImage: {
       src: 'https://images.unsplash.com/photo-1568321431819-bb00accbca4a?q=80&w=1600&auto=format&fit=crop',
       alt: 'Cityscape view over north Orange County under a cloudy sky',
@@ -467,7 +467,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'The lab around the corner',
         paragraphs: [
-          'Yorba Linda’s businesses — from light manufacturing and labs to contractors and facilities teams — don’t need to ship instruments across the country for accredited calibration. Our A2LA-accredited laboratory (ISO/IEC 17025:2017, certificate 4296.01) is minutes away across the Placentia line, calibrating everything from calipers and torque wrenches to pressure gauges, scales, and electrical test equipment since 1968.',
+          'Yorba Linda’s businesses — from light manufacturing and labs to contractors and facilities teams — don’t need to ship instruments across the country for accredited calibration. Our [A2LA](/accreditations)-accredited laboratory (ISO/IEC 17025:2017, certificate 4296.01) is minutes away across the Placentia line, calibrating everything from [calipers](/caliper-calibration) and [torque wrenches](/torque-wrench-calibration) to [pressure gauges](/pressure-gauge-calibration), scales, and electrical test equipment since 1968.',
           'Use the free Monday & Wednesday route, or drop instruments at 1131 S Richfield Rd any weekday between 7:30 AM and 4:00 PM. Standard turnaround is 7–10 business days.',
         ],
       },
@@ -499,7 +499,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO 17025 accredited calibration serving Los Angeles County — free pickup routes every Tuesday & Thursday, 7–10 day turnaround, on-site service. Est. 1968. (657) 216-2600.',
     h1: 'Calibration Services in Los Angeles',
     lead:
-      'American Gage runs free pickup and delivery routes through Los Angeles County every Tuesday and Thursday — bringing LA manufacturers the same A2LA-accredited, single-lab service Orange County has used since 1968.',
+      'American Gage runs free pickup and delivery routes through Los Angeles County every Tuesday and Thursday — bringing LA manufacturers the same [A2LA](/accreditations)-accredited, single-lab service Orange County has used since 1968.',
     heroImage: {
       src: 'https://images.unsplash.com/photo-1544413660-299165566b1d?q=80&w=1600&auto=format&fit=crop',
       alt: 'Downtown Los Angeles skyline under blue sky',
@@ -521,7 +521,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'On-site calibration across Los Angeles',
         paragraphs: [
-          'For chambers, ovens, surface plates, and production equipment that shouldn’t travel, our technicians calibrate on-site anywhere in LA County with NIST-traceable standards — including AMS 2750 temperature uniformity surveys for aerospace heat-treat operations and after-hours emergency calls when a line is down.',
+          'For chambers, ovens, [surface plates](/surface-plate-calibration), and production equipment that shouldn’t travel, our technicians calibrate on-site anywhere in LA County with NIST-traceable standards — including AMS 2750 temperature uniformity surveys for aerospace heat-treat operations and after-hours emergency calls when a line is down.',
         ],
       },
     ],
@@ -563,7 +563,7 @@ export const locations: LocationPage[] = [
       'A2LA-accredited (ISO/IEC 17025) calibration lab serving all of California. Local pickup across Southern California and fast mail-in service statewide. Dimensional, electrical, pressure, temperature & more.',
     h1: 'Calibration Services Across California',
     lead:
-      'American Gage has calibrated for California manufacturers since 1968 from our lab in Placentia. Southern California companies get free scheduled pickup; the rest of the state — the Bay Area, Sacramento, the Central Valley, and beyond — ships in and gets the same A2LA-accredited certificates with fast turnaround.',
+      'American Gage has calibrated for California manufacturers since 1968 from our lab in Placentia. Southern California companies get free scheduled pickup; the rest of the state — the Bay Area, Sacramento, the Central Valley, and beyond — ships in and gets the same [A2LA](/accreditations)-accredited certificates with fast turnaround.',
     heroImage: {
       src: '/images/american-gage-facility.jpg',
       alt: 'The American Gage A2LA-accredited calibration laboratory serving California',
@@ -585,7 +585,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'How mail-in calibration works from anywhere in California',
         paragraphs: [
-          'Send us your equipment list — manufacturer, model, serial, and any compliance regimes your customers reference — and we confirm scope, pricing, and turnaround within one to two business days. Pack and ship (we can advise on inbound shipping), we calibrate in our environmentally controlled labs, and your instruments come back with full certificates. Nothing is sub-contracted to another lab.',
+          'Send us your [equipment list](/contact) — manufacturer, model, serial, and any compliance regimes your customers reference — and we confirm scope, pricing, and turnaround within one to two business days. Pack and ship (we can advise on inbound shipping), we calibrate in our environmentally controlled labs, and your instruments come back with full certificates. Nothing is sub-contracted to another lab.',
         ],
       },
     ],
@@ -620,7 +620,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration by mail-in for Texas manufacturers — aerospace, energy, semiconductors, and defense. Full data certificates, fast turnaround, no sub-contracting.',
     h1: 'Calibration Services for Texas Manufacturers',
     lead:
-      'From the aerospace and defense corridor around Fort Worth to the energy instrumentation of Houston and the semiconductor fabs near Austin, Texas runs on measurement. American Gage provides A2LA-accredited calibration to Texas companies by mail-in, with certificates built to satisfy the toughest customer audits.',
+      'From the aerospace and defense corridor around Fort Worth to the energy instrumentation of Houston and the semiconductor fabs near Austin, Texas runs on measurement. American Gage provides [A2LA](/accreditations)-accredited calibration to Texas companies by mail-in, with certificates built to satisfy the toughest customer audits.',
     heroImage: {
       src: '/images/american-gage-team-lab.jpg',
       alt: 'American Gage metrologists calibrating instruments for Texas manufacturers',
@@ -635,14 +635,14 @@ export const locations: LocationPage[] = [
       {
         heading: 'Built for the industries that define Texas manufacturing',
         paragraphs: [
-          'Texas concentrates aerospace and defense (the Fort Worth aviation cluster and its supply chain), oil, gas, and petrochemical instrumentation across Houston and the Gulf Coast, and a fast-growing semiconductor and electronics base around Austin and Dallas. Each of those sectors audits calibration hard — AS9100 flow-downs, process instrumentation traceability, and tight tolerances on precision parts.',
+          'Texas concentrates aerospace and defense (the Fort Worth aviation cluster and its supply chain), oil, gas, and petrochemical instrumentation across Houston and the Gulf Coast, and a fast-growing semiconductor and electronics base around Austin and Dallas. Each of those sectors audits calibration hard — [AS9100](/resources/as9100-calibration-requirements) flow-downs, process instrumentation traceability, and tight tolerances on precision parts.',
           'American Gage answers all three with A2LA ISO/IEC 17025 accreditation across nine disciplines, and certificates documenting as-found/as-left data, measurement uncertainty, NIST traceability, and the ANSI/NCSL Z540.3 decision rule — the evidence package Texas quality managers hand to their auditors.',
         ],
       },
       {
         heading: 'Mail-in calibration, minus the national-chain queue',
         paragraphs: [
-          'Unlike a national chain that ships your instruments through a shared queue in another state, American Gage is a single independent lab where you can reach the technician doing the work. Send your equipment list, ship to Placentia, and get instruments back on a 7–10 business day standard turnaround with expedited options. Everything is calibrated in-house — never forwarded.',
+          'Unlike a national chain that ships your instruments through a shared queue in another state, American Gage is a single independent lab where you can reach the technician doing the work. Send your [equipment list](/contact), ship to Placentia, and get instruments back on a 7–10 business day standard turnaround with expedited options. Everything is calibrated in-house — never forwarded.',
         ],
       },
     ],
@@ -677,7 +677,7 @@ export const locations: LocationPage[] = [
       'A2LA-accredited calibration for Arizona’s semiconductor, aerospace, and defense manufacturers by mail-in. Full-data ISO/IEC 17025 certificates with fast, reliable turnaround.',
     h1: 'Calibration Services for Arizona Manufacturers',
     lead:
-      'Arizona has become one of the country’s most important semiconductor and aerospace-defense hubs. American Gage supports Phoenix, Tucson, and the wider state with A2LA-accredited mail-in calibration and certificates that stand up to semiconductor and defense audits alike.',
+      'Arizona has become one of the country’s most important semiconductor and aerospace-defense hubs. American Gage supports Phoenix, Tucson, and the wider state with [A2LA](/accreditations)-accredited mail-in calibration and certificates that stand up to semiconductor and defense audits alike.',
     heroImage: {
       src: '/images/american-gage-lab-work.jpg',
       alt: 'Precision calibration work supporting Arizona semiconductor and aerospace manufacturers',
@@ -693,13 +693,13 @@ export const locations: LocationPage[] = [
         heading: 'Semiconductors, aerospace, and defense',
         paragraphs: [
           'Arizona’s manufacturing base leans heavily on semiconductor fabrication expanding around Phoenix, established aerospace and defense in both Phoenix and Tucson, and a deep electronics supply chain. These industries live and die by measurement traceability — from dimensional and electrical calibration to the pressure, temperature, and RF instrumentation behind fabs and defense electronics.',
-          'American Gage covers all nine disciplines under A2LA ISO/IEC 17025 accreditation, with certificates documenting data, uncertainty, NIST traceability, and the Z540.3 decision rule — and an automated RF/microwave capability for high-frequency work.',
+          'American Gage covers all nine disciplines under A2LA ISO/IEC 17025 accreditation, with certificates documenting data, uncertainty, NIST traceability, and the Z540.3 decision rule — and an automated [RF/microwave](/capabilities/electrical) capability for high-frequency work.',
         ],
       },
       {
         heading: 'Ship-in service that keeps proximity to your neighbors',
         paragraphs: [
-          'Arizona sits close enough to Southern California that inbound freight to our Placentia lab is quick, and standard turnaround runs 7–10 business days with expedited options. Send your equipment list; we confirm scope and pricing in one to two business days, calibrate in-house, and return your instruments with full certificates.',
+          'Arizona sits close enough to Southern California that inbound freight to our Placentia lab is quick, and standard turnaround runs 7–10 business days with expedited options. Send your [equipment list](/contact); we confirm scope and pricing in one to two business days, calibrate in-house, and return your instruments with full certificates.',
         ],
       },
     ],
@@ -734,7 +734,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Washington’s aerospace and technology manufacturers by mail-in. Full-data certificates for AS9100 aerospace supply chains.',
     h1: 'Calibration Services for Washington Manufacturers',
     lead:
-      'Washington is aerospace country — Boeing and a deep tier of AS9100 suppliers around the Puget Sound, alongside a strong technology and medical-device base. American Gage delivers A2LA-accredited mail-in calibration with the documented, traceable certificates aerospace primes expect.',
+      'Washington is aerospace country — Boeing and a deep tier of [AS9100](/resources/as9100-calibration-requirements) suppliers around the Puget Sound, alongside a strong technology and medical-device base. American Gage delivers [A2LA](/accreditations)-accredited mail-in calibration with the documented, traceable certificates aerospace primes expect.',
     heroImage: {
       src: '/images/american-gage-facility.jpg',
       alt: 'American Gage laboratory serving Washington aerospace and technology manufacturers',
@@ -756,7 +756,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'Reliable mail-in turnaround',
         paragraphs: [
-          'Send your equipment list, ship to our Placentia lab, and receive instruments back on a 7–10 business day standard turnaround with expedited options for critical items. Everything is calibrated in-house by technicians you can reach directly — no national-chain queue, no forwarding to another facility.',
+          'Send your [equipment list](/contact), ship to our Placentia lab, and receive instruments back on a 7–10 business day standard turnaround with expedited options for critical items. Everything is calibrated in-house by technicians you can reach directly — no national-chain queue, no forwarding to another facility.',
         ],
       },
     ],
@@ -791,7 +791,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Massachusetts biotech, medical device, and defense-electronics manufacturers by mail-in. Full-data certificates, fast turnaround.',
     h1: 'Calibration Services for Massachusetts Manufacturers',
     lead:
-      'Massachusetts is a powerhouse of biotech, medical device, and defense electronics, from the Cambridge/Boston life-sciences cluster to the state’s established defense contractors. American Gage supports them with A2LA-accredited mail-in calibration and certificates built for ISO 13485 and defense audits.',
+      'Massachusetts is a powerhouse of biotech, medical device, and defense electronics, from the Cambridge/Boston life-sciences cluster to the state’s established defense contractors. American Gage supports them with [A2LA](/accreditations)-accredited mail-in calibration and certificates built for [ISO 13485](/resources/iso-13485-calibration-requirements) and defense audits.',
     heroImage: {
       src: '/images/american-gage-team-lab.jpg',
       alt: 'American Gage technicians calibrating instruments for Massachusetts life-sciences and defense manufacturers',
@@ -806,7 +806,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'Life sciences, medical device, and defense electronics',
         paragraphs: [
-          'The Massachusetts economy runs on life sciences and biotech (the Cambridge/Boston corridor), medical-device manufacturing under ISO 13485 and FDA 21 CFR 820, and defense electronics. These industries demand calibration with rigorous documentation — pipette and balance calibration for labs, temperature and humidity mapping for storage, and electrical/RF for defense electronics.',
+          'The Massachusetts economy runs on life sciences and biotech (the Cambridge/Boston corridor), medical-device manufacturing under ISO 13485 and FDA 21 CFR 820, and defense electronics. These industries demand calibration with rigorous documentation — [pipette](/pipette-calibration) and balance calibration for labs, [temperature and humidity](/capabilities/temperature-humidity) mapping for storage, and electrical/RF for defense electronics.',
           'American Gage covers all of it across nine disciplines under A2LA ISO/IEC 17025 accreditation, with certificates documenting data, uncertainty, NIST traceability, and decision rules that satisfy medical-device and defense audits.',
         ],
       },
@@ -863,7 +863,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'Automotive, tooling, and defense',
         paragraphs: [
-          'Michigan’s manufacturing base is dominated by automotive (OEMs and a vast IATF 16949 supplier tier around Detroit), precision tooling and die, and defense ground-vehicle work. Dimensional calibration — calipers, micrometers, gauge blocks, thread and ring/plug gauges — is the backbone here, alongside torque tools for assembly and force instruments for materials testing.',
+          'Michigan’s manufacturing base is dominated by automotive (OEMs and a vast IATF 16949 supplier tier around Detroit), precision tooling and die, and defense ground-vehicle work. [Dimensional calibration](/capabilities/dimensional) — [calipers](/caliper-calibration), [micrometers](/micrometer-calibration), [gauge blocks](/gage-block-calibration), thread and ring/plug gauges — is the backbone here, alongside torque tools for assembly and force instruments for materials testing.',
           'American Gage covers dimensional, mass, force and torque, and the rest of the nine disciplines under A2LA ISO/IEC 17025 accreditation, with data-and-uncertainty certificates that support IATF 16949 measurement-system requirements.',
         ],
       },
@@ -906,7 +906,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Silicon Valley semiconductor, electronics, and hardware R&D companies by mail-in. Electrical, RF, dimensional & more with full-data certificates.',
     h1: 'Calibration Services in San Jose & Silicon Valley',
     lead:
-      'Silicon Valley builds the world’s most advanced electronics and hardware, and every one of those products depends on precise measurement. American Gage supports San Jose and the wider Bay Area tech corridor with A2LA-accredited mail-in calibration — including automated RF/microwave capability for high-frequency work.',
+      'Silicon Valley builds the world’s most advanced electronics and hardware, and every one of those products depends on precise measurement. American Gage supports San Jose and the wider Bay Area tech corridor with [A2LA](/accreditations)-accredited mail-in calibration — including automated [RF/microwave](/capabilities/electrical) capability for high-frequency work.',
     heroImage: {
       src: '/images/american-gage-reception.jpg',
       alt: 'American Gage laboratory serving San Jose and Silicon Valley electronics companies',
@@ -921,14 +921,14 @@ export const locations: LocationPage[] = [
       {
         heading: 'Calibration for the electronics and hardware capital',
         paragraphs: [
-          'San Jose and Silicon Valley concentrate semiconductor design and manufacturing, electronics, and the hardware R&D labs of the world’s largest technology companies. Their calibration needs skew electrical and RF — multimeters, oscilloscopes, sources, DAQ systems, and RF/microwave instruments — alongside dimensional and environmental work for hardware and reliability testing.',
+          'San Jose and Silicon Valley concentrate semiconductor design and manufacturing, electronics, and the hardware R&D labs of the world’s largest technology companies. Their calibration needs skew electrical and RF — [multimeters](/multimeter-calibration), oscilloscopes, sources, DAQ systems, and RF/microwave instruments — alongside dimensional and environmental work for hardware and reliability testing.',
           'American Gage covers all of it under A2LA ISO/IEC 17025 accreditation, and runs automated RF/microwave calibration that produces complete, repeatable certificates without the long lead times manual RF work incurs.',
         ],
       },
       {
         heading: 'Mail-in from the Bay Area to our SoCal lab',
         paragraphs: [
-          'Ship your instruments to Placentia and get them back on a 7–10 business day standard turnaround, with expedite options for R&D schedules that cannot wait. Send your equipment list and we confirm scope, pricing, and turnaround within one to two business days — and you deal with an actual technician, not a ticketing queue.',
+          'Ship your instruments to Placentia and get them back on a 7–10 business day standard turnaround, with expedite options for R&D schedules that cannot wait. Send your [equipment list](/contact) and we confirm scope, pricing, and turnaround within one to two business days — and you deal with an actual technician, not a ticketing queue.',
         ],
       },
     ],
@@ -963,7 +963,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Houston energy, petrochemical, and aerospace instrumentation by mail-in. Pressure, temperature, electrical & more with full-data certificates.',
     h1: 'Calibration Services in Houston',
     lead:
-      'Houston runs on process instrumentation — energy, oil and gas, petrochemical, and the aerospace work anchored by NASA. American Gage supports Houston companies with A2LA-accredited mail-in calibration, with deep pressure and temperature capability for process and safety instrumentation.',
+      'Houston runs on process instrumentation — energy, oil and gas, petrochemical, and the aerospace work anchored by NASA. American Gage supports Houston companies with [A2LA](/accreditations)-accredited mail-in calibration, with deep pressure and temperature capability for process and safety instrumentation.',
     heroImage: {
       src: '/images/onsite-multimeter-fleet.webp',
       alt: 'Instrumentation calibrated by American Gage for Houston energy and aerospace industries',
@@ -978,14 +978,14 @@ export const locations: LocationPage[] = [
       {
         heading: 'Pressure, temperature, and the instrumentation of energy',
         paragraphs: [
-          'Houston’s energy, oil-and-gas, and petrochemical sectors depend on pressure gauges and transducers, temperature sensors, and the safety instrumentation that keeps facilities running within limits — plus the aerospace work around NASA’s Johnson Space Center. Calibration here is about traceable pressure and temperature above all, backed by full documentation.',
-          'American Gage brings deep pressure capability (deadweight/pressure-balance references and precision controllers) and temperature calibration under A2LA ISO/IEC 17025 accreditation, with certificates documenting data, uncertainty, and NIST traceability.',
+          'Houston’s energy, oil-and-gas, and petrochemical sectors depend on [pressure gauges](/pressure-gauge-calibration) and transducers, temperature sensors, and the safety instrumentation that keeps facilities running within limits — plus the aerospace work around NASA’s Johnson Space Center. Calibration here is about traceable pressure and temperature above all, backed by full documentation.',
+          'American Gage brings deep pressure capability (deadweight/pressure-balance references and precision controllers) and [temperature calibration](/capabilities/temperature-humidity) under A2LA ISO/IEC 17025 accreditation, with certificates documenting data, uncertainty, and NIST traceability.',
         ],
       },
       {
         heading: 'Mail-in service for process instruments',
         paragraphs: [
-          'Send your equipment list — including ranges and any hazardous-area or process specifics — and we confirm scope, pricing, and turnaround within one to two business days. Ship to Placentia, we calibrate in-house, and instruments return on a 7–10 business day standard turnaround with expedite options.',
+          'Send your [equipment list](/contact) — including ranges and any hazardous-area or process specifics — and we confirm scope, pricing, and turnaround within one to two business days. Ship to Placentia, we calibrate in-house, and instruments return on a 7–10 business day standard turnaround with expedite options.',
         ],
       },
     ],
@@ -1020,7 +1020,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Boston and Cambridge biotech, medical device, and research labs by mail-in. Pipettes, balances, data loggers & more with full-data certificates.',
     h1: 'Calibration Services in Boston & Cambridge',
     lead:
-      'The Boston–Cambridge corridor is one of the world’s densest concentrations of biotech, life sciences, and medical-device innovation. American Gage supports its labs and manufacturers with A2LA-accredited mail-in calibration for the pipettes, balances, and environmental instruments that research and production depend on.',
+      'The Boston–Cambridge corridor is one of the world’s densest concentrations of biotech, life sciences, and medical-device innovation. American Gage supports its labs and manufacturers with [A2LA](/accreditations)-accredited mail-in calibration for the [pipettes](/pipette-calibration), balances, and environmental instruments that research and production depend on.',
     heroImage: {
       src: '/images/american-gage-team-lab.jpg',
       alt: 'American Gage laboratory calibrating instruments for Boston biotech and medical-device labs',
@@ -1035,7 +1035,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'Calibration for life sciences and medical device',
         paragraphs: [
-          'Boston and Cambridge host biotech and pharmaceutical research, medical-device manufacturing under ISO 13485 and FDA 21 CFR 820, and a deep bench of academic and clinical labs. The calibration needs cluster around pipettes (gravimetric and photometric), analytical balances, temperature and humidity monitoring, and data loggers for sample and storage integrity.',
+          'Boston and Cambridge host biotech and pharmaceutical research, medical-device manufacturing under [ISO 13485](/resources/iso-13485-calibration-requirements) and FDA 21 CFR 820, and a deep bench of academic and clinical labs. The calibration needs cluster around pipettes (gravimetric and photometric), analytical balances, [temperature and humidity](/capabilities/temperature-humidity) monitoring, and data loggers for sample and storage integrity.',
           'American Gage calibrates all of these under A2LA ISO/IEC 17025 accreditation, with certificates documenting as-found/as-left data, uncertainty, and traceability — the evidence life-sciences and medical audits require.',
         ],
       },
@@ -1077,7 +1077,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Seattle and Puget Sound aerospace and technology manufacturers by mail-in. Full-data certificates for AS9100 supply chains.',
     h1: 'Calibration Services in Seattle & the Puget Sound',
     lead:
-      'Seattle and the Puget Sound anchor one of the largest aerospace manufacturing clusters in the world, surrounded by aviation MRO, technology hardware, and medical device. American Gage supports them with A2LA-accredited mail-in calibration and the documented certificates aerospace primes require.',
+      'Seattle and the Puget Sound anchor one of the largest aerospace manufacturing clusters in the world, surrounded by aviation MRO, technology hardware, and medical device. American Gage supports them with [A2LA](/accreditations)-accredited mail-in calibration and the documented certificates aerospace primes require.',
     heroImage: {
       src: '/images/american-gage-facility.jpg',
       alt: 'American Gage laboratory serving Seattle and Puget Sound aerospace manufacturers',
@@ -1092,14 +1092,14 @@ export const locations: LocationPage[] = [
       {
         heading: 'Aerospace-grade calibration for the Puget Sound',
         paragraphs: [
-          'The Seattle region’s aerospace supply chain — the prime plus its dense tier of AS9100 suppliers, aviation MRO, and precision machining — needs calibration with as-found/as-left data, measurement uncertainty, NIST traceability, and the ANSI/NCSL Z540.3 decision rule. Dimensional and torque calibration dominate, with electrical and pressure close behind.',
+          'The Seattle region’s aerospace supply chain — the prime plus its dense tier of [AS9100](/resources/as9100-calibration-requirements) suppliers, aviation MRO, and precision machining — needs calibration with as-found/as-left data, measurement uncertainty, NIST traceability, and the ANSI/NCSL Z540.3 decision rule. Dimensional and torque calibration dominate, with electrical and pressure close behind.',
           'American Gage covers nine disciplines under A2LA ISO/IEC 17025 accreditation (certificate 4296.01), so Seattle suppliers get certificates that satisfy prime flow-downs on the first pass.',
         ],
       },
       {
         heading: 'Dependable mail-in turnaround',
         paragraphs: [
-          'Send your equipment list, ship to our Placentia lab, and receive instruments back on a 7–10 business day standard turnaround, with expedited options for AOG-style urgency. Everything is calibrated in-house by technicians you can reach directly.',
+          'Send your [equipment list](/contact), ship to our Placentia lab, and receive instruments back on a 7–10 business day standard turnaround, with expedited options for AOG-style urgency. Everything is calibrated in-house by technicians you can reach directly.',
         ],
       },
     ],
@@ -1134,7 +1134,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Wichita — the Air Capital — aviation manufacturers by mail-in. Dimensional, torque, and full-data certificates for AS9100 aerospace.',
     h1: 'Calibration Services in Wichita — the Air Capital',
     lead:
-      'Wichita calls itself the Air Capital of the World for good reason — it is one of the densest aircraft-manufacturing clusters anywhere. American Gage supports Wichita’s aviation manufacturers and their AS9100 supply chain with A2LA-accredited mail-in calibration and fully documented certificates.',
+      'Wichita calls itself the Air Capital of the World for good reason — it is one of the densest aircraft-manufacturing clusters anywhere. American Gage supports Wichita’s aviation manufacturers and their [AS9100](/resources/as9100-calibration-requirements) supply chain with A2LA-accredited mail-in calibration and fully documented certificates.',
     heroImage: {
       src: '/images/american-gage-lab-work.jpg',
       alt: 'Precision dimensional calibration supporting Wichita aviation manufacturers',
@@ -1149,7 +1149,7 @@ export const locations: LocationPage[] = [
       {
         heading: 'Built for aviation manufacturing',
         paragraphs: [
-          'Wichita’s economy is aviation — major airframe and business-jet manufacturing and a deep tier of AS9100-certified suppliers and machine shops. That means heavy demand for dimensional calibration (calipers, micrometers, gauge blocks, thread and ring/plug gauges), torque tools for safety-critical fastening, and force instruments for testing.',
+          'Wichita’s economy is aviation — major airframe and business-jet manufacturing and a deep tier of AS9100-certified suppliers and machine shops. That means heavy demand for dimensional calibration ([calipers](/caliper-calibration), [micrometers](/micrometer-calibration), [gauge blocks](/gage-block-calibration), thread and ring/plug gauges), torque tools for safety-critical fastening, and force instruments for testing.',
           'American Gage covers dimensional, force and torque, and the rest of the nine disciplines under A2LA ISO/IEC 17025 accreditation, with certificates documenting data, uncertainty, NIST traceability, and the Z540.3 decision rule — exactly what aviation audits demand.',
         ],
       },
@@ -1191,7 +1191,7 @@ export const locations: LocationPage[] = [
       'A2LA ISO/IEC 17025 accredited calibration for Phoenix semiconductor, aerospace, and electronics manufacturers by mail-in. Electrical, RF, dimensional & more with full-data certificates.',
     h1: 'Calibration Services in Phoenix',
     lead:
-      'Phoenix has become a national center for semiconductor fabrication and a long-established aerospace and electronics hub. American Gage supports Phoenix-area manufacturers with A2LA-accredited mail-in calibration, including automated RF/microwave capability for high-frequency work.',
+      'Phoenix has become a national center for semiconductor fabrication and a long-established aerospace and electronics hub. American Gage supports Phoenix-area manufacturers with [A2LA](/accreditations)-accredited mail-in calibration, including automated [RF/microwave](/capabilities/electrical) capability for high-frequency work.',
     heroImage: {
       src: '/images/american-gage-reception.jpg',
       alt: 'American Gage laboratory serving Phoenix semiconductor and aerospace manufacturers',
@@ -1206,14 +1206,14 @@ export const locations: LocationPage[] = [
       {
         heading: 'Semiconductors, aerospace, and electronics',
         paragraphs: [
-          'Phoenix’s manufacturing base spans rapidly expanding semiconductor fabrication, established aerospace and defense, and a broad electronics supply chain. These sectors need electrical and RF calibration — multimeters, oscilloscopes, sources, DAQ, and RF/microwave — alongside dimensional, pressure, and temperature work for fabs and precision manufacturing.',
+          'Phoenix’s manufacturing base spans rapidly expanding semiconductor fabrication, established aerospace and defense, and a broad electronics supply chain. These sectors need electrical and RF calibration — [multimeters](/multimeter-calibration), oscilloscopes, sources, DAQ, and RF/microwave — alongside dimensional, pressure, and temperature work for fabs and precision manufacturing.',
           'American Gage covers all nine disciplines under A2LA ISO/IEC 17025 accreditation and runs automated RF/microwave calibration for complete, repeatable high-frequency certificates.',
         ],
       },
       {
         heading: 'Fast mail-in from a nearby lab',
         paragraphs: [
-          'Arizona’s proximity to Southern California keeps inbound freight quick. Send your equipment list, ship to our Placentia lab, and receive instruments back on a 7–10 business day standard turnaround with expedited options — calibrated in-house, never forwarded.',
+          'Arizona’s proximity to Southern California keeps inbound freight quick. Send your [equipment list](/contact), ship to our Placentia lab, and receive instruments back on a 7–10 business day standard turnaround with expedited options — calibrated in-house, never forwarded.',
         ],
       },
     ],

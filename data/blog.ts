@@ -68,12 +68,12 @@ export const blogPosts: BlogPost[] = [
       alt: 'A metrologist calibrating an instrument against reference standards at American Gage',
     },
     lead:
-      'Calibration is one of those words that gets used constantly in a quality system and explained almost never. This guide is the plain-English foundation: what calibration actually is, how it differs from the things people confuse it with, and the handful of concepts — traceability, uncertainty, as-found data, decision rules — that determine whether a certificate is worth the paper it is printed on.',
+      'Calibration is one of those words that gets used constantly in a quality system and explained almost never. This guide is the plain-English foundation: what calibration actually is, how it differs from the things people confuse it with, and the handful of concepts — traceability, uncertainty, [as-found data](/blog/as-found-as-left-data), [decision rules](/blog/tur-tar-and-decision-rules) — that determine whether a certificate is worth the paper it is printed on.',
     sections: [
       {
         heading: 'What calibration actually is',
         paragraphs: [
-          'Calibration is the documented comparison of a measurement instrument against a reference standard of known, higher accuracy — and the recording of the difference between them. That is the whole idea. When you calibrate a caliper, a lab measures known artifacts with it, compares what the caliper reads to what the artifact truly is, and documents how far off the caliper was at each point.',
+          'Calibration is the documented comparison of a measurement instrument against a reference standard of known, higher accuracy — and the recording of the difference between them. That is the whole idea. When you calibrate a [caliper](/caliper-calibration), a lab measures known artifacts with it, compares what the caliper reads to what the artifact truly is, and documents how far off the caliper was at each point.',
           'Notice what calibration is not: it is not automatically fixing the instrument, and it is not a pass/fail sticker on its own. A calibration can find an instrument perfectly within tolerance, or wildly out of it — either way, the value is in the documented measurement result, because that is what lets you trust (or distrust) every measurement the instrument made since its last calibration.',
         ],
         image: {
@@ -84,7 +84,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The four concepts that make a calibration meaningful',
         paragraphs: [
-          'Four ideas separate a real calibration from a meaningless one. First, traceability: the reference standard the lab used must itself be traceable through an unbroken chain to a national standard (in the US, NIST). Second, measurement uncertainty: no measurement is perfect, so a credible certificate states how much doubt surrounds each result. Third, as-found / as-left data: the certificate should show the instrument’s condition when it arrived and after any adjustment — not just a final verdict. Fourth, the decision rule: how the lab accounted for uncertainty when it declared a result in or out of tolerance.',
+          'Four ideas separate a real calibration from a meaningless one. First, traceability: the reference standard the lab used must itself be traceable through an unbroken chain to a national standard (in the US, NIST). Second, [measurement uncertainty](/blog/measurement-uncertainty-traceability): no measurement is perfect, so a credible certificate states how much doubt surrounds each result. Third, as-found / as-left data: the certificate should show the instrument’s condition when it arrived and after any adjustment — not just a final verdict. Fourth, the decision rule: how the lab accounted for uncertainty when it declared a result in or [out of tolerance](/blog/instrument-out-of-tolerance-what-to-do).',
           'If a certificate has all four, you can defend it in front of an aerospace or medical-device auditor. If it has none of them — just a “PASS” and a sticker — you are trusting a stranger’s word with no evidence behind it.',
         ],
         bullets: [
@@ -146,20 +146,20 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Calibration: measure and document',
         paragraphs: [
-          'Calibration compares an instrument to a reference standard and documents the result, including the difference at each test point and the measurement uncertainty. It does not, by itself, change the instrument. The deliverable is data — a certificate you can use to judge whether measurements taken with that instrument can be trusted.',
+          'Calibration compares an instrument to a reference standard and documents the result, including the difference at each test point and the [measurement uncertainty](/blog/measurement-uncertainty-traceability). It does not, by itself, change the instrument. The deliverable is data — a certificate you can use to judge whether measurements taken with that instrument can be trusted.',
         ],
       },
       {
         heading: 'Verification: does it meet a stated requirement?',
         paragraphs: [
-          'Verification is the act of confirming an instrument meets a specific requirement — usually its tolerance. It answers a yes/no question (“is this within spec?”), whereas calibration produces the underlying measurement data that verification is based on. A calibration certificate with data lets you verify against whatever tolerance your process actually needs, not just the manufacturer’s default.',
+          'Verification is the act of confirming an instrument meets a specific requirement — usually its tolerance. It answers a yes/no question (“is this within spec?”), whereas calibration produces the underlying measurement data that verification is based on. A [calibration certificate](/blog/how-to-read-a-calibration-certificate) with data lets you verify against whatever tolerance your process actually needs, not just the manufacturer’s default.',
         ],
       },
       {
         heading: 'Adjustment and repair: changing the instrument',
         paragraphs: [
-          'Adjustment brings an instrument’s output into agreement with the reference — turning a screw, editing a calibration constant, aligning a mechanism. Repair fixes something broken. Both change the instrument, which is exactly why the as-found data (its condition before you touched it) is so important: it is the only record of how the instrument was performing while it was measuring your product.',
-          'Best practice: capture as-found data, then adjust or repair if needed, then capture as-left data. A lab that adjusts silently and hands you only a passing certificate has erased the information you need for an out-of-tolerance impact assessment.',
+          'Adjustment brings an instrument’s output into agreement with the reference — turning a screw, editing a calibration constant, aligning a mechanism. Repair fixes something broken. Both change the instrument, which is exactly why the [as-found data](/blog/as-found-as-left-data) (its condition before you touched it) is so important: it is the only record of how the instrument was performing while it was measuring your product.',
+          'Best practice: capture as-found data, then adjust or repair if needed, then capture as-left data. A lab that adjusts silently and hands you only a passing certificate has erased the information you need for an [out-of-tolerance](/blog/instrument-out-of-tolerance-what-to-do) impact assessment.',
         ],
         image: {
           src: '/images/electrical-calibration-bench.webp',
@@ -202,19 +202,19 @@ export const blogPosts: BlogPost[] = [
       alt: 'Triple point of water cells used as intrinsic temperature standards',
     },
     lead:
-      'Almost every calibration certificate claims to be “NIST traceable.” The phrase is meaningful — but only if you understand what it is asserting, because the words alone are easy to put on paper.',
+      'Almost every [calibration certificate](/blog/how-to-read-a-calibration-certificate) claims to be “NIST traceable.” The phrase is meaningful — but only if you understand what it is asserting, because the words alone are easy to put on paper.',
     sections: [
       {
         heading: 'Traceability is a documented chain, not a logo',
         paragraphs: [
-          'Metrological traceability means every measurement result can be related to a reference through a documented, unbroken chain of calibrations, each contributing to the measurement uncertainty. In the US that chain terminates at the National Institute of Standards and Technology (NIST) or another national metrology institute, or at an intrinsic standard of nature (like the triple point of water for temperature).',
+          'Metrological traceability means every measurement result can be related to a reference through a documented, unbroken chain of calibrations, each contributing to the [measurement uncertainty](/blog/measurement-uncertainty-traceability). In the US that chain terminates at the National Institute of Standards and Technology (NIST) or another national metrology institute, or at an intrinsic standard of nature (like the triple point of water for temperature).',
           'The key words are unbroken and documented. Your lab’s working standard was calibrated by a higher-level standard, which was calibrated by a reference standard, which ties back to a national standard. If any link is missing or undocumented, the chain — and the traceability claim — is broken.',
         ],
       },
       {
         heading: 'What “NIST traceable” does not guarantee',
         paragraphs: [
-          'A traceability statement says the chain exists; it does not, by itself, tell you the calibration was competent or the uncertainty was small enough for your use. That is what ISO/IEC 17025 accreditation adds: independent assessment that the lab actually performs the measurement correctly and reports uncertainty honestly. Traceability answers “to what?”; accreditation answers “done well?”',
+          'A traceability statement says the chain exists; it does not, by itself, tell you the calibration was competent or the uncertainty was small enough for your use. That is what [ISO/IEC 17025 accreditation](/accreditations) adds: independent assessment that the lab actually performs the measurement correctly and reports uncertainty honestly. Traceability answers “to what?”; accreditation answers “done well?”',
         ],
         image: {
           src: '/images/a2la-accredited-4296-01.jpg',
@@ -224,7 +224,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What to check on a certificate',
         paragraphs: [
-          'A credible certificate names the standards used and their traceability, states measurement uncertainty, and (if accredited) carries the accreditation body’s symbol and the lab’s certificate number. American Gage certificates document NIST traceability, measurement uncertainty, and the ANSI/NCSL Z540.3 decision rule under A2LA accreditation (certificate 4296.01).',
+          'A credible certificate names the standards used and their traceability, states measurement uncertainty, and (if accredited) carries the accreditation body’s symbol and the lab’s certificate number. American Gage certificates document NIST traceability, measurement uncertainty, and the ANSI/NCSL [Z540.3](/blog/tur-tar-and-decision-rules) decision rule under A2LA accreditation (certificate 4296.01).',
         ],
       },
     ],
@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'As-found and as-left data',
         paragraphs: [
-          'This is the heart of the document. As-found data shows how the instrument performed on arrival — before any adjustment. As-left shows it after. If the instrument was in tolerance on arrival, as-found and as-left may be identical. If it was out, the as-found data is what triggers your impact assessment on product measured since the last calibration. A certificate with no data — only “PASS” — cannot support that assessment.',
+          'This is the heart of the document. [As-found data](/blog/as-found-as-left-data) shows how the instrument performed on arrival — before any adjustment. As-left shows it after. If the instrument was in tolerance on arrival, as-found and as-left may be identical. If it was out, the as-found data is what triggers your impact assessment on product measured since the last calibration. A certificate with no data — only “PASS” — cannot support that assessment.',
         ],
         image: {
           src: '/images/mass-lab-class-1-weights.webp',
@@ -284,7 +284,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Uncertainty, decision rule, and accreditation',
         paragraphs: [
-          'Each reported result should carry a measurement uncertainty. When the lab states pass/fail, it should also state the decision rule — how uncertainty was handled at the tolerance limit (guard banding, or ANSI/NCSL Z540.3 with a test uncertainty ratio). Finally, an accredited certificate carries the accreditation body’s symbol and the lab’s certificate number, and the scope of accreditation should cover the measurement performed.',
+          'Each reported result should carry a [measurement uncertainty](/blog/measurement-uncertainty-traceability). When the lab states pass/fail, it should also state the [decision rule](/blog/tur-tar-and-decision-rules) — how uncertainty was handled at the tolerance limit (guard banding, or ANSI/NCSL Z540.3 with a test uncertainty ratio). Finally, an accredited certificate carries the accreditation body’s symbol and the lab’s certificate number, and the [scope of accreditation](/blog/how-to-read-a2la-scope) should cover the measurement performed.',
         ],
         bullets: [
           'Unique instrument identification and calibration/due dates',
@@ -331,7 +331,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'A pressure comparator used to calibrate gauges',
     },
     lead:
-      'If you take one habit away from this whole cluster, make it this: ask for as-found data. It is the difference between a calibration program that can answer “was our product affected?” and one that can only shrug.',
+      'If you take one habit away from this whole cluster, make it this: ask for as-found data. It is the difference between a [calibration program](/blog/managing-a-calibration-program) that can answer “was our product affected?” and one that can only shrug.',
     sections: [
       {
         heading: 'The two snapshots',
@@ -342,7 +342,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Why it matters more than the sticker',
         paragraphs: [
-          'When an instrument comes back out of tolerance, most quality systems (and standards like AS9100 and ISO 13485) require you to assess whether measurements made with it were valid — and to act on any nonconforming product. You cannot do that assessment without knowing how far out of tolerance it was, which is exactly the as-found data. A “PASS” with no numbers leaves you guessing, or worse, unable to prove anything either way.',
+          'When an instrument comes back out of tolerance, most quality systems (and standards like [AS9100](/resources/as9100-calibration-requirements) and [ISO 13485](/resources/iso-13485-calibration-requirements)) require you to assess whether measurements made with it were valid — and to act on any nonconforming product. You cannot do that assessment without knowing how far out of tolerance it was, which is exactly the as-found data. A “PASS” with no numbers leaves you guessing, or worse, unable to prove anything either way.',
         ],
         image: {
           src: '/images/dimensional-height-gauge-surface-plate.webp',
@@ -390,7 +390,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'TAR and TUR: how much better is the standard?',
         paragraphs: [
-          'Test accuracy ratio (TAR) is the crude comparison of the instrument’s tolerance to the accuracy of the standard used to check it — historically people wanted 4:1. Test uncertainty ratio (TUR) is the more honest modern version: the ratio of the tolerance to the full measurement uncertainty of the calibration, not just the standard’s spec. A 4:1 TUR means the calibration process is four times “tighter” than the tolerance it is judging.',
+          'Test accuracy ratio (TAR) is the crude comparison of the instrument’s tolerance to the accuracy of the standard used to check it — historically people wanted 4:1. Test uncertainty ratio (TUR) is the more honest modern version: the ratio of the tolerance to the full [measurement uncertainty](/blog/measurement-uncertainty-traceability) of the calibration, not just the standard’s spec. A 4:1 TUR means the calibration process is four times “tighter” than the tolerance it is judging.',
         ],
       },
       {
@@ -451,14 +451,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What accreditation actually certifies',
         paragraphs: [
-          'ISO/IEC 17025 is the international standard for the competence of testing and calibration laboratories. Accreditation to it means an independent accreditation body — in the US commonly A2LA — has assessed the lab against the standard: its technical methods, its staff competence, its equipment and traceability, and crucially its ability to estimate and report measurement uncertainty. That assessment is repeated on a cycle, not granted once and forgotten.',
+          'ISO/IEC 17025 is the international standard for the competence of testing and calibration laboratories. Accreditation to it means an independent accreditation body — in the US commonly [A2LA](/accreditations) — has assessed the lab against the standard: its technical methods, its staff competence, its equipment and traceability, and crucially its ability to estimate and report measurement uncertainty. That assessment is repeated on a cycle, not granted once and forgotten.',
           'The distinction that matters to a buyer: ISO 9001 certifies that a company follows its own quality processes. ISO/IEC 17025 certifies that a lab produces technically valid measurement results. For calibration, only the second one answers the question you actually care about.',
         ],
       },
       {
         heading: 'Accreditation is scoped — check the scope',
         paragraphs: [
-          'A lab is not simply "17025 accredited" in the abstract; it is accredited for specific measurements over specific ranges with specific capabilities. That is the scope of accreditation, and it is a public document. A calibration is only accredited if the specific measurement falls within the lab’s scope — so a lab can be accredited yet perform a given calibration outside its scope (which then is not an accredited result).',
+          'A lab is not simply "17025 accredited" in the abstract; it is accredited for specific measurements over specific ranges with specific capabilities. That is the [scope of accreditation](/blog/how-to-read-a2la-scope), and it is a public document. A calibration is only accredited if the specific measurement falls within the lab’s scope — so a lab can be accredited yet perform a given calibration outside its scope (which then is not an accredited result).',
           'American Gage holds A2LA accreditation under certificate 4296.01; the scope is published in the A2LA directory and linked from our accreditations page.',
         ],
         image: {
@@ -469,7 +469,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'How to use this in supplier selection',
         paragraphs: [
-          'When your customers or primes require accredited calibration, verifying a supplier is straightforward: confirm the accreditation is current with the accreditation body directly, and confirm the measurements you need are on the scope. The articles below walk through reading a scope, the 9001 vs 17025 difference, and a full lab-selection checklist.',
+          'When your customers or primes require [accredited calibration](/blog/accredited-vs-traceable-calibration), verifying a supplier is straightforward: confirm the accreditation is current with the accreditation body directly, and confirm the measurements you need are on the scope. The articles below walk through reading a scope, the 9001 vs 17025 difference, and a full lab-selection checklist.',
         ],
       },
     ],
@@ -513,7 +513,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'Reference standards traceable to national standards',
     },
     lead:
-      'Two certificates can both say "NIST traceable" and mean very different things. One might be accredited; the other might be a self-declaration. Knowing which you have — and which your customer requires — prevents an ugly audit surprise.',
+      'Two certificates can both say "[NIST traceable](/blog/what-nist-traceability-means)" and mean very different things. One might be accredited; the other might be a self-declaration. Knowing which you have — and which your customer requires — prevents an ugly audit surprise.',
     sections: [
       {
         heading: 'Traceable calibration',
@@ -524,7 +524,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Accredited calibration',
         paragraphs: [
-          'An accredited calibration is a traceable calibration performed within the lab’s ISO/IEC 17025 scope, where an accreditation body has independently assessed that the lab performs the measurement competently and reports uncertainty correctly. The certificate carries the accreditation symbol and the lab’s certificate number, and the result is defensible because a third party stands behind the lab’s competence.',
+          'An accredited calibration is a traceable calibration performed within the lab’s [ISO/IEC 17025](/blog/iso-17025-accreditation) scope, where an accreditation body has independently assessed that the lab performs the measurement competently and reports uncertainty correctly. The certificate carries the accreditation symbol and the lab’s certificate number, and the result is defensible because a third party stands behind the lab’s competence.',
         ],
         image: {
           src: '/images/a2la-accredited-4296-01.jpg',
@@ -534,7 +534,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'When the difference bites',
         paragraphs: [
-          'Aerospace primes (AS9100 flow-downs), medical-device makers (ISO 13485), and many regulated manufacturers require accredited calibration for equipment that verifies product. If you hand an auditor a non-accredited "traceable" certificate where an accredited one was required, expect a finding. The fix is simple: specify accredited calibration for the instruments that matter, and confirm the measurement is on the lab’s scope.',
+          'Aerospace primes ([AS9100](/resources/as9100-calibration-requirements) flow-downs), medical-device makers ([ISO 13485](/resources/iso-13485-calibration-requirements)), and many regulated manufacturers require accredited calibration for equipment that verifies product. If you hand an auditor a non-accredited "traceable" certificate where an accredited one was required, expect a finding. The fix is simple: specify accredited calibration for the instruments that matter, and confirm the measurement is on the lab’s scope.',
         ],
       },
     ],
@@ -584,7 +584,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'How to confirm your measurement is covered',
         paragraphs: [
-          'Find the discipline, then the parameter (e.g., "gauge blocks, steel"), then confirm your range falls inside the accredited range and that the CMC is small enough for your tolerance. If your measurement is not listed, a calibration the lab performs for it may still be traceable but will not be accredited. Always match the scope to the specific instrument and tolerance.',
+          'Find the discipline, then the parameter (e.g., "[gauge blocks](/gage-block-calibration), steel"), then confirm your range falls inside the accredited range and that the CMC is small enough for your tolerance. If your measurement is not listed, a calibration the lab performs for it may still be traceable but will not be accredited. Always match the scope to the specific instrument and tolerance.',
         ],
         image: {
           src: '/images/dimensional-height-gauge-surface-plate.webp',
@@ -638,7 +638,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'ISO/IEC 17025: technical competence',
         paragraphs: [
-          'ISO/IEC 17025 incorporates management-system elements but adds the technical requirements that matter for measurement: method validation, equipment and traceability, staff competence, and the estimation and reporting of measurement uncertainty. Accreditation to it is assessed by technical experts. That is why regulated customers ask for 17025, not 9001, for calibration.',
+          '[ISO/IEC 17025](/blog/iso-17025-accreditation) incorporates management-system elements but adds the technical requirements that matter for measurement: method validation, equipment and traceability, staff competence, and the estimation and reporting of [measurement uncertainty](/blog/measurement-uncertainty-traceability). Accreditation to it is assessed by technical experts. That is why regulated customers ask for 17025, not 9001, for calibration.',
         ],
         image: {
           src: '/images/fluke-5520a-3458a-standards.jpg',
@@ -740,12 +740,12 @@ export const blogPosts: BlogPost[] = [
       alt: 'An accredited laboratory operating under the 2017 revision of ISO/IEC 17025',
     },
     lead:
-      'If your supplier’s certificates look different than they did a few years ago — decision rules stated explicitly, more attention to impartiality — the 2017 revision is why. Here is the short version of what changed.',
+      'If your supplier’s certificates look different than they did a few years ago — [decision rules](/blog/tur-tar-and-decision-rules) stated explicitly, more attention to impartiality — the 2017 revision is why. Here is the short version of what changed.',
     sections: [
       {
         heading: 'Risk-based thinking and decision rules',
         paragraphs: [
-          'The 2017 revision moved the standard toward risk-based thinking and made decision rules explicit: when a lab issues a statement of conformity (pass/fail), it must have a documented rule for how measurement uncertainty is accounted for at the tolerance limit, and that rule should be agreed with the customer. This is why decision-rule language (and Z540.3-style guard banding) now appears clearly on certificates.',
+          'The 2017 revision moved the standard toward risk-based thinking and made decision rules explicit: when a lab issues a statement of conformity (pass/fail), it must have a documented rule for how [measurement uncertainty](/blog/measurement-uncertainty-traceability) is accounted for at the tolerance limit, and that rule should be agreed with the customer. This is why decision-rule language (and Z540.3-style guard banding) now appears clearly on certificates.',
         ],
       },
       {
@@ -796,7 +796,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'Precision reference standards used to quantify measurement uncertainty',
     },
     lead:
-      'Every measurement carries doubt. Measurement uncertainty is the discipline of quantifying that doubt honestly — and it is what makes a calibration result usable rather than a bare number. This hub covers uncertainty, the traceability chain that feeds it, and the concepts (budgets, CMC, guard banding) that turn it into decisions.',
+      'Every measurement carries doubt. Measurement uncertainty is the discipline of quantifying that doubt honestly — and it is what makes a calibration result usable rather than a bare number. This hub covers uncertainty, the [traceability chain](/blog/metrological-traceability-chain) that feeds it, and the concepts (budgets, CMC, [guard banding](/blog/tur-tar-and-decision-rules)) that turn it into decisions.',
     sections: [
       {
         heading: 'Why uncertainty is the whole point',
@@ -817,7 +817,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'From uncertainty to decisions',
         paragraphs: [
-          'The articles below take uncertainty from concept to practice: reading an uncertainty budget, following the traceability chain link by link, understanding CMC on a scope, seeing how temperature and humidity move a measurement, and using guard banding to control the risk of a wrong pass/fail call.',
+          'The articles below take uncertainty from concept to practice: reading an uncertainty budget, following the traceability chain link by link, understanding CMC on a scope, seeing how [temperature and humidity](/capabilities/temperature-humidity) move a measurement, and using guard banding to control the risk of a wrong pass/fail call.',
         ],
       },
     ],
@@ -856,7 +856,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'Reference standards on a metrology bench',
     },
     lead:
-      'Measurement uncertainty sounds like a confession of failure. It is the opposite: it is the mark of a lab honest enough to tell you how much to trust its numbers. Here is the concept without the calculus.',
+      '[Measurement uncertainty](/blog/measurement-uncertainty-traceability) sounds like a confession of failure. It is the opposite: it is the mark of a lab honest enough to tell you how much to trust its numbers. Here is the concept without the calculus.',
     sections: [
       {
         heading: 'Uncertainty is a range, with a confidence level',
@@ -867,7 +867,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'How to use it',
         paragraphs: [
-          'Compare the uncertainty to your tolerance. If your tolerance is ±0.05 V and the calibration uncertainty is ±0.002 V, you have plenty of margin (a healthy TUR). If the uncertainty is a large fraction of your tolerance, the pass/fail call near the limit gets risky — which is where decision rules and guard banding come in. Uncertainty is the number that tells you whether a "pass" is comfortable or marginal.',
+          'Compare the uncertainty to your tolerance. If your tolerance is ±0.05 V and the calibration uncertainty is ±0.002 V, you have plenty of margin (a healthy TUR). If the uncertainty is a large fraction of your tolerance, the pass/fail call near the limit gets risky — which is where [decision rules](/blog/tur-tar-and-decision-rules) and guard banding come in. Uncertainty is the number that tells you whether a "pass" is comfortable or marginal.',
         ],
         image: {
           src: '/images/electrical-calibration-bench.webp',
@@ -1023,7 +1023,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Thermal expansion is the big one',
         paragraphs: [
-          'Metals expand and contract with temperature, so dimensional measurements are referenced to 20 °C (68 °F) by international convention. A steel gauge block measured warm reads slightly long. This is why dimensional labs control temperature tightly and why the material’s coefficient of thermal expansion appears in serious uncertainty budgets.',
+          'Metals expand and contract with temperature, so dimensional measurements are referenced to 20 °C (68 °F) by international convention. A steel [gauge block](/gage-block-calibration) measured warm reads slightly long. This is why dimensional labs control temperature tightly and why the material’s coefficient of thermal expansion appears in serious uncertainty budgets.',
         ],
       },
       {
@@ -1072,12 +1072,12 @@ export const blogPosts: BlogPost[] = [
       alt: 'Precision measurement where guard banding manages pass/fail risk',
     },
     lead:
-      'Guard banding is how a lab keeps a marginal "pass" from becoming a false pass. It is a simple idea with real consequences for what shows up on your certificate.',
+      '[Guard banding](/blog/tur-tar-and-decision-rules) is how a lab keeps a marginal "pass" from becoming a false pass. It is a simple idea with real consequences for what shows up on your certificate.',
     sections: [
       {
         heading: 'The risk it manages',
         paragraphs: [
-          'Because every measurement has uncertainty, an instrument reading right at the tolerance limit might actually be just outside it. Simple acceptance (pass if the reading is inside the limit) ignores that risk. Guard banding shrinks the acceptance zone by a portion of the measurement uncertainty, so the lab only declares a pass when the result is comfortably inside — reducing the probability of a false accept.',
+          'Because every measurement has uncertainty, an instrument reading right at the tolerance limit might actually be just outside it. Simple acceptance (pass if the reading is inside the limit) ignores that risk. Guard banding shrinks the acceptance zone by a portion of the [measurement uncertainty](/blog/measurement-uncertainty-traceability), so the lab only declares a pass when the result is comfortably inside — reducing the probability of a false accept.',
         ],
       },
       {
@@ -1131,7 +1131,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What CMC is',
         paragraphs: [
-          'Calibration and Measurement Capability is the smallest measurement uncertainty a lab can achieve for a specific measurement under near-ideal conditions, as assessed by its accreditation body and published on its scope. It represents the lab’s best case; the uncertainty on your actual certificate may be larger once the real instrument and conditions are included.',
+          'Calibration and Measurement Capability is the smallest [measurement uncertainty](/blog/measurement-uncertainty-traceability) a lab can achieve for a specific measurement under near-ideal conditions, as assessed by its accreditation body and published on its scope. It represents the lab’s best case; the uncertainty on your actual certificate may be larger once the real instrument and conditions are included.',
         ],
       },
       {
@@ -1182,18 +1182,18 @@ export const blogPosts: BlogPost[] = [
       alt: 'Instruments being processed on schedule at a calibration lab',
     },
     lead:
-      'Calibration intervals are where good intentions meet auditor scrutiny. Set them too long and you risk bad measurements; too short and you burn money. This hub covers setting intervals, adjusting them with real data, and running a recall system that keeps overdue instruments off the floor.',
+      '[Calibration intervals](/resources/how-often-should-instruments-be-calibrated) are where good intentions meet auditor scrutiny. Set them too long and you risk bad measurements; too short and you burn money. This hub covers setting intervals, adjusting them with real data, and running a [recall system](/blog/calibration-recall-systems) that keeps overdue instruments off the floor.',
     sections: [
       {
         heading: 'There is no universal interval',
         paragraphs: [
-          'The most common question — "how often should I calibrate this?" — has no single answer, and auditors know it. An interval should reflect the instrument’s stability, how hard it is used, the consequence of it being wrong, and its as-found history. A brand-new default of "annual" is a starting point, not a justification.',
+          'The most common question — "how often should I calibrate this?" — has no single answer, and auditors know it. An interval should reflect the instrument’s stability, how hard it is used, the consequence of it being wrong, and its [as-found](/blog/as-found-as-left-data) history. A brand-new default of "annual" is a starting point, not a justification.',
         ],
       },
       {
         heading: 'Intervals should be defensible, then dynamic',
         paragraphs: [
-          'Standards like AS9100 and ISO 13485 expect intervals to be established and reviewed, not pulled from thin air. The strong practice is to start from manufacturer guidance and risk, then adjust based on as-found data: instruments that keep coming back in tolerance can often have intervals extended; instruments that drift get pulled in. That data-driven loop is exactly what a good calibration program produces.',
+          'Standards like [AS9100](/resources/as9100-calibration-requirements) and [ISO 13485](/resources/iso-13485-calibration-requirements) expect intervals to be established and reviewed, not pulled from thin air. The strong practice is to start from manufacturer guidance and risk, then adjust based on as-found data: instruments that keep coming back in tolerance can often have intervals extended; instruments that drift get pulled in. That data-driven loop is exactly what a good calibration program produces.',
         ],
         image: {
           src: '/images/american-gage-team-lab.jpg',
@@ -1203,7 +1203,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'A recall system is non-negotiable',
         paragraphs: [
-          'None of this works without a recall system that flags due dates before they pass and prevents overdue instruments from measuring product. The articles below cover recall systems, what to do when something comes back out of tolerance, and how to keep a gauge crib under control.',
+          'None of this works without a recall system that flags due dates before they pass and prevents overdue instruments from measuring product. The articles below cover recall systems, what to do when something comes back [out of tolerance](/blog/instrument-out-of-tolerance-what-to-do), and how to keep a gauge crib under control.',
         ],
       },
     ],
@@ -1257,7 +1257,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Document the rationale',
         paragraphs: [
-          'Whatever interval you choose, record why. A one-line rationale ("manufacturer 12 months; low usage; non-critical — 12 months") turns an arbitrary number into a controlled decision. When the auditor asks "why annual?", you have an answer instead of a shrug. Then review the interval against as-found history — the subject of the next article.',
+          'Whatever interval you choose, record why. A one-line rationale ("manufacturer 12 months; low usage; non-critical — 12 months") turns an arbitrary number into a controlled decision. When the auditor asks "why annual?", you have an answer instead of a shrug. Then review the interval against [as-found](/blog/as-found-as-left-data) history — the subject of the next article.',
         ],
         image: {
           src: '/images/dimensional-height-gauge-surface-plate.webp',
@@ -1300,12 +1300,12 @@ export const blogPosts: BlogPost[] = [
       alt: 'Reviewing calibration history to adjust intervals',
     },
     lead:
-      'The best calibration programs treat intervals as a hypothesis they keep testing. As-found data is the evidence that lets you tighten or relax an interval with confidence instead of guesswork.',
+      'The best [calibration program](/blog/managing-a-calibration-program)s treat intervals as a hypothesis they keep testing. [As-found data](/blog/as-found-as-left-data) is the evidence that lets you tighten or relax an interval with confidence instead of guesswork.',
     sections: [
       {
         heading: 'The feedback loop',
         paragraphs: [
-          'Every calibration produces as-found data: was the instrument in tolerance when it arrived? Track that over several cycles. Instruments that consistently return well within tolerance are candidates for a longer interval; instruments found out of tolerance, or trending toward a limit, should have their intervals shortened. This is interval analysis, and it turns your calibration spend into a managed risk rather than a flat calendar cost.',
+          'Every calibration produces as-found data: was the instrument in tolerance when it arrived? Track that over several cycles. Instruments that consistently return well within tolerance are candidates for a longer interval; instruments found [out of tolerance](/blog/instrument-out-of-tolerance-what-to-do), or trending toward a limit, should have their intervals shortened. This is interval analysis, and it turns your calibration spend into a managed risk rather than a flat calendar cost.',
         ],
       },
       {
@@ -1365,7 +1365,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Common failure modes',
         paragraphs: [
-          'Recall systems fail in predictable ways: instruments that were never entered, "temporary" tools that escape the system, no owner for follow-up when a due date is missed, and no mechanism to physically prevent use of an overdue gauge. Close those gaps and the recall system does its job quietly. Leave them open and an auditor will find the overdue caliper before you do.',
+          'Recall systems fail in predictable ways: instruments that were never entered, "temporary" tools that escape the system, no owner for follow-up when a due date is missed, and no mechanism to physically prevent use of an overdue gauge. Close those gaps and the recall system does its job quietly. Leave them open and an auditor will find the overdue [caliper](/caliper-calibration) before you do.',
         ],
         image: {
           src: '/images/onsite-multimeter-fleet.webp',
@@ -1408,18 +1408,18 @@ export const blogPosts: BlogPost[] = [
       alt: 'A gauge found out of tolerance during calibration',
     },
     lead:
-      'An out-of-tolerance result is not a disaster — but ignoring it is. It is the moment your calibration program proves whether it can protect your product and your quality record.',
+      'An out-of-tolerance result is not a disaster — but ignoring it is. It is the moment your [calibration program](/blog/managing-a-calibration-program) proves whether it can protect your product and your quality record.',
     sections: [
       {
         heading: 'The required response',
         paragraphs: [
-          'When an instrument is found out of tolerance, standards like AS9100 (7.1.5) and ISO 13485 require you to assess the validity of prior measurements made with it and take action on any affected product. The as-found data tells you how far out it was, which drives how far back and how aggressively you must look. This is "reverse traceability," and it is exactly why as-found data matters.',
+          'When an instrument is found out of tolerance, standards like [AS9100](/resources/as9100-calibration-requirements) (7.1.5) and [ISO 13485](/resources/iso-13485-calibration-requirements) require you to assess the validity of prior measurements made with it and take action on any affected product. The as-found data tells you how far out it was, which drives how far back and how aggressively you must look. This is "reverse traceability," and it is exactly why as-found data matters.',
         ],
       },
       {
         heading: 'A workable procedure',
         paragraphs: [
-          'Quarantine the instrument, record the as-found condition, identify what it measured since its last good calibration, assess whether the magnitude of the error could have caused nonconforming product to pass, and document the decision and any containment. Then adjust or repair, verify as-left, and feed the event back into interval analysis. A calm, documented process here is what turns an OOT event from a crisis into a controlled record.',
+          'Quarantine the instrument, record the [as-found](/blog/as-found-as-left-data) condition, identify what it measured since its last good calibration, assess whether the magnitude of the error could have caused nonconforming product to pass, and document the decision and any containment. Then adjust or repair, verify as-left, and feed the event back into interval analysis. A calm, documented process here is what turns an OOT event from a crisis into a controlled record.',
         ],
         image: {
           src: '/images/pressure-low-controller.jpg',
@@ -1473,7 +1473,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Reading drift trends',
         paragraphs: [
-          'Plotting as-found results over several cycles reveals whether an instrument is stable, drifting steadily, or jumping erratically. Steady drift toward a limit lets you shorten the interval before it goes out of tolerance; erratic behavior may signal a fault worth investigating. Either way, drift analysis turns calibration from a pass/fail gate into a predictive tool.',
+          'Plotting [as-found](/blog/as-found-as-left-data) results over several cycles reveals whether an instrument is stable, drifting steadily, or jumping erratically. Steady drift toward a limit lets you shorten the interval before it goes [out of tolerance](/blog/instrument-out-of-tolerance-what-to-do); erratic behavior may signal a fault worth investigating. Either way, drift analysis turns calibration from a pass/fail gate into a predictive tool.',
         ],
         image: {
           src: '/images/electrical-calibration-bench.webp',
@@ -1527,7 +1527,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Make status obvious and ownership clear',
         paragraphs: [
-          'Use clear labeling (in-cal, due date, or restricted), segregate out-of-service and awaiting-calibration items so they cannot be grabbed by mistake, and assign one owner for recall follow-up. Tie the crib to your equipment master list so nothing is untracked. These basics keep a crib audit-ready without heroics.',
+          'Use clear labeling (in-cal, due date, or restricted), segregate out-of-service and awaiting-calibration items so they cannot be grabbed by mistake, and assign one owner for recall follow-up. Tie the crib to your [equipment master list](/blog/building-an-equipment-master-list) so nothing is untracked. These basics keep a crib audit-ready without heroics.',
         ],
         image: {
           src: '/images/mass-lab-class-1-weights.webp',
@@ -1577,13 +1577,13 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The common thread',
         paragraphs: [
-          'Across AS9100, ISO 13485, FDA regulations, IATF 16949, and Nadcap, the underlying requirement rhymes: measuring equipment used to verify product must be calibrated against traceable standards at planned intervals, its status controlled, and out-of-tolerance conditions assessed for impact on product. Where they differ is in emphasis, documentation, and how hard the auditor pushes.',
+          'Across [AS9100](/resources/as9100-calibration-requirements), [ISO 13485](/resources/iso-13485-calibration-requirements), FDA regulations, IATF 16949, and Nadcap, the underlying requirement rhymes: measuring equipment used to verify product must be calibrated against traceable standards at planned intervals, its status controlled, and out-of-tolerance conditions assessed for impact on product. Where they differ is in emphasis, documentation, and how hard the auditor pushes.',
         ],
       },
       {
         heading: 'Why accredited calibration keeps recurring',
         paragraphs: [
-          'In regulated supply chains, ISO/IEC 17025 accreditation is the recognized evidence that a calibration supplier is competent. Aerospace primes flow down requirements referencing ANSI/NCSL Z540.3; medical-device makers cite ISO 13485 measurement control; and auditors across industries treat accreditation as the default proof of supplier competence. American Gage certificates document data, uncertainty, traceability, and decision rules under A2LA accreditation (4296.01).',
+          'In regulated supply chains, [ISO/IEC 17025 accreditation](/accreditations) is the recognized evidence that a calibration supplier is competent. Aerospace primes flow down requirements referencing ANSI/NCSL Z540.3; medical-device makers cite ISO 13485 measurement control; and auditors across industries treat accreditation as the default proof of supplier competence. American Gage certificates document data, uncertainty, traceability, and decision rules under A2LA accreditation (4296.01).',
         ],
         image: {
           src: '/images/a2la-accredited-4296-01.jpg',
@@ -1593,7 +1593,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Deep-dive guides',
         paragraphs: [
-          'For the three most audit-heavy regimes we have detailed guides — AS9100, ISO 13485, and FDA 21 CFR 211 — and the articles below cover Nadcap, IATF 16949, and ITAR/defense considerations.',
+          'For the three most audit-heavy regimes we have detailed guides — AS9100, ISO 13485, and FDA [21 CFR 211](/resources/fda-21-cfr-part-211-calibration-requirements) — and the articles below cover Nadcap, IATF 16949, and ITAR/defense considerations.',
         ],
       },
     ],
@@ -1643,7 +1643,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What auditors expect',
         paragraphs: [
-          'Expect scrutiny of traceability, calibration intervals and their justification, out-of-tolerance handling, and — for thermal processing — instrumentation calibrated to the relevant pyrometry requirements (e.g., AMS2750 for heat treat). Using an ISO/IEC 17025 accredited calibration supplier whose scope covers your parameters removes a whole category of audit questions about supplier competence.',
+          'Expect scrutiny of traceability, [calibration intervals](/resources/how-often-should-instruments-be-calibrated) and their justification, out-of-tolerance handling, and — for thermal processing — instrumentation calibrated to the relevant pyrometry requirements (e.g., AMS2750 for heat treat). Using an [ISO/IEC 17025 accredited](/accreditations) calibration supplier whose scope covers your parameters removes a whole category of audit questions about supplier competence.',
         ],
         image: {
           src: '/images/temperature-lab.jpg',
@@ -1686,12 +1686,12 @@ export const blogPosts: BlogPost[] = [
       alt: 'Dimensional measurement in an automotive quality context',
     },
     lead:
-      'The automotive standard IATF 16949 treats measurement as a system, not just a set of calibrated tools — which is why calibration and MSA sit side by side in its requirements.',
+      'The automotive standard IATF 16949 treats measurement as a system, not just a set of calibrated tools — which is why calibration and [MSA](/blog/gauge-rr-msa-basics) sit side by side in its requirements.',
     sections: [
       {
         heading: 'Calibration and the laboratory scope requirement',
         paragraphs: [
-          'IATF 16949 builds on ISO 9001 with automotive-specific requirements, including detailed expectations for measurement system control. It calls for calibration/verification records for monitoring and measuring equipment and addresses the use of internal and external laboratories, including that external labs’ scope of accreditation cover the required calibrations. An accredited supplier with the right scope maps directly onto that requirement.',
+          'IATF 16949 builds on ISO 9001 with automotive-specific requirements, including detailed expectations for measurement system control. It calls for calibration/verification records for monitoring and measuring equipment and addresses the use of internal and external laboratories, including that external labs’ [scope of accreditation](/blog/how-to-read-a2la-scope) cover the required calibrations. An accredited supplier with the right scope maps directly onto that requirement.',
         ],
       },
       {
@@ -1745,7 +1745,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Calibration requirements are conventional; the context is not',
         paragraphs: [
-          'The technical calibration requirements on defense contracts largely mirror AS9100 and Z540.3 — traceable, accredited calibration with data and controlled intervals. What is different is the surrounding compliance environment: ITAR (International Traffic in Arms Regulations) governs export of defense articles and technical data, so where equipment or associated technical data is handled can carry restrictions.',
+          'The technical calibration requirements on defense contracts largely mirror [AS9100](/resources/as9100-calibration-requirements) and Z540.3 — traceable, accredited calibration with data and controlled intervals. What is different is the surrounding compliance environment: ITAR (International Traffic in Arms Regulations) governs export of defense articles and technical data, so where equipment or associated technical data is handled can carry restrictions.',
         ],
       },
       {
@@ -1798,7 +1798,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         heading: 'The reliable questions',
-        paragraphs: ['Across AS9100, ISO 13485, and IATF audits, expect to be asked to show:'],
+        paragraphs: ['Across [AS9100](/resources/as9100-calibration-requirements), [ISO 13485](/resources/iso-13485-calibration-requirements), and IATF audits, expect to be asked to show:'],
         bullets: [
           'Traceability of the standards behind your calibrations',
           'Certificates with data and uncertainty, not just a PASS',
@@ -1811,7 +1811,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'How to be ready',
         paragraphs: [
-          'Keep certificates, the equipment master list, and interval rationales retrievable in minutes, and have one real OOT event documented end to end as proof your process works. Using an accredited lab whose scope covers your equipment answers the supplier-competence thread before it is even asked. Preparation here is mostly about retrieval speed and having the evidence exist in the first place.',
+          'Keep certificates, the [equipment master list](/blog/building-an-equipment-master-list), and interval rationales retrievable in minutes, and have one real OOT event documented end to end as proof your process works. Using an accredited lab whose scope covers your equipment answers the supplier-competence thread before it is even asked. Preparation here is mostly about retrieval speed and having the evidence exist in the first place.',
         ],
         image: {
           src: '/images/american-gage-reception.jpg',
@@ -1861,13 +1861,13 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The discipline in one idea',
         paragraphs: [
-          'Dimensional calibration compares length- and form-measuring instruments to reference artifacts (gauge blocks, ring and plug gauges, step masters) whose sizes are known and traceable. Because materials expand with temperature, dimensional measurements are referenced to 20 °C, and serious work happens in a temperature-controlled room — the difference between a defensible micron-level result and a warm approximation.',
+          'Dimensional calibration compares length- and form-measuring instruments to reference artifacts ([gauge blocks](/gage-block-calibration), ring and plug gauges, step masters) whose sizes are known and traceable. Because materials expand with temperature, dimensional measurements are referenced to 20 °C, and serious work happens in a temperature-controlled room — the difference between a defensible micron-level result and a warm approximation.',
         ],
       },
       {
         heading: 'What we calibrate',
         paragraphs: [
-          'American Gage’s dimensional laboratory calibrates hand tools and precision instruments across the range shops actually use — calipers, micrometers, indicators, height gauges, gauge blocks, thread and ring/plug gauges, and surface plates. Each is covered in a dedicated article below with the specifics of what a good certificate shows.',
+          'American Gage’s dimensional laboratory calibrates hand tools and precision instruments across the range shops actually use — [calipers](/caliper-calibration), [micrometers](/micrometer-calibration), indicators, height gauges, gauge blocks, thread and ring/plug gauges, and [surface plates](/surface-plate-calibration). Each is covered in a dedicated article below with the specifics of what a good certificate shows.',
         ],
         image: {
           src: '/images/american-gage-lab-work.jpg',
@@ -1877,7 +1877,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Why it anchors a quality system',
         paragraphs: [
-          'Dimensional measurements verify part conformity more than any other kind, so dimensional calibration is usually the largest slice of a manufacturer’s calibration program — and the one auditors examine most. Getting certificates with data, uncertainty, and traceability here pays off across every inspection you run.',
+          'Dimensional measurements verify part conformity more than any other kind, so dimensional calibration is usually the largest slice of a manufacturer’s [calibration program](/blog/managing-a-calibration-program) — and the one auditors examine most. Getting certificates with data, uncertainty, and traceability here pays off across every inspection you run.',
         ],
       },
     ],
@@ -1916,18 +1916,18 @@ export const blogPosts: BlogPost[] = [
       alt: 'Dimensional calibration of precision hand tools',
     },
     lead:
-      'Calipers are the workhorse of the shop floor, which is exactly why their calibration deserves more than a quick zero-check. Here is what a proper caliper calibration covers.',
+      '[Calipers](/caliper-calibration) are the workhorse of the shop floor, which is exactly why their calibration deserves more than a quick zero-check. Here is what a proper caliper calibration covers.',
     sections: [
       {
         heading: 'What gets checked',
         paragraphs: [
-          'A calibration measures the caliper against gauge blocks at multiple points across its range, checking accuracy for outside, inside, and depth measurements, plus jaw parallelism and the zero. Digital, dial, and vernier calipers all get verified across the span they will actually be used over — not just at one convenient point.',
+          'A calibration measures the caliper against [gauge blocks](/gage-block-calibration) at multiple points across its range, checking accuracy for outside, inside, and depth measurements, plus jaw parallelism and the zero. Digital, dial, and vernier calipers all get verified across the span they will actually be used over — not just at one convenient point.',
         ],
       },
       {
         heading: 'What the certificate should show',
         paragraphs: [
-          'Look for as-found and as-left readings at each test point, the measurement uncertainty, the standards used, and a clear pass/fail against a stated tolerance. American Gage calibrates calipers with traceable gauge blocks and documents data and uncertainty on every certificate.',
+          'Look for [as-found](/blog/as-found-as-left-data) and as-left readings at each test point, the [measurement uncertainty](/blog/measurement-uncertainty-traceability), the standards used, and a clear pass/fail against a stated tolerance. American Gage calibrates calipers with traceable gauge blocks and documents data and uncertainty on every certificate.',
         ],
         image: {
           src: '/images/american-gage-lab-work.jpg',
@@ -1970,18 +1970,18 @@ export const blogPosts: BlogPost[] = [
       alt: 'Precision dimensional instruments under calibration',
     },
     lead:
-      'A micrometer is a more precise instrument than a caliper, and its calibration reflects that — flatness and parallelism of the measuring faces matter as much as raw accuracy.',
+      'A [micrometer](/micrometer-calibration) is a more precise instrument than a [caliper](/caliper-calibration), and its calibration reflects that — flatness and parallelism of the measuring faces matter as much as raw accuracy.',
     sections: [
       {
         heading: 'What gets checked',
         paragraphs: [
-          'Calibration verifies accuracy across the micrometer’s range using gauge blocks, plus the flatness of the anvil and spindle faces and their parallelism (often with optical flats). Because micrometers resolve to the micron level, temperature control and careful technique are part of the measurement, not an afterthought.',
+          'Calibration verifies accuracy across the micrometer’s range using [gauge blocks](/gage-block-calibration), plus the flatness of the anvil and spindle faces and their parallelism (often with optical flats). Because micrometers resolve to the micron level, temperature control and careful technique are part of the measurement, not an afterthought.',
         ],
       },
       {
         heading: 'What the certificate should show',
         paragraphs: [
-          'Expect as-found/as-left data at multiple points, uncertainty, and the flatness/parallelism results where applicable. A certificate that reports only a single point tells you little about how the instrument behaves across its span.',
+          'Expect [as-found/as-left data](/blog/as-found-as-left-data) at multiple points, uncertainty, and the flatness/parallelism results where applicable. A certificate that reports only a single point tells you little about how the instrument behaves across its span.',
         ],
         image: {
           src: '/images/american-gage-team-lab.jpg',
@@ -2024,7 +2024,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'Gauge blocks used as dimensional reference standards',
     },
     lead:
-      'Gauge blocks are the quiet reference behind a huge share of dimensional measurement. Understanding their grades and calibration tells you how far you can trust everything measured against them.',
+      '[Gauge blocks](/gage-block-calibration) are the quiet reference behind a huge share of dimensional measurement. Understanding their grades and calibration tells you how far you can trust everything measured against them.',
     sections: [
       {
         heading: 'Grades and what they mean',
@@ -2078,12 +2078,12 @@ export const blogPosts: BlogPost[] = [
       alt: 'A precision metrology environment for coordinate measurement',
     },
     lead:
-      'A coordinate measuring machine measures in three dimensions, so "is it accurate?" is a bigger question than for a caliper. That is why CMMs are handled through performance verification, not a single calibration point.',
+      'A coordinate measuring machine measures in three dimensions, so "is it accurate?" is a bigger question than for a [caliper](/caliper-calibration). That is why CMMs are handled through performance verification, not a single calibration point.',
     sections: [
       {
         heading: 'Performance verification',
         paragraphs: [
-          'CMM performance is typically verified against standards such as the ISO 10360 series, using calibrated artifacts (ball bars, gauge blocks, step gauges) to check length-measuring error and probing error across the machine’s volume. The result characterizes how the machine performs throughout its working space, not just at one location.',
+          'CMM performance is typically verified against standards such as the ISO 10360 series, using calibrated artifacts (ball bars, [gauge blocks](/gage-block-calibration), step gauges) to check length-measuring error and probing error across the machine’s volume. The result characterizes how the machine performs throughout its working space, not just at one location.',
         ],
       },
       {
@@ -2132,7 +2132,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'A height gauge referenced to a granite surface plate',
     },
     lead:
-      'The granite surface plate is the flat, stable datum a whole layout depends on. If it is not flat, every measurement referenced to it inherits the error — quietly.',
+      'The granite [surface plate](/surface-plate-calibration) is the flat, stable datum a whole layout depends on. If it is not flat, every measurement referenced to it inherits the error — quietly.',
     sections: [
       {
         heading: 'Flatness is the whole game',
@@ -2143,7 +2143,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Height gauges ride on it',
         paragraphs: [
-          'A height gauge measures vertical dimensions referenced to the surface plate, so its calibration and the plate’s flatness work together. Height gauges are calibrated against gauge blocks or step masters across their range, with data and uncertainty reported. Treat the plate and the gauges that use it as a system.',
+          'A height gauge measures vertical dimensions referenced to the surface plate, so its calibration and the plate’s flatness work together. Height gauges are calibrated against [gauge blocks](/gage-block-calibration) or step masters across their range, with data and uncertainty reported. Treat the plate and the gauges that use it as a system.',
         ],
         image: {
           src: '/images/american-gage-lab-work.jpg',
@@ -2191,13 +2191,13 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Measuring the gauges that measure parts',
         paragraphs: [
-          'Thread gauges (plug and ring), and plain plug and ring gauges, are calibrated by measuring their critical dimensions — pitch diameter, major/minor diameters, and form for threads — against traceable standards, and comparing to the gauge’s class tolerance. Even though they are used as attribute (go/no-go) gauges, verifying them requires real dimensional measurement.',
+          '[Thread gauges](/thread-gage-calibration) (plug and ring), and plain plug and ring gauges, are calibrated by measuring their critical dimensions — pitch diameter, major/minor diameters, and form for threads — against traceable standards, and comparing to the gauge’s class tolerance. Even though they are used as attribute (go/no-go) gauges, verifying them requires real dimensional measurement.',
         ],
       },
       {
         heading: 'Wear and retirement',
         paragraphs: [
-          'Because these gauges physically engage parts, they wear — especially "go" members in high-volume use. Calibration tracks that wear so a gauge is retired before it drifts out of class and starts accepting nonconforming parts. As-found data is what makes an out-of-tolerance gauge’s impact assessable.',
+          'Because these gauges physically engage parts, they wear — especially "go" members in high-volume use. Calibration tracks that wear so a gauge is retired before it drifts out of class and starts accepting nonconforming parts. [As-found data](/blog/as-found-as-left-data) is what makes an [out-of-tolerance](/blog/instrument-out-of-tolerance-what-to-do) gauge’s impact assessable.',
         ],
         image: {
           src: '/images/american-gage-team-lab.jpg',
@@ -2247,7 +2247,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'From DC volts to microwaves',
         paragraphs: [
-          'Electrical calibration covers DC and AC voltage, current, resistance, capacitance, and frequency, extending into RF and microwave power, attenuation, and s-parameters at the high end. Multi-function calibrators and reference standards (like precision multimeters and calibrators) anchor the lab’s capability, with traceability back to national standards.',
+          'Electrical calibration covers DC and AC voltage, current, resistance, capacitance, and frequency, extending into [RF and microwave](/capabilities/electrical) power, attenuation, and s-parameters at the high end. Multi-function calibrators and reference standards (like precision [multimeters](/multimeter-calibration) and calibrators) anchor the lab’s capability, with traceability back to national standards.',
         ],
       },
       {
@@ -2302,7 +2302,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'A digital multimeter being calibrated against a multifunction standard',
     },
     lead:
-      'The digital multimeter is the most common electrical instrument in any facility, and its calibration is only as good as the range of functions and points it actually covers.',
+      'The [digital multimeter](/multimeter-calibration) is the most common electrical instrument in any facility, and its calibration is only as good as the range of functions and points it actually covers.',
     sections: [
       {
         heading: 'What gets calibrated',
@@ -2313,7 +2313,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What the certificate should show',
         paragraphs: [
-          'Expect as-found/as-left readings at each point and range, measurement uncertainty, and pass/fail against the manufacturer specification or your stated tolerance. A certificate covering only DC volts when you use current and resistance is not calibrating the instrument you actually use.',
+          'Expect [as-found/as-left](/blog/as-found-as-left-data) readings at each point and range, [measurement uncertainty](/blog/measurement-uncertainty-traceability), and pass/fail against the manufacturer specification or your stated tolerance. A certificate covering only DC volts when you use current and resistance is not calibrating the instrument you actually use.',
         ],
         image: {
           src: '/images/electrical-calibration-bench.webp',
@@ -2464,7 +2464,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'An automated RF and microwave calibration rack',
     },
     lead:
-      'RF and microwave calibration is where test-point counts explode — many frequencies, many levels — which is exactly why doing it manually is slow and error-prone, and why automation is the right answer.',
+      '[RF and microwave](/capabilities/electrical) calibration is where test-point counts explode — many frequencies, many levels — which is exactly why doing it manually is slow and error-prone, and why automation is the right answer.',
     sections: [
       {
         heading: 'What RF calibration covers',
@@ -2628,7 +2628,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'A high-pressure comparator used to calibrate pressure instruments',
     },
     lead:
-      'Pressure, temperature, and humidity are the physical parameters behind an enormous amount of process control and product testing. This hub covers how each is calibrated — from a simple pressure gauge to mapping a walk-in environmental chamber.',
+      'Pressure, temperature, and humidity are the physical parameters behind an enormous amount of process control and product testing. This hub covers how each is calibrated — from a simple [pressure gauge](/pressure-gauge-calibration) to mapping a walk-in environmental chamber.',
     sections: [
       {
         heading: 'Three parameters, one principle',
@@ -2699,7 +2699,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What the certificate shows',
         paragraphs: [
-          'Expect as-found/as-left readings at each point, measurement uncertainty, and the reference used, with pass/fail against your tolerance. For transducers feeding a control system, the electrical output (mA or V) is verified alongside the pressure so the whole signal path is trustworthy.',
+          'Expect [as-found/as-left](/blog/as-found-as-left-data) readings at each point, [measurement uncertainty](/blog/measurement-uncertainty-traceability), and the reference used, with pass/fail against your tolerance. For transducers feeding a control system, the electrical output (mA or V) is verified alongside the pressure so the whole signal path is trustworthy.',
         ],
         image: {
           src: '/images/pressure-low-controller.jpg',
@@ -3019,13 +3019,13 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The reference artifacts',
         paragraphs: [
-          'Mass calibration rests on classified reference weights (ASTM or OIML classes) whose values are traceable to national standards; balances and scales are calibrated by comparison against them. Force calibration uses reference load cells or deadweight machines; torque calibration uses reference torque transducers and calibrated arms/weights. In every case, the quality of the reference and the technique define the result.',
+          'Mass calibration rests on classified reference weights (ASTM or OIML classes) whose values are traceable to national standards; [balances and scales](/scale-calibration) are calibrated by comparison against them. Force calibration uses reference load cells or deadweight machines; torque calibration uses reference torque transducers and calibrated arms/weights. In every case, the quality of the reference and the technique define the result.',
         ],
       },
       {
         heading: 'Small errors, big consequences',
         paragraphs: [
-          'These measurements sit under safety-critical assembly (torqued fasteners on aircraft and vehicles), formulation and dosing (analytical balances), and materials testing (force/load). A miscalibrated torque wrench or balance does not announce itself — it quietly produces out-of-spec assemblies or formulations. That is why traceable calibration with data matters as much here as anywhere.',
+          'These measurements sit under safety-critical assembly (torqued fasteners on aircraft and vehicles), formulation and dosing (analytical balances), and materials testing (force/load). A miscalibrated [torque wrench](/torque-wrench-calibration) or balance does not announce itself — it quietly produces out-of-spec assemblies or formulations. That is why traceable calibration with data matters as much here as anywhere.',
         ],
         image: {
           src: '/images/force-calibration-stand.webp',
@@ -3035,7 +3035,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The instruments, one by one',
         paragraphs: [
-          'The articles below cover balances and scales, mass standards and weight classes, torque wrenches and screwdrivers, force gauges and load cells, and crane/floor scales.',
+          'The articles below cover balances and scales, mass standards and weight classes, torque wrenches and screwdrivers, [force gauges](/force-gauge-calibration) and load cells, and crane/floor scales.',
         ],
       },
     ],
@@ -3182,7 +3182,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'Torque calibration equipment',
     },
     lead:
-      'A torque wrench sets the clamp load on fasteners that hold together engines, airframes, and machinery. Calibration is the difference between a joint that holds and one that fails.',
+      'A [torque wrench](/torque-wrench-calibration) sets the clamp load on fasteners that hold together engines, airframes, and machinery. Calibration is the difference between a joint that holds and one that fails.',
     sections: [
       {
         heading: 'How it is calibrated',
@@ -3193,7 +3193,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What to watch for',
         paragraphs: [
-          'Click-type wrenches should be stored at their lowest setting and can drift with heavy use, so interval and handling matter. The certificate should report as-found/as-left readings at each point with uncertainty and pass/fail against the applicable tolerance (often per ASME B107 / ISO 6789 for hand torque tools). For safety-critical fastening, that documented data is exactly what your quality system needs.',
+          'Click-type wrenches should be stored at their lowest setting and can drift with heavy use, so interval and handling matter. The certificate should report [as-found/as-left](/blog/as-found-as-left-data) readings at each point with uncertainty and pass/fail against the applicable tolerance (often per ASME B107 / ISO 6789 for hand torque tools). For safety-critical fastening, that documented data is exactly what your quality system needs.',
         ],
         image: {
           src: '/images/american-gage-team-lab.jpg',
@@ -3236,7 +3236,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'A force calibration stand with a reference load cell',
     },
     lead:
-      'Force measurement underlies materials testing, product strength verification, and countless assembly checks. Calibrating a force gauge or load cell keeps those numbers honest in both directions of loading.',
+      'Force measurement underlies materials testing, product strength verification, and countless assembly checks. Calibrating a [force gauge](/force-gauge-calibration) or load cell keeps those numbers honest in both directions of loading.',
     sections: [
       {
         heading: 'Tension and compression',
@@ -3301,7 +3301,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Where it matters',
         paragraphs: [
-          'These tools set fastener torque in electronics, medical devices, and precision assemblies where over- or under-torquing damages components or compromises function. As-found/as-left data with uncertainty documents that the tool was — and remains — within tolerance, which is exactly what a controlled assembly process requires.',
+          'These tools set fastener torque in electronics, medical devices, and precision assemblies where over- or under-torquing damages components or compromises function. [As-found/as-left data](/blog/as-found-as-left-data) with uncertainty documents that the tool was — and remains — within tolerance, which is exactly what a controlled assembly process requires.',
         ],
         image: {
           src: '/images/american-gage-team-lab.jpg',
@@ -3355,7 +3355,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What the certificate confirms',
         paragraphs: [
-          'The certificate reports as-found/as-left data across the tested range with uncertainty and pass/fail against your tolerance (and legal-for-trade requirements where applicable). For scales used in shipping, inventory, or batching, that documented accuracy protects both compliance and cost.',
+          'The certificate reports [as-found/as-left data](/blog/as-found-as-left-data) across the tested range with uncertainty and pass/fail against your tolerance (and legal-for-trade requirements where applicable). For scales used in shipping, inventory, or batching, that documented accuracy protects both compliance and cost.',
         ],
         image: {
           src: '/images/onsite-multimeter-fleet.webp',
@@ -3400,7 +3400,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'A calibration program managed by quality professionals',
     },
     lead:
-      'A calibration program is a system, not a stack of certificates. This hub is the quality manager’s playbook: how to decide what to keep in-house, how to choose and manage a lab, how to handle the bad days (out-of-tolerance findings, audits), and how to keep the whole thing organized.',
+      'A calibration program is a system, not a stack of certificates. This hub is the quality manager’s playbook: how to decide what to keep in-house, how to choose and manage a lab, how to handle the bad days ([out-of-tolerance](/blog/instrument-out-of-tolerance-what-to-do) findings, audits), and how to keep the whole thing organized.',
     sections: [
       {
         heading: 'What a good program actually delivers',
@@ -3411,7 +3411,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The recurring decisions',
         paragraphs: [
-          'You will keep facing the same handful of decisions: what to calibrate in-house versus send out, which lab(s) to trust, how to react to an out-of-tolerance result, how to prove your measurement processes are capable (MSA), and how to walk into an audit without dread. The articles below tackle each directly, and they connect back to the intervals, uncertainty, and compliance clusters where the detail lives.',
+          'You will keep facing the same handful of decisions: what to calibrate in-house versus send out, which lab(s) to trust, how to react to an out-of-tolerance result, how to prove your measurement processes are capable ([MSA](/blog/gauge-rr-msa-basics)), and how to walk into an audit without dread. The articles below tackle each directly, and they connect back to the intervals, uncertainty, and compliance clusters where the detail lives.',
         ],
         image: {
           src: '/images/american-gage-reception.jpg',
@@ -3421,7 +3421,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Start with the master list',
         paragraphs: [
-          'If your program is a mess, the fastest fix is usually the equipment master list — a single controlled record of every instrument, its status, and its due date. It is the backbone everything else hangs on, and it is the last article in this cluster.',
+          'If your program is a mess, the fastest fix is usually the [equipment master list](/blog/building-an-equipment-master-list) — a single controlled record of every instrument, its status, and its due date. It is the backbone everything else hangs on, and it is the last article in this cluster.',
         ],
       },
     ],
@@ -3465,7 +3465,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The real cost of in-house',
         paragraphs: [
-          'In-house calibration is not free labor with a spare bench. It requires reference standards (and their recurring calibration), a controlled environment, trained and demonstrably competent technicians, documented procedures, and — if you need accredited results — your own ISO/IEC 17025 accreditation, which is a significant ongoing commitment. For high-volume, simple checks you do constantly, that investment can pay off. For specialized or low-volume work, it rarely does.',
+          'In-house calibration is not free labor with a spare bench. It requires reference standards (and their recurring calibration), a controlled environment, trained and demonstrably competent technicians, documented procedures, and — if you need accredited results — your own [ISO/IEC 17025 accreditation](/accreditations), which is a significant ongoing commitment. For high-volume, simple checks you do constantly, that investment can pay off. For specialized or low-volume work, it rarely does.',
         ],
       },
       {
@@ -3531,7 +3531,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Then service and fit',
         paragraphs: [
-          'Once the technical box is checked, the day-to-day experience decides whether the relationship works: realistic turnaround with expedite options, whether you can reach an actual technician, logistics (pickup routes or reliable mail-in), and responsiveness when something is urgent. A smaller independent lab often wins on access and flexibility; confirm it also has the accreditation and scope you need. American Gage combines A2LA accreditation across nine disciplines with direct technician access and both local pickup and nationwide mail-in.',
+          'Once the technical box is checked, the day-to-day experience decides whether the relationship works: realistic turnaround with expedite options, whether you can reach an actual technician, logistics (pickup routes or reliable mail-in), and responsiveness when something is urgent. A smaller independent lab often wins on access and flexibility; confirm it also has the accreditation and scope you need. American Gage combines [A2LA accreditation](/accreditations) across nine disciplines with direct technician access and both local pickup and nationwide mail-in.',
         ],
         image: {
           src: '/images/onsite-multimeter-fleet.webp',
@@ -3574,18 +3574,18 @@ export const blogPosts: BlogPost[] = [
       alt: 'Reviewing an out-of-tolerance calibration result',
     },
     lead:
-      'How you handle an out-of-tolerance result is the clearest signal of whether your calibration program is real. A calm, documented procedure turns a scary finding into a controlled record.',
+      'How you handle an [out-of-tolerance](/blog/instrument-out-of-tolerance-what-to-do) result is the clearest signal of whether your [calibration program](/blog/managing-a-calibration-program) is real. A calm, documented procedure turns a scary finding into a controlled record.',
     sections: [
       {
         heading: 'The procedure, step by step',
         paragraphs: [
-          'When a lab reports an out-of-tolerance (OOT) as-found condition, work a standard sequence: quarantine the instrument so it cannot be used; capture the as-found magnitude; identify everything it measured since its last good calibration; assess whether an error of that size could have let nonconforming product pass; decide and document containment or acceptance; then adjust/repair, verify as-left, and record the whole event. The as-found data is what makes the impact assessment possible — which is why "PASS-only" certificates are dangerous.',
+          'When a lab reports an out-of-tolerance (OOT) [as-found](/blog/as-found-as-left-data) condition, work a standard sequence: quarantine the instrument so it cannot be used; capture the as-found magnitude; identify everything it measured since its last good calibration; assess whether an error of that size could have let nonconforming product pass; decide and document containment or acceptance; then adjust/repair, verify as-left, and record the whole event. The as-found data is what makes the impact assessment possible — which is why "PASS-only" certificates are dangerous.',
         ],
       },
       {
         heading: 'Close the loop',
         paragraphs: [
-          'An OOT event is also information. Feed it into interval analysis (should this instrument’s interval shorten?), into supplier and process review, and into training if technique contributed. Standards like AS9100 and ISO 13485 expect not just the assessment but evidence you acted. Done consistently, OOT handling stops being a fire drill and becomes routine quality machinery.',
+          'An OOT event is also information. Feed it into interval analysis (should this instrument’s interval shorten?), into supplier and process review, and into training if technique contributed. Standards like [AS9100](/resources/as9100-calibration-requirements) and [ISO 13485](/resources/iso-13485-calibration-requirements) expect not just the assessment but evidence you acted. Done consistently, OOT handling stops being a fire drill and becomes routine quality machinery.',
         ],
         image: {
           src: '/images/pressure-low-controller.jpg',
@@ -3682,7 +3682,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'Calibration records organized for an audit',
     },
     lead:
-      'The calibration part of an audit rewards preparation more than luck. If you can retrieve the right records fast and tell one clean out-of-tolerance story, you are most of the way there.',
+      'The calibration part of an audit rewards preparation more than luck. If you can retrieve the right records fast and tell one clean [out-of-tolerance](/blog/instrument-out-of-tolerance-what-to-do) story, you are most of the way there.',
     sections: [
       {
         heading: 'Have these retrievable in minutes',
@@ -3742,7 +3742,7 @@ export const blogPosts: BlogPost[] = [
       alt: 'A controlled equipment master list underpinning a calibration program',
     },
     lead:
-      'If a calibration program has a single foundation, it is the equipment master list — the one controlled record of what you own, its status, and when it is due. Get this right and recall, audits, and impact assessments all get easier.',
+      'If a [calibration program](/blog/managing-a-calibration-program) has a single foundation, it is the equipment master list — the one controlled record of what you own, its status, and when it is due. Get this right and recall, audits, and impact assessments all get easier.',
     sections: [
       {
         heading: 'The fields that matter',
@@ -3759,7 +3759,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Keep it controlled and current',
         paragraphs: [
-          'The list only works if new instruments get entered before use, retired ones are marked, and one owner keeps it current and drives recall. Tie it to your recall system (or a portal like ours) so due dates trigger action automatically. When an out-of-tolerance event or audit hits, this single record is what lets you answer "where was this used and what is its status?" in minutes instead of days.',
+          'The list only works if new instruments get entered before use, retired ones are marked, and one owner keeps it current and drives recall. Tie it to your [recall system](/blog/calibration-recall-systems) (or a portal like ours) so due dates trigger action automatically. When an [out-of-tolerance](/blog/instrument-out-of-tolerance-what-to-do) event or audit hits, this single record is what lets you answer "where was this used and what is its status?" in minutes instead of days.',
         ],
         image: {
           src: '/images/american-gage-team-lab.jpg',
